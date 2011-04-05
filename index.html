@@ -49,6 +49,8 @@ h1 {
     
     </style>
     <script type="text/javascript">
+
+var pixelsPerMinute = 800.0/150.0;
     
 window.onload = function() {
 
@@ -113,7 +115,20 @@ window.onload = function() {
                         .attr("width", w)
                         .attr("height", h);
 
-       var route = vis.selectAll("line.route")
+        var radii = d3.range(pixelsPerMinute*10, Math.max(w,h), pixelsPerMinute*10);
+        radii.reverse();
+
+        var radius = vis.selectAll('circle.radius')
+                            .data(radii)
+                          .enter().append('svg:circle')
+                            .attr('class','radius')
+                            .attr('fill',function(d,i) { return i%2==0 ? '#e6e6e6' : '#fff' })
+                            .attr('cx',w/2)
+                            .attr('cy',h/2)
+                            .attr('r',Number)
+                            .style('opacity',0);
+
+        var route = vis.selectAll("line.route")
                          .data(connections)
                        .enter().append("svg:line")
                          .attr("class", "route")
@@ -156,6 +171,7 @@ window.onload = function() {
                            .attr("cx", function(d) { return d.mapx; })
                            .attr("cy", function(d) { return d.mapy; })
                            .attr("r", 2.5)
+                           .attr("title", function(d) { return d.name })                           
                            .style("fill", '#ffff00')
                            .style("opacity", 0)
                            .on('mouseover', function(d,i) {
@@ -184,25 +200,40 @@ window.onload = function() {
                                 .append('option')
                                 .attr('value', function(d) { return d.id })
                                 .text(function(d) { return d.name });                           
+
+                            window.onkeyup = function(e) {
+                              if (String.fromCharCode(e.keyCode).toLowerCase() == 'g') {
+                                var box = document.getElementById('navi');
+                                box.selectedIndex = 0;
+                                selectStation(null);
+                              }
+                            }
                            
                            function selectStation(d, i) {
 
                              updateShortestPaths(d, stations);
                              
                              if (i) {
-                                var box = document.getElementById('navi');
-                                box.selectedIndex = i+1;
+                               var box = document.getElementById('navi');
+                               box.selectedIndex = i+1;
                              }
+
+                             d3.selectAll('circle.radius')
+                                .transition()
+                                .duration(0)
+                              .style("opacity", d ? 1 : 0)
+                              .attr("cx", d ? d.x : w/2)
+                              .attr("cy", d ? d.y : h/2);
                              
                              d3.selectAll('circle.connect, circle.station')
                                  .transition()
-                                 .duration(1500)
+                                 .duration(1000)
                                .attr("cx", function(d) { return d.x; })
                                .attr("cy", function(d) { return d.y; })
 
                              d3.selectAll("line.route, line.stripe")
                                .transition()
-                                 .duration(1500)
+                                 .duration(1000)
                                .attr("x1", function(d) { return d.station1.x; })
                                .attr("y1", function(d) { return d.station1.y; })
                                .attr("x2", function(d) { return d.station2.x; })
@@ -256,7 +287,6 @@ function updateShortestPaths(centre, stations) {
     }
   }
 
-  var pixelsPerMinute = 800.0/150.0;
   stations.forEach(function(s) {
     var ang = Math.atan2(s.mapy - centre.mapy, s.mapx - centre.mapx),
         rad = pixelsPerMinute * s.timeToCentre; // todo: limit to min(width/2,height/2)?
@@ -285,7 +315,7 @@ function updateShortestPaths(centre, stations) {
 <div id="map">
 </div>
 
-<p><big><strong>NB:-</strong> times may not be accurate! This is really only a proof of concept, and to me it looks like I'm reporting times which are slightly too fast.  You'll have to factor in interchange times and possibly times when the train is stopped if you want to actually make use of this in its current form.  Also, it needs a <a href="http://www.java.com">recent Java plug-in</a>, probably 1.4+, sorry.</big></p>
+<p><big><strong>NB:-</strong> times may not be accurate! This is really only a proof of concept, and to me it looks like I'm reporting times which are slightly too fast.  You'll have to factor in interchange times and possibly times when the train is stopped if you want to actually make use of this in its current form.  Also, it needs a browser that supports SVG and recent Javascript features, only tested in Safari so far, sorry.</big></p>
 		
 <p>Inspired by <a href="http://www.oskarlin.com/2005/11/29/time-travel">Oskar Karlin's reworking of the tube map</a> around the time to travel from Elephant and Castle, and Rod McLaren's subsequent sketch <a href="http://www.flickr.com/photos/rodcorp/74944750/"><em>10 Minutes tube travel from Oxford Circus</em></a>. Uses travel times from <a href="http://www.geofftech.co.uk/">Geoff</a> and Neil's <a href="http://www.geofftech.co.uk/tube/sillymaps/travel_times.jpg">travel times map</a> (plus fake ones for DLR, sorry).  Station locations are from Wikipedia's <a href="http://commons.wikimedia.org/wiki/London_Underground_geographic_maps">London Underground Geographic Maps</a>. Yes, there are similar maps in existence elsewhere - you might have heard the terms anamorphosis, isochrone or isochronic map used to describe them.  Here's <a href="http://www.visualcomplexity.com/vc/project_details.cfm?id=216&index_number=13&DomainName=Transportation Networks">one for Japan's railways</a>.</p>
 
