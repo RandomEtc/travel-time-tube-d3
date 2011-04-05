@@ -17,11 +17,10 @@ body {
   line-height: normal; 
 }
  
-a 	       { color: #3399CC; }
-a:link	   { color: #3399CC; text-decoration: underline; }
-a:visited  { color: #3399CC; text-decoration: underline; }
-a:active   { color: #3399CC; text-decoration: underline; }
-a:hover	   { color: #3399CC; text-decoration: underline; }
+a, a:link, a:visited, a:hover, a:active {
+  color: #3399CC;
+  text-decoration: underline;
+}
 
 #content {
   width: 802px;
@@ -67,9 +66,10 @@ window.onload = function() {
     stations.forEach(function(s) {
       stationsById[s.id] = s;
       s.conns = [];
+      s.display_name = (s.display_name == 'NULL') ? null : s.display_name;
       s.rail = parseInt(s.rail,10);
       s.totalLines = parseInt(s.total_lines,10);
-      console.log(s.rail, s.totalLines);
+      //console.log(s.rail, s.totalLines);
       s.latitude = parseFloat(s.latitude);
       s.longitude = parseFloat(s.longitude);
       minLat = Math.min(minLat, s.latitude);
@@ -78,16 +78,17 @@ window.onload = function() {
       maxLon = Math.max(maxLon, s.longitude);
     });
 
+    var padding = 10;
     stations.forEach(function(s) {
-      s.mapx = w * (s.longitude-minLon) / (maxLon-minLon);
-      s.mapy = h - h * (s.latitude-minLat) / (maxLat-minLat);
+      s.mapx = padding + (w-padding*2) * (s.longitude-minLon) / (maxLon-minLon);
+      s.mapy = h-padding - (h-padding*2) * (s.latitude-minLat) / (maxLat-minLat);
     });
-    
-    console.log(stations);
+        
+    //console.log(stations);
     
     d3.csv('data/lines2.csv', function(connections) {
     
-      console.log(connections);
+      //console.log(connections);
       
       connections.forEach(function(c) {
         c.station1 = stationsById[c.station1];
@@ -99,7 +100,7 @@ window.onload = function() {
     
       d3.csv('data/routes.csv', function(routes) {
     
-        console.log(routes);
+        //console.log(routes);
         
         var routesById = {};
         
@@ -169,25 +170,45 @@ window.onload = function() {
                                  .duration(25)
                                .style('opacity', 0.0);
                            })
-                           .on('click', function(d,i) {
+                           .on('click', selectStation);
+
+                          var option = d3.select('#navi')
+                              .on('change', function() {
+                                var box = document.getElementById('navi'),
+                                    destination = box.options[box.selectedIndex].value;
+                                selectStation(stationsById[destination]);
+                              })
+                              .selectAll('option')
+                                .data( [ { id: 0, name: "Geographic Layout" } ].concat(stations) )
+                              .enter()
+                                .append('option')
+                                .attr('value', function(d) { return d.id })
+                                .text(function(d) { return d.name });                           
+                           
+                           function selectStation(d, i) {
 
                              updateShortestPaths(d, stations);
+                             
+                             if (i) {
+                                var box = document.getElementById('navi');
+                                box.selectedIndex = i+1;
+                             }
                              
                              d3.selectAll('circle.connect, circle.station')
                                  .transition()
                                  .duration(1500)
-                               .attr("cx", function(d) { return d.timex; })
-                               .attr("cy", function(d) { return d.timey; })
+                               .attr("cx", function(d) { return d.x; })
+                               .attr("cy", function(d) { return d.y; })
 
                              d3.selectAll("line.route, line.stripe")
                                .transition()
                                  .duration(1500)
-                               .attr("x1", function(d) { return d.station1.timex; })
-                               .attr("y1", function(d) { return d.station1.timey; })
-                               .attr("x2", function(d) { return d.station2.timex; })
-                               .attr("y2", function(d) { return d.station2.timey; });        
+                               .attr("x1", function(d) { return d.station1.x; })
+                               .attr("y1", function(d) { return d.station1.y; })
+                               .attr("x2", function(d) { return d.station2.x; })
+                               .attr("y2", function(d) { return d.station2.y; });        
                              
-                           });
+                           };
        
        
       }); // load routes
@@ -200,6 +221,14 @@ window.onload = function() {
 
 // cribbed from here in double quick time: http://www.cs.cmu.edu/~crpalmer/sp/
 function updateShortestPaths(centre, stations) {
+
+  if (!centre) {
+    stations.forEach(function(s) {
+      s.x = s.mapx;
+      s.y = s.mapy;
+    });  
+    return;
+  }
 
   stations.forEach(function(s) {
     s.timeToCentre = (s == centre) ? 0 : Number.MAX_VALUE;
@@ -231,8 +260,8 @@ function updateShortestPaths(centre, stations) {
   stations.forEach(function(s) {
     var ang = Math.atan2(s.mapy - centre.mapy, s.mapx - centre.mapx),
         rad = pixelsPerMinute * s.timeToCentre; // todo: limit to min(width/2,height/2)?
-    s.timex = centre.mapx + (rad * Math.cos(ang));
-    s.timey = centre.mapy + (rad * Math.sin(ang));
+    s.x = centre.mapx + (rad * Math.cos(ang));
+    s.y = centre.mapy + (rad * Math.sin(ang));
   });
 
 }
@@ -246,311 +275,7 @@ function updateShortestPaths(centre, stations) {
 <table width="100%"><tr>
 <td valign="middle"><h1>Travel Time Tube Map</h1></td>
 <td valign="middle" align="right"><form style="float:right">
-<select id="navi" onChange="javascript:selectStation()">
-<option value="0">Geographic Layout</option>
-<option value="1">Acton Town</option>
-<option value="3">Aldgate East</option>
-<option value="2">Aldgate</option>
-<option value="4">All Saints</option>
-<option value="5">Alperton</option>
-<option value="6">Amersham</option>
-<option value="7">Angel</option>
-<option value="8">Archway</option>
-<option value="9">Arnos Grove</option>
-<option value="10">Arsenal</option>
-<option value="11">Baker Street</option>
-<option value="12">Balham</option>
-<option value="13">Bank</option>
-<option value="14">Barbican</option>
-<option value="15">Barking</option>
-<option value="16">Barkingside</option>
-<option value="17">Barons Court</option>
-<option value="18">Bayswater</option>
-<option value="20">Beckton Park</option>
-<option value="19">Beckton</option>
-<option value="21">Becontree</option>
-<option value="22">Belsize Park</option>
-<option value="23">Bermondsey</option>
-<option value="24">Bethnal Green</option>
-<option value="25">Blackfriars</option>
-<option value="26">Blackhorse Road</option>
-<option value="27">Blackwall</option>
-<option value="28">Bond Street</option>
-<option value="29">Borough</option>
-<option value="30">Boston Manor</option>
-<option value="31">Bounds Green</option>
-<option value="32">Bow Church</option>
-<option value="33">Bow Road</option>
-<option value="34">Brent Cross</option>
-<option value="35">Brixton</option>
-<option value="36">Bromley-By-Bow</option>
-<option value="37">Buckhurst Hill</option>
-<option value="38">Burnt Oak</option>
-<option value="39">Caledonian Road</option>
-<option value="40">Camden Town</option>
-<option value="41">Canada Water</option>
-<option value="42">Canary Wharf</option>
-<option value="43">Canning Town</option>
-<option value="44">Cannon Street</option>
-<option value="45">Canons Park</option>
-<option value="46">Chalfont & Latimer</option>
-<option value="47">Chalk Farm</option>
-<option value="48">Chancery Lane</option>
-<option value="49">Charing Cross</option>
-<option value="50">Chesham</option>
-<option value="51">Chigwell</option>
-<option value="52">Chiswick Park</option>
-<option value="53">Chorleywood</option>
-<option value="54">Clapham Common</option>
-<option value="55">Clapham North</option>
-<option value="56">Clapham South</option>
-<option value="57">Cockfosters</option>
-<option value="58">Colindale</option>
-<option value="59">Colliers Wood</option>
-<option value="60">Covent Garden</option>
-<option value="61">Crossharbour & London Arena</option>
-<option value="62">Croxley</option>
-<option value="63">Custom House</option>
-<option value="64">Cutty Sark</option>
-<option value="65">Cyprus</option>
-<option value="66">Dagenham East</option>
-<option value="67">Dagenham Heathway</option>
-<option value="68">Debden</option>
-<option value="69">Deptford Bridge</option>
-<option value="70">Devons Road</option>
-<option value="71">Dollis Hill</option>
-<option value="72">Ealing Broadway</option>
-<option value="73">Ealing Common</option>
-<option value="74">Earl's Court</option>
-<option value="76">East Acton</option>
-<option value="77">East Finchley</option>
-<option value="78">East Ham</option>
-<option value="79">East India</option>
-<option value="80">East Putney</option>
-<option value="75">Eastcote</option>
-<option value="82">Edgware Road (B)</option>
-<option value="83">Edgware Road (C)</option>
-<option value="81">Edgware</option>
-<option value="84">Elephant & Castle</option>
-<option value="85">Elm Park</option>
-<option value="86">Elverson Road</option>
-<option value="87">Embankment</option>
-<option value="88">Epping</option>
-<option value="90">Euston Square</option>
-<option value="89">Euston</option>
-<option value="91">Fairlop</option>
-<option value="92">Farringdon</option>
-<option value="93">Finchley Central</option>
-<option value="94">Finchley Road</option>
-<option value="95">Finsbury Park</option>
-<option value="96">Fulham Broadway</option>
-<option value="97">Gallions Reach</option>
-<option value="98">Gants Hill</option>
-<option value="99">Gloucester Road</option>
-<option value="100">Golders Green</option>
-<option value="101">Goldhawk Road</option>
-<option value="102">Goodge Street</option>
-<option value="103">Grange Hill</option>
-<option value="104">Great Portland Street</option>
-<option value="107">Green Park</option>
-<option value="105">Greenford</option>
-<option value="106">Greenwich</option>
-<option value="108">Gunnersbury</option>
-<option value="109">Hainault</option>
-<option value="110">Hammersmith</option>
-<option value="111">Hampstead</option>
-<option value="112">Hanger Lane</option>
-<option value="113">Harlesden</option>
-<option value="114">Harrow & Wealdston</option>
-<option value="115">Harrow-on-the-Hill</option>
-<option value="116">Hatton Cross</option>
-<option value="118">Heathrow Terminal 4</option>
-<option value="117">Heathrow Terminals 1, 2 & 3</option>
-<option value="119">Hendon Central</option>
-<option value="120">Heron Quays</option>
-<option value="121">High Barnet</option>
-<option value="122">High Street Kensington</option>
-<option value="123">Highbury & Islington</option>
-<option value="124">Highgate</option>
-<option value="125">Hillingdon</option>
-<option value="126">Holborn</option>
-<option value="127">Holland Park</option>
-<option value="128">Holloway Road</option>
-<option value="129">Hornchurch</option>
-<option value="130">Hounslow Central</option>
-<option value="131">Hounslow East</option>
-<option value="132">Hounslow West</option>
-<option value="133">Hyde Park Corner</option>
-<option value="134">Ickenham</option>
-<option value="135">Island Gardens</option>
-<option value="136">Kennington</option>
-<option value="137">Kensal Green</option>
-<option value="138">Kensington (Olympia)</option>
-<option value="139">Kentish Town</option>
-<option value="140">Kenton</option>
-<option value="141">Kew Gardens</option>
-<option value="143">Kilburn Park</option>
-<option value="142">Kilburn</option>
-<option value="145">King's Cross St. Pancras</option>
-<option value="144">Kingsbury</option>
-<option value="146">Knightsbridge</option>
-<option value="147">Ladbroke Grove</option>
-<option value="148">Lambeth North</option>
-<option value="149">Lancaster Gate</option>
-<option value="150">Latimer Road</option>
-<option value="151">Leicester Square</option>
-<option value="152">Lewisham</option>
-<option value="153">Leyton</option>
-<option value="154">Leytonstone</option>
-<option value="155">Limehouse</option>
-<option value="156">Liverpool Street</option>
-<option value="157">London Bridge</option>
-<option value="158">Loughton</option>
-<option value="159">Maida Vale</option>
-<option value="160">Manor House</option>
-<option value="161">Mansion House</option>
-<option value="162">Marble Arch</option>
-<option value="163">Marylebone</option>
-<option value="164">Mile End</option>
-<option value="165">Mill Hill East</option>
-<option value="166">Monument</option>
-<option value="168">Moor Park</option>
-<option value="167">Moorgate</option>
-<option value="169">Morden</option>
-<option value="170">Mornington Crescent</option>
-<option value="171">Mudchute</option>
-<option value="172">Neasden</option>
-<option value="175">New Cross Gate</option>
-<option value="174">New Cross</option>
-<option value="173">Newbury Park</option>
-<option value="181">North Acton</option>
-<option value="182">North Ealing</option>
-<option value="183">North Greenwich</option>
-<option value="184">North Harrow</option>
-<option value="185">North Wembley</option>
-<option value="176">Northfields</option>
-<option value="177">Northolt</option>
-<option value="178">Northwick Park</option>
-<option value="180">Northwood Hills</option>
-<option value="179">Northwood</option>
-<option value="186">Notting Hill Gate</option>
-<option value="187">Oakwood</option>
-<option value="188">Old Street</option>
-<option value="190">Osterley</option>
-<option value="191">Oval</option>
-<option value="192">Oxford Circus</option>
-<option value="193">Paddington</option>
-<option value="194">Park Royal</option>
-<option value="195">Parsons Green</option>
-<option value="196">Perivale</option>
-<option value="197">Picadilly Circus</option>
-<option value="198">Pimlico</option>
-<option value="199">Pinner</option>
-<option value="200">Plaistow</option>
-<option value="201">Poplar</option>
-<option value="202">Preston Road</option>
-<option value="203">Prince Regent</option>
-<option value="204">Pudding Mill Lane</option>
-<option value="205">Putney Bridge</option>
-<option value="206">Queen's Park</option>
-<option value="207">Queensbury</option>
-<option value="208">Queensway</option>
-<option value="209">Ravenscourt Park</option>
-<option value="210">Rayners Lane</option>
-<option value="211">Redbridge</option>
-<option value="212">Regent's Park</option>
-<option value="213">Richmond</option>
-<option value="214">Rickmansworth</option>
-<option value="215">Roding Valley</option>
-<option value="216">Rotherhithe</option>
-<option value="217">Royal Albert</option>
-<option value="218">Royal Oak</option>
-<option value="219">Royal Victoria</option>
-<option value="221">Ruislip Gardens</option>
-<option value="222">Ruislip Manor</option>
-<option value="220">Ruislip</option>
-<option value="223">Russell Square</option>
-<option value="224">Seven Sisters</option>
-<option value="225">Shadwell</option>
-<option value="226">Shepherd's Bush (C)</option>
-<option value="227">Shepherd's Bush (H)</option>
-<option value="228">Shoreditch</option>
-<option value="229">Sloane Square</option>
-<option value="230">Snaresbrook</option>
-<option value="234">South Ealing</option>
-<option value="235">South Harrow</option>
-<option value="236">South Kensington</option>
-<option value="237">South Kenton</option>
-<option value="238">South Quay</option>
-<option value="239">South Ruislip</option>
-<option value="240">South Wimbledon</option>
-<option value="241">South Woodford</option>
-<option value="231">Southfields</option>
-<option value="232">Southgate</option>
-<option value="233">Southwark</option>
-<option value="248">St. James's Park</option>
-<option value="249">St. John's Wood</option>
-<option value="250">St. Paul's</option>
-<option value="242">Stamford Brook</option>
-<option value="243">Stanmore</option>
-<option value="244">Stepney Green</option>
-<option value="245">Stockwell</option>
-<option value="246">Stonebridge Park</option>
-<option value="247">Stratford</option>
-<option value="251">Sudbury Hill</option>
-<option value="252">Sudbury Town</option>
-<option value="253">Surrey Quays</option>
-<option value="254">Swiss Cottage</option>
-<option value="255">Temple</option>
-<option value="256">Theydon Bois</option>
-<option value="257">Tooting Bec</option>
-<option value="258">Tooting Broadway</option>
-<option value="259">Tottenham Court Road</option>
-<option value="260">Tottenham Hale</option>
-<option value="261">Totteridge & Whetstone</option>
-<option value="262">Tower Gateway</option>
-<option value="263">Tower Hill</option>
-<option value="264">Tufnell Park</option>
-<option value="265">Turnham Green</option>
-<option value="266">Turnpike Lane</option>
-<option value="268">Upminster Bridge</option>
-<option value="267">Upminster</option>
-<option value="269">Upney</option>
-<option value="270">Upton Park</option>
-<option value="271">Uxbridge</option>
-<option value="272">Vauxhall</option>
-<option value="273">Victoria</option>
-<option value="274">Walthamstow Central</option>
-<option value="275">Wanstead</option>
-<option value="276">Wapping</option>
-<option value="277">Warren Street</option>
-<option value="278">Warwick Avenue</option>
-<option value="279">Waterloo</option>
-<option value="280">Watford</option>
-<option value="281">Wembley Central</option>
-<option value="282">Wembley Park</option>
-<option value="286">West Acton</option>
-<option value="287">West Brompton</option>
-<option value="288">West Finchley</option>
-<option value="289">West Ham</option>
-<option value="290">West Hampstead</option>
-<option value="291">West Harrow</option>
-<option value="292">West India Quay</option>
-<option value="293">West Kensington</option>
-<option value="294">West Ruislip</option>
-<option value="283">Westbourne Park</option>
-<option value="284">Westferry</option>
-<option value="285">Westminster</option>
-<option value="296">White City</option>
-<option value="295">Whitechapel</option>
-<option value="297">Willesden Green</option>
-<option value="298">Willesden Junction</option>
-<option value="300">Wimbledon Park</option>
-<option value="299">Wimbledon</option>
-<option value="303">Wood Green</option>
-<option value="301">Woodford</option>
-<option value="302">Woodside Park</option>
-</select>
+<select id="navi"></select>
 </form></td>
 </tr></table>
 
