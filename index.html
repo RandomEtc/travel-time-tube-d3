@@ -48,6 +48,7 @@ h1 {
     <script type="text/javascript">
 
 var pixelsPerMinute = 800.0/4800.0;
+var zoom = 0; // ]-1;+Infinity[ Centre à 0
     
 window.onload = function() {
 
@@ -77,6 +78,14 @@ window.onload = function() {
       maxLon = Math.max(maxLon, s.longitude);
     });
 
+	var ecartLon = maxLon - minLon;
+	var ecartLat = maxLat - minLat;
+	
+	minLon = minLon - (zoom*ecartLon)/2
+	maxLon = maxLon + (zoom*ecartLon)/2
+	minLat = minLat - (zoom*ecartLat)/2
+	maxLat = maxLat + (zoom*ecartLat)/2
+	
     var paddingx = 150;
 	var paddingy = 10;
     stations.forEach(function(s) {
@@ -136,7 +145,7 @@ window.onload = function() {
                          .attr("x1", function(d) { return d.station1.mapx; })
                          .attr("y1", function(d) { return d.station1.mapy; })
                          .attr("x2", function(d) { return d.station2.mapx; })
-                         .attr("y2", function(d) { return d.station2.mapy; });        
+                         .attr("y2", function(d) { return d.station2.mapy; });
 
         var stripe = vis.selectAll("line.stripe")
                           .data(connections.filter(function(d) { return routesById[d.line].stripe != "NULL"; }))
@@ -190,11 +199,11 @@ window.onload = function() {
                                 selectStation(stationsById[destination]);
                               })
                               .selectAll('option')
-                                .data( [ { id: 0, name: "Geographic Layout" } ].concat(stations) )
+                                .data( [ { id: 0, name: "Arrangement geographique" } ].concat(stations) )
                               .enter()
                                 .append('option')
                                 .attr('value', function(d) { return d.id })
-                                .text(function(d) { return d.name });                           
+                                .text(function(d) { return d.name });
 
                             window.onkeyup = function(e) {
                               if (String.fromCharCode(e.keyCode).toLowerCase() == 'g') {
@@ -232,17 +241,12 @@ window.onload = function() {
                                .attr("x1", function(d) { return d.station1.x; })
                                .attr("y1", function(d) { return d.station1.y; })
                                .attr("x2", function(d) { return d.station2.x; })
-                               .attr("y2", function(d) { return d.station2.y; });        
+                               .attr("y2", function(d) { return d.station2.y; });
                              
                            };
-       
-       
       }); // load routes
-      
     }); // load lines
-    
   }); // load stations
-
 }
 
 // cribbed from here in double quick time: http://www.cs.cmu.edu/~crpalmer/sp/
