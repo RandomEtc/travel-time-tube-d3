@@ -80,10 +80,11 @@ window.onload = function() {
       maxLon = Math.max(maxLon, s.longitude);
     });
 
-    var padding = -150;
+    var paddingx = 150;
+	var paddingy = 10;
     stations.forEach(function(s) {
-      s.mapx = padding + (w-padding*2) * (s.longitude-minLon) / (maxLon-minLon);
-      s.mapy = h-padding - (h-padding*2) * (s.latitude-minLat) / (maxLat-minLat);
+      s.mapx = paddingx + (w-paddingx*2) * (s.longitude-minLon) / (maxLon-minLon);
+      s.mapy = h-paddingy - (h-paddingy*2) * (s.latitude-minLat) / (maxLat-minLat);
     });
         
     //console.log(stations);
