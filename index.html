@@ -80,7 +80,7 @@ window.onload = function() {
       maxLon = Math.max(maxLon, s.longitude);
     });
 
-    var padding = 10;
+    var padding = -150;
     stations.forEach(function(s) {
       s.mapx = padding + (w-padding*2) * (s.longitude-minLon) / (maxLon-minLon);
       s.mapy = h-padding - (h-padding*2) * (s.latitude-minLat) / (maxLat-minLat);
