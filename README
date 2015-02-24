@@ -1,8 +1,12 @@
 A port of old crusty http://www.tom-carden.co.uk/p5/tube_map_travel_times/applet/ to new shiny http://mbostock.github.com/d3/
 
 D3 version lacks:
- - titles
  - scales
- - tooltips
  - artificial selection radius for stations (too fiddly right now)
 
+Cette version est pour le métro parisien, basé sur les données de la RATP (http://data.ratp.fr/fr/les-donnees.html) 
+
+TODO : 
+ - Zoom + Déplacement
+ - RERs
+ - Données temporelles plus fines
