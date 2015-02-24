@@ -50,7 +50,7 @@ h1 {
     </style>
     <script type="text/javascript">
 
-var pixelsPerMinute = 800.0/80.0;
+var pixelsPerMinute = 800.0/4800.0;
     
 window.onload = function() {
 
@@ -115,7 +115,7 @@ window.onload = function() {
                         .attr("width", w)
                         .attr("height", h);
 
-        var radii = d3.range(pixelsPerMinute*10, Math.max(w,h), pixelsPerMinute*10);
+        var radii = d3.range(pixelsPerMinute*600, Math.max(w,h), pixelsPerMinute*600);
         radii.reverse();
 
         var radius = vis.selectAll('circle.radius')
@@ -303,7 +303,7 @@ function updateShortestPaths(centre, stations) {
 <div id="content">
 
 <table width="100%"><tr>
-<td valign="middle"><h1>Travel Time Tube Map</h1></td>
+<td valign="middle"><h1>Temps de voyage en métro</h1></td>
 <td valign="middle" align="right"><form style="float:right">
 <select id="navi"></select>
 </form></td>
