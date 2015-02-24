@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Travel Time Tube Map</title>
+    <title>Temps de voyage en métro</title>
     <script type="text/javascript" src="js/d3.min.js" charset="utf-8"></script>
     <style type="text/css">
 
@@ -22,17 +22,15 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 #content {
+  display:block;
   width: 802px;
-  position: absolute;
-  margin-left: 25px;
-  margin-top: 25px;
-  padding-bottom: 25px;
+  margin: 25px auto;
 }
 
 #map {
   width: 800px;
   height: 500px;
-  border: 1px solid #aaa;  
+  border: 1px solid #aaa;
 }
 
 ul {
@@ -166,12 +164,23 @@ window.onload = function() {
         var station = vis.selectAll("circle.station")
                            .data(stations)
                            .enter().append("svg:circle")
+						   .attr("id", function(d) { return 'station'+d.id })
                            .attr("class", "station")
                            .attr("cx", function(d) { return d.mapx; })
                            .attr("cy", function(d) { return d.mapy; })
                            .attr("r", 2)
                            .style("fill", 'white')
                            .on('click', selectStation)
+						   .on('mouseover', function(d,i) {
+							   d3.selectAll('#station'+d.id)
+							   .attr("r", 3)
+							   .style("fill", 'yellow');
+						   })
+						   .on('mouseout', function(d,i) {
+							   d3.selectAll('#station'+d.id)
+							     .attr("r", 2)
+								 .style("fill", 'white');
+						   })
 						   .append("svg:title").text(function(d) { return d.name });
 
                           var option = d3.select('#navi')
