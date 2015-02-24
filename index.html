@@ -168,24 +168,10 @@ window.onload = function() {
                            .data(stations)
                            .enter().append("svg:circle")
                            .attr("class", "station")
-                           .attr("id", function(d) { return 'station'+d.id })
                            .attr("cx", function(d) { return d.mapx; })
                            .attr("cy", function(d) { return d.mapy; })
-                           .attr("r", 2.5)
-                           .style("fill", '#ffff00')
-                           .style("opacity", 0)
-                           .on('mouseover', function(d,i) {
-                             d3.selectAll('#station'+d.id)
-                                 .transition()
-                                 .duration(25)
-                               .style('opacity', 1.0);
-                           })
-                           .on('mouseout', function(d,i) {
-                             d3.selectAll('#station'+d.id)
-                                 .transition()
-                                 .duration(25)
-                               .style('opacity', 0.0);
-                           })
+                           .attr("r", 2)
+                           .style("fill", 'white')
                            .on('click', selectStation)
 						   .append("svg:title").text(function(d) { return d.name });
 
