@@ -8,7 +8,6 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 11,48.8756724859879,2.28944416448145,Argentine,Argentine,1,1,0
 12,48.8655518636348,2.35610815512031,Arts-et-Métiers,Arts-et-Métiers,1,2,0
 13,48.8614539042949,2.32030969050736,Assemblée Nationale,Assemblée Nationale,1,1,0
-14,48.872608179941,2.32970681644823,Auber,Auber,1,1,0
 15,48.9038980475295,2.39248007867247,Aubervilliers Pantin (4 Chemins),Aubervilliers Pantin (4 Chemins),1,1,0
 17,48.8468521519498,2.29544882793447,Avenue Emile-Zola,Avenue Emile-Zola,1,1,0
 18,48.8511938192133,2.39823914082312,Avron,Avron,1,1,0
@@ -243,7 +242,6 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 303,48.8462382566208,2.41899982810926,Saint-Mandé,Saint-Mandé,1,1,0
 304,48.8394422789207,2.36164021412343,Saint-Marcel,Saint-Marcel,1,1,0
 306,48.8535999078858,2.34399624109401,Saint-Michel,Saint-Michel,1,1,0
-307,48.8533931341985,2.34501765859822,Saint-Michel Notre-Dame,Saint-Michel Notre-Dame,1,1,0
 308,48.855134518235,2.36133433906766,Saint-Paul (Le Marais),Saint-Paul (Le Marais),1,1,0
 309,48.8724706657937,2.31076910123035,Saint-Philippe du Roule,Saint-Philippe du Roule,1,1,0
 310,48.8470118401686,2.32705511135513,Saint-Placide,Saint-Placide,1,1,0
