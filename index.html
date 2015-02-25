@@ -56,10 +56,29 @@ table{
     <script type="text/javascript">
 
 var pixelsPerMinute = 800.0/4800.0;
+var donnees = [['Métro parisien', 'data/stations-paris2.csv', 'data/routes.csv', 'data/lines2.csv']];
     
 window.onload = function() {
+	createGraph(0);
+	
+	var optionDonnees = d3.select('#donnees')
+		.on('change', function() {
+			var box = document.getElementById('donnees');
+			d3.select("#map").selectAll("svg").remove();
+			createGraph(box.selectedIndex);
+		});
 
-  d3.csv('data/stations-paris2.csv', function(stations) {
+	var options = optionDonnees.selectAll('option');
+	for(i=0 ; i<donnees.length; i++){
+		options.data([ { id: i, name: donnees[i][0] } ]).enter().append('option').text(donnees[i][0]);
+	}
+}
+
+
+function createGraph(idData) {
+
+  d3.csv(donnees[idData][1], function(stations) {
+	  
 
     var w = 800,
         h = 500,
@@ -94,7 +113,7 @@ window.onload = function() {
         
     //console.log(stations);
     
-    d3.csv('data/routes.csv', function(connections) {
+    d3.csv(donnees[idData][2], function(connections) {
     
       //console.log(connections);
       
@@ -106,7 +125,7 @@ window.onload = function() {
         c.time = parseInt(c.time,10);
       });
     
-      d3.csv('data/lines2.csv', function(routes) {
+      d3.csv(donnees[idData][3], function(routes) {
     
         //console.log(routes);
 		  
@@ -155,7 +174,7 @@ window.onload = function() {
                          .enter().append("svg:line")
                          .attr("class", "route")
                          .attr("stroke", function(d) { return '#'+routesById[d.line].colour; })
-                         .attr("stroke-width", 5)
+                         .attr("stroke-width", 3)
                          .attr("stroke-linecap", 'round')
                          .attr("x1", function(d) { return d.station1.mapx; })
                          .attr("y1", function(d) { return d.station1.mapy; })
@@ -180,7 +199,7 @@ window.onload = function() {
                            .attr("class", "connect")
                            .attr("cx", function(d) { return d.mapx; })
                            .attr("cy", function(d) { return d.mapy; })
-                           .attr("r", 2.5)
+                           .attr("r", 1.5)
                            .style("fill", 'white')
                            .style("stroke", 'black')
                            .style("stroke-width", 0.5);
@@ -192,7 +211,7 @@ window.onload = function() {
                            .attr("class", "station")
                            .attr("cx", function(d) { return d.mapx; })
                            .attr("cy", function(d) { return d.mapy; })
-                           .attr("r", 2)
+                           .attr("r", 1.5)
                            .style("fill", 'white')
                            .on('click', selectStation)
 						   .on('mouseover', function(d,i) {
@@ -202,7 +221,7 @@ window.onload = function() {
 						   })
 						   .on('mouseout', function(d,i) {
 							   d3.selectAll('#station'+d.id)
-							     .attr("r", 2)
+							     .attr("r", 1.5)
 								 .style("fill", 'white');
 						   })
 						   .append("svg:title").text(function(d) { return d.name });
@@ -319,6 +338,9 @@ function updateShortestPaths(centre, stations) {
 <td><h1>Temps de voyage en m&eacute;tro</h1></td>
 <td><form style="float:right">
 <select id="navi"></select>
+</form></td>
+<td><form>
+<select id="donnees"></select>
 </form></td>
 </tr></table>
 
