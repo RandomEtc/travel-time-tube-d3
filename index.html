@@ -190,7 +190,8 @@ function createGraph(idData) {
                          .attr("x1", function(d) { return d.station1.mapx; })
                          .attr("y1", function(d) { return d.station1.mapy; })
                          .attr("x2", function(d) { return d.station2.mapx; })
-                         .attr("y2", function(d) { return d.station2.mapy; });
+                         .attr("y2", function(d) { return d.station2.mapy; })
+						 .append("svg:title").text(function(d) { return routesById[d.line].name; });
 
         var stripe = vis.selectAll("line.stripe")
                           .data(connections.filter(function(d) { return routesById[d.line].stripe != "NULL"; }))
