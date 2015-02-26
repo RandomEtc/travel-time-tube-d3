@@ -56,7 +56,8 @@ table{
     <script type="text/javascript">
 
 var pixelsPerMinute = 800.0/4800.0;
-var donnees = [['Métro parisien', 'data/stations-paris2.csv', 'data/routes.csv', 'data/lines2.csv']];
+var donnees = [['Métro parisien', 'data/metro-paris/stations.csv', 'data/metro-paris/routes.csv', 'data/metro-paris/lines.csv'],
+			   ['Métro RER TRAM Paris', 'data/metro-rer-tram-paris/stations.csv', 'data/metro-rer-tram-paris/routes.csv', 'data/metro-rer-tram-paris/lines.csv']];
     
 window.onload = function() {
 	createGraph(0);
@@ -104,7 +105,7 @@ function createGraph(idData) {
       maxLon = Math.max(maxLon, s.longitude);
     });
 
-    var paddingx = 150;
+    var paddingx = 10;
 	var paddingy = 10;
     stations.forEach(function(s) {
       s.mapx = paddingx + (w-paddingx*2) * (s.longitude-minLon) / (maxLon-minLon);
