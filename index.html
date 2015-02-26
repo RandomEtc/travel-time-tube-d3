@@ -112,9 +112,9 @@ function createGraph(idData) {
 	var ecartY = maxLat - minLat;
 	
 	if(ecartX/w > ecartY/h){
-		paddingy = ((1 - (ecartY/h)/(ecartX/w))*(h - paddingy))/2 + paddingy;
+		paddingy = ((1 - (ecartY/h)/(ecartX/w))*(h - paddingy))/3;
 	}else{
-		paddingx = ((1 - (ecartX/w)/(ecartY/h))*(w - paddingx))/2  + paddingx;
+		paddingx = ((1 - (ecartX/w)/(ecartY/h))*(w - paddingx));
 	}
 	
     stations.forEach(function(s) {
