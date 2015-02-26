@@ -107,6 +107,16 @@ function createGraph(idData) {
 
     var paddingx = 10;
 	var paddingy = 10;
+	
+	var ecartX = maxLon - minLon;
+	var ecartY = maxLat - minLat;
+	
+	if(ecartX/w > ecartY/h){
+		paddingy = ((1 - (ecartY/h)/(ecartX/w))*(h - paddingy))/2 + paddingy;
+	}else{
+		paddingx = ((1 - (ecartX/w)/(ecartY/h))*(w - paddingx))/2  + paddingx;
+	}
+	
     stations.forEach(function(s) {
       s.mapx = paddingx + (w-paddingx*2) * (s.longitude-minLon) / (maxLon-minLon);
       s.mapy = h-paddingy - (h-paddingy*2) * (s.latitude-minLat) / (maxLat-minLat);
