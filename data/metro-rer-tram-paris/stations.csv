@@ -103,7 +103,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 126,48.8914993837643,2.40312496065608,Hoche,Hoche,1,1,0
 127,48.8573559271695,2.35207356685872,Hôtel de Ville,Hôtel de Ville,1,2,0
 129,48.8643501996473,2.29404526378309,Iéna,Iéna,1,1,0
-130,48.8608507896675,2.31454811262665,Invalides,Invalides,1,1,0
+130,48.8608507896675,2.31454811262665,Invalides,Invalides,1,3,0
 131,48.8707008232696,2.36057863558728,Jacques-Bonsergent,Jacques-Bonsergent,1,1,0
 132,48.8524385192227,2.26793392300095,Jasmin,Jasmin,1,1,0
 133,48.8827685467488,2.36994579899074,Jaurès,Jaurès,1,3,0
@@ -195,7 +195,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 253,48.8643365354836,2.40882537603773,Porte de Bagnolet,Porte de Bagnolet,1,1,0
 254,48.885739159692,2.29186062067553,Porte de Champerret,Porte de Champerret,1,1,0
 255,48.8199024461617,2.36496559829082,Porte de Choisy,Porte de Choisy,1,1,0
-256,48.894436060298,2.31356566546523,Porte de Clichy,Porte de Clichy,1,1,0
+256,48.894436060298,2.31356566546523,Porte de Clichy,Porte de Clichy,1,2,0
 257,48.8979701704072,2.34398838343329,Porte de Clignancourt,Porte de Clignancourt,1,1,0
 258,48.8979593432415,2.35925506957965,Porte de la Chapelle,Porte de la Chapelle,1,1,0
 259,48.8975291568915,2.3856442301273,Porte de la Villette,Porte de la Villette,1,1,0
@@ -320,7 +320,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 393,49.0359438349434,2.08014375724293,Cergy-Préfecture,Cergy-Préfecture,1,1,0
 394,49.0495421181763,2.03504364803459,Cergy-Saint-Christophe,Cergy-Saint-Christophe,1,1,0
 395,48.8070358020923,2.50990166838635,Champigny,Champigny,1,1,0
-397,48.8614637105586,2.34684413160301,Châtelet-Les Halles,Châtelet-Les Halles,1,1,0
+397,48.8614637105586,2.34684413160301,Châtelet-Les Halles,Châtelet-Les Halles,1,3,0
 398,48.8851420716858,2.15562586701861,Chatou-Croissy,Chatou-Croissy,1,1,0
 399,48.9894177404915,2.07418924715144,Conflans-Fin d'Oise,Conflans-Fin d'Oise,1,1,0
 400,48.8434118592224,2.46481540327434,Fontenay-sous-Bois,Fontenay-sous-Bois,1,1,0
@@ -350,7 +350,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 427,48.7710515330376,2.50751126834554,Sucy Bonneuil,Sucy Bonneuil,1,1,0
 428,48.8397284227296,2.65590311514528,Torcy,Torcy,1,1,0
 429,48.8554970482612,2.77360843321897,Val d'europe,Val d'europe,1,1,0
-430,48.8540432484831,2.48855301402338,Val de Fontenay,Val de Fontenay,1,1,0
+430,48.8540432484831,2.48855301402338,Val de Fontenay,Val de Fontenay,1,2,0
 431,49.0106207175917,2.56321615646988,Aeroport Charles de Gaulle 1,Aeroport Charles de Gaulle 1,1,1,0
 432,49.0039144069026,2.56921045187106,Aeroport Charles de Gaulle 2 TGV,Aeroport Charles de Gaulle 2 TGV,1,1,0
 433,48.7548274850388,2.30086507059831,Antony,Antony,1,1,0
@@ -377,8 +377,8 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 454,48.7393809280585,2.28759904769514,Les Baconnets,Les Baconnets,1,1,0
 455,48.7060497930491,2.21156541622239,Lozère,Lozère,1,1,0
 456,48.8467785590282,2.34044118117617,Luxembourg,Luxembourg,1,1,0
-457,48.7241485261006,2.25934234895455,Massy-Palaiseau,Massy-Palaiseau,1,1,0
-458,48.7346013022464,2.27328170999022,Massy-Verrières,Massy-Verrières,1,1,0
+457,48.7241485261006,2.25934234895455,Massy-Palaiseau,Massy-Palaiseau,1,2,0
+458,48.7346013022464,2.27328170999022,Massy-Verrières,Massy-Verrières,1,2,0
 459,48.975712599403,2.64216068372558,Mitry-Claye,Mitry-Claye,1,1,0
 460,48.6976016469381,2.18207974854558,Orsay-Ville,Orsay-Ville,1,1,0
 461,48.7179194367165,2.24650141632646,Palaiseau,Palaiseau,1,1,0
@@ -387,7 +387,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 464,48.9737412428684,2.51479888547561,Parc des Expositions,Parc des Expositions,1,1,0
 465,48.8398851659774,2.33687344089015,Port Royal,Port Royal,1,1,0
 466,48.7800313210551,2.28105937847185,Robinson,Robinson,1,1,0
-467,48.8533931341985,2.34501765859822,Saint-Michel Notre-Dame,Saint-Michel Notre-Dame,1,1,0
+467,48.8533931341985,2.34501765859822,Saint-Michel Notre-Dame,Saint-Michel Notre-Dame,1,2,0
 468,48.7028686842498,2.07060021452115,Saint-Rémy-lès-Chevreuse,Saint-Rémy-lès-Chevreuse,1,1,0
 469,48.7812873184787,2.2976096510082,Sceaux,Sceaux,1,1,0
 470,48.9360106859113,2.53468090102698,Sevran Livry,Sevran Livry,1,1,0
@@ -429,7 +429,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 506,48.739831,2.4264,Villeneuve-le-Roi,Villeneuve-le-Roi,1,1,0
 507,48.725535,2.419565,Ablon,Ablon,1,1,0
 508,48.712629,2.403633,Athis-Mons,Athis-Mons,1,1,0
-509,48.689457,2.383139,Juvisy,Juvisy,1,1,0
+509,48.689457,2.383139,Juvisy,Juvisy,1,2,0
 510,48.676447,2.352481,Savigny-sur-Orge,Savigny-sur-Orge,1,1,0
 511,48.676381,2.333249,Petit Vaux,Petit Vaux,1,1,0
 512,48.685714,2.317626,Gravigny – Balizy,Gravigny – Balizy,1,1,0
@@ -472,3 +472,78 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 549,48.493645,2.194582,Étréchy,Étréchy,1,1,0
 550,48.436924,2.159531,Étampes,Étampes,1,1,0
 551,48.427363,2.145247,Saint-Martin-d'Étampes,Saint-Martin-d'Étampes,1,1,0
+552,49.263944,2.468914,Creil,Creil,1,1,0
+553,49.187334,2.45952,Chantilly Gouvieux,Chantilly Gouvieux,1,1,0
+554,49.155327,2.475658,Orry La Ville Coye La Foret,Orry La Ville Coye La Foret,1,1,0
+555,49.126781,2.506144,La Borne Blanche,La Borne Blanche,1,1,0
+556,49.099587,2.525532,Survilliers Fosses,Survilliers Fosses,1,1,0
+557,49.049326,2.501758,Louvres,Louvres,1,1,0
+558,49.033183,2.478033,Les Noues,Les Noues,1,1,0
+559,49.023162,2.462169,Goussainville,Goussainville,1,1,0
+560,48.993777,2.416187,Villiers Le Bel Gonesse Arnouville,Villiers Le Bel Gonesse Arnouville,1,1,0
+561,48.976748,2.390594,Garges Sarcelles,Garges Sarcelles,1,1,0
+562,48.963755,2.372103,Pierrefitte Stains,Pierrefitte Stains,1,1,0
+563,48.934456,2.345604,Saint-Denis,Saint-Denis,1,1,0
+564,48.917567,2.35039,Stade De France Saint-Denis,Stade De France Saint-Denis,1,1,0
+565,48.802049,2.426482,Maisons Alfort Alfortville,Maisons Alfort Alfortville,1,1,0
+566,48.788915,2.43207,Le Vert De Maisons,Le Vert De Maisons,1,1,0
+567,48.773318,2.436146,Creteil Pompadour,Creteil Pompadour,1,1,0
+568,48.745231,2.438344,Villeneuve Triage,Villeneuve Triage,1,1,0
+569,48.730117,2.446136,Villeneuve Saint-Georges,Villeneuve Saint-Georges,1,1,0
+570,48.708238,2.462282,Montgeron Crosne,Montgeron Crosne,1,1,0
+571,48.706611,2.484245,Yerres,Yerres,1,1,0
+572,48.699732,2.506078,Brunoy,Brunoy,1,1,0
+573,48.681017,2.533131,Boussy Saint-Antoine,Boussy Saint-Antoine,1,1,0
+574,48.667902,2.547548,Combs La Ville Quincy,Combs La Ville Quincy,1,1,0
+575,48.628376,2.569584,Lieusaint Moissy,Lieusaint Moissy,1,1,0
+576,48.595564,2.583948,Savigny Le Temple Nandy,Savigny Le Temple Nandy,1,1,0
+577,48.564949,2.594552,Cesson,Cesson,1,1,0
+578,48.538775,2.625522,Le Mée,Le Mée,1,1,0
+579,48.527243,2.65499,Melun,Melun,1,1,0
+580,48.708366,2.414359,Vigneux Sur Seine,Vigneux Sur Seine,1,1,0
+581,48.676092,2.386784,Viry Chatillon,Viry Chatillon,1,1,0
+582,48.658975,2.415207,Ris Orangis,Ris Orangis,1,1,0
+583,48.648489,2.435331,Grand Bourg,Grand Bourg,1,1,0
+584,48.634479,2.45229,Evry - Val De Seine,Evry - Val De Seine,1,1,0
+585,48.613428,2.472934,Corbeil Essonnes,Corbeil Essonnes,1,1,0
+586,48.65397,2.396177,Grigny Centre,Grigny Centre,1,1,0
+587,48.636351,2.407796,Orangis Bois de L'Epine,Orangis Bois de L'Epine,1,1,0
+588,48.626022,2.428739,Évry Courcouronnes - Centre,Évry Courcouronnes - Centre,1,1,0
+589,48.623332,2.451409,Le Bras De Fer,Le Bras De Fer,1,1,0
+590,48.605556,2.462456,Essonnes Robinson,Essonnes Robinson,1,1,0
+591,48.592628,2.461806,Villabé,Villabé,1,1,0
+592,48.573808,2.479469,Le Plessis Chenet,Le Plessis Chenet,1,1,0
+593,48.565271,2.488287,Le Coudray Monceaux La Justice,Le Coudray Monceaux La Justice,1,1,0
+594,48.564486,2.542652,Saint-Fargeau,Saint-Fargeau,1,1,0
+595,48.53514,2.544349,Ponthierry Pringy,Ponthierry Pringy,1,1,0
+596,48.529747,2.572074,Boissise Le Roi,Boissise Le Roi,1,1,0
+597,48.515151,2.599304,Vosves,Vosves,1,1,0
+598,48.587154,2.47349,Moulin Galant,Moulin Galant,1,1,0
+599,48.570597,2.432099,Mennecy,Mennecy,1,1,0
+600,48.531502,2.370518,Ballancourt,Ballancourt,1,1,0
+601,48.484957,2.351858,La Ferté Alais,La Ferté Alais,1,1,0
+602,48.434491,2.376673,Boutigny,Boutigny,1,1,0
+603,48.393642,2.393411,Maisse,Maisse,1,1,0
+604,48.371383,2.38721,Buno Gironville,Buno Gironville,1,1,0
+605,48.341664,2.378815,Boigneville,Boigneville,1,1,0
+606,48.296734,2.398779,Malesherbes,Malesherbes,1,1,0
+607,48.875029,2.326718,Haussmann St Lazare,Haussmann St Lazare,1,1,0
+608,48.880914,2.358833,Magenta,Magenta,1,1,0
+609,48.898112,2.400362,Pantin,Pantin,1,1,0
+610,48.896652,2.458363,Noisy Le Sec,Noisy Le Sec,1,1,0
+611,48.89403,2.480071,Bondy,Bondy,1,1,0
+612,48.889077,2.512567,Le Raincy Villemomble,Le Raincy Villemomble,1,1,0
+613,48.883734,2.525434,Gagny,Gagny,1,1,0
+614,48.877158,2.552882,Chenay Gagny,Chenay Gagny,1,1,0
+615,48.874144,2.583331,Chelles Gournay,Chelles Gournay,1,1,0
+616,48.882304,2.481421,Rosny Bois Perrier,Rosny Bois Perrier,1,1,0
+617,48.869912,2.485761,Rosny Sous Bois,Rosny Sous Bois,1,1,0
+618,48.839342,2.494188,Nogent Le Perreux,Nogent Le Perreux,1,1,0
+619,48.824849,2.511856,Les Boullereaux Champigny,Les Boullereaux Champigny,1,1,0
+620,48.823267,2.54268,Villiers Sur Marne Plessis Trevise,Villiers Sur Marne Plessis Trevise,1,1,0
+621,48.823152,2.579837,Les Yvris Noisy Le Grand,Les Yvris Noisy Le Grand,1,1,0
+622,48.80577,2.619396,Emerainville Pontault Combault,Emerainville Pontault Combault,1,1,0
+623,48.795655,2.650388,Roissy En Brie,Roissy En Brie,1,1,0
+624,48.770779,2.690253,Ozoir La Ferriere,Ozoir La Ferriere,1,1,0
+625,48.746452,2.727229,Gretz Armainvilliers,Gretz Armainvilliers,1,1,0
+626,48.739487,2.758825,Tournan,Tournan,1,1,0
