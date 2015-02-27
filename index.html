@@ -51,6 +51,10 @@ h1 {
 table{
 	width:100%;
 }
+line,
+circle.connect {
+	vector-effect: non-scaling-stroke;
+}
     
     </style>
     <script type="text/javascript">
@@ -114,7 +118,7 @@ function createGraph(idData) {
 	if(ecartX/w > ecartY/h){
 		paddingy = ((1 - (ecartY/h)/(ecartX/w))*(h - paddingy))/3;
 	}else{
-		paddingx = ((1 - (ecartX/w)/(ecartY/h))*(w - paddingx))/3;
+		paddingx = ((1 - (ecartX/w)/(ecartY/h))*(w - paddingx))/2;
 	}
 	
     stations.forEach(function(s) {
@@ -141,12 +145,12 @@ function createGraph(idData) {
         //console.log(routes);
 		  
 		function zoomed() {
-		  var visu = d3.select("#visualisation");
+		  var visu = d3.select("#visualisation").selectAll("g");
 		  visu.selectAll("circle.radius").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
 		  visu.selectAll("line.route").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
 		  visu.selectAll("line.stripe").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-		  visu.selectAll("circle.connect").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-		  visu.selectAll("circle.station").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+		  visu.selectAll("circle.connect").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")").attr("r", 2.5/zoom.scale());
+		  visu.selectAll("circle.station").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")").attr("r", 2.5/zoom.scale());
 		}
         
         var routesById = {};
@@ -157,7 +161,7 @@ function createGraph(idData) {
 		
 		var zoom = d3.behavior.zoom()
 								.center([w / 2, h / 2])
-								.scaleExtent([0.1, 10])
+								.scaleExtent([0.1, 20])
 								.on("zoom", zoomed);
 
         var vis = d3.select("#map")
@@ -165,9 +169,10 @@ function createGraph(idData) {
 					    .attr("id", "visualisation")
                         .attr("width", w)
                         .attr("height", h)
+						.append("svg:g")
 						.call(zoom);
 
-        var radii = d3.range(pixelsPerMinute*600, Math.max(w,h), pixelsPerMinute*600);
+        var radii = d3.range(pixelsPerMinute*600, Math.max(4*w,4*h), pixelsPerMinute*600);
         radii.reverse();
 
         var radius = vis.selectAll('circle.radius')
@@ -181,11 +186,11 @@ function createGraph(idData) {
                             .style('opacity',0);
 
         var route = vis.selectAll("line.route")
-                         .data(connections)
+                         .data(connections.filter(function(d) { return d.line != -1; }))
                          .enter().append("svg:line")
                          .attr("class", "route")
                          .attr("stroke", function(d) { return '#'+routesById[d.line].colour; })
-                         .attr("stroke-width", 3)
+                         .attr("stroke-width", 4)
                          .attr("stroke-linecap", 'round')
                          .attr("x1", function(d) { return d.station1.mapx; })
                          .attr("y1", function(d) { return d.station1.mapy; })
@@ -194,11 +199,11 @@ function createGraph(idData) {
 						 .append("svg:title").text(function(d) { return routesById[d.line].name; });
 
         var stripe = vis.selectAll("line.stripe")
-                          .data(connections.filter(function(d) { return routesById[d.line].stripe != "NULL"; }))
+                          .data(connections.filter(function(d) { return d.line != -1 && routesById[d.line].stripe != "NULL"; }))
                           .enter().append("svg:line")
                           .attr("class", "stripe")
                           .attr("stroke", function(d) { return '#'+routesById[d.line].stripe; })
-                          .attr("stroke-width", 3)
+                          .attr("stroke-width", 4)
                           .attr("stroke-linecap", 'round')
                           .attr("x1", function(d) { return d.station1.mapx; })
                           .attr("y1", function(d) { return d.station1.mapy; })
@@ -211,10 +216,10 @@ function createGraph(idData) {
                            .attr("class", "connect")
                            .attr("cx", function(d) { return d.mapx; })
                            .attr("cy", function(d) { return d.mapy; })
-                           .attr("r", 1.5)
+                           .attr("r", 2)
                            .style("fill", 'white')
                            .style("stroke", 'black')
-                           .style("stroke-width", 0.5);
+                           .style("stroke-width", 1);
 
         var station = vis.selectAll("circle.station")
                            .data(stations)
@@ -223,17 +228,17 @@ function createGraph(idData) {
                            .attr("class", "station")
                            .attr("cx", function(d) { return d.mapx; })
                            .attr("cy", function(d) { return d.mapy; })
-                           .attr("r", 1.5)
+                           .attr("r", 2)
                            .style("fill", 'white')
                            .on('click', selectStation)
 						   .on('mouseover', function(d,i) {
 							   d3.selectAll('#station'+d.id)
-							   .attr("r", 3)
+							   .attr("r", 3*2/zoom.scale())
 							   .style("fill", 'yellow');
 						   })
 						   .on('mouseout', function(d,i) {
 							   d3.selectAll('#station'+d.id)
-							     .attr("r", 1.5)
+							     .attr("r", 1.5*2/zoom.scale())
 								 .style("fill", 'white');
 						   })
 						   .append("svg:title").text(function(d) { return d.name });
@@ -260,7 +265,6 @@ function createGraph(idData) {
                             }
                            
                            function selectStation(d, i) {
-
                              updateShortestPaths(d, stations);
                              
                              if (i) {
@@ -288,7 +292,6 @@ function createGraph(idData) {
                                .attr("y1", function(d) { return d.station1.y; })
                                .attr("x2", function(d) { return d.station2.x; })
                                .attr("y2", function(d) { return d.station2.y; });
-                             
                            };
       }); // load routes
     }); // load lines
