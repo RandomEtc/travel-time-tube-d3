@@ -1,0 +1,11 @@
+body {
+    margin: auto;
+    padding: 1em;
+    width: 800px;
+}
+
+#map {
+    width: 800px;
+    height: 500px;
+    border: 1px solid #aaa;
+}
