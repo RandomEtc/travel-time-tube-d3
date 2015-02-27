@@ -9,3 +9,8 @@ body {
     height: 500px;
     border: 1px solid #aaa;
 }
+
+line,
+circle.connect {
+	vector-effect: non-scaling-stroke;
+}
