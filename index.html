@@ -114,7 +114,7 @@ function createGraph(idData) {
 	if(ecartX/w > ecartY/h){
 		paddingy = ((1 - (ecartY/h)/(ecartX/w))*(h - paddingy))/3;
 	}else{
-		paddingx = ((1 - (ecartX/w)/(ecartY/h))*(w - paddingx));
+		paddingx = ((1 - (ecartX/w)/(ecartY/h))*(w - paddingx))/3;
 	}
 	
     stations.forEach(function(s) {
