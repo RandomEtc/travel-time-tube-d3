@@ -142,7 +142,7 @@ function createGraph(idData) {
                     .enter().append("svg:line")
                     .attr("class", "stripe")
                     .attr("stroke", function(d) { return '#'+routesById[d.line].stripe; })
-                    .attr("stroke-width", 4)
+                    .attr("stroke-width", 2)
                     .attr("stroke-linecap", 'round')
                     .attr("x1", function(d) { return d.station1.mapx; })
                     .attr("y1", function(d) { return d.station1.mapy; })

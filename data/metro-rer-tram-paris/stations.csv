@@ -12,7 +12,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 17,48.8468521519498,2.29544882793447,Avenue Emile-Zola,Avenue Emile-Zola,1,1,0
 18,48.8511938192133,2.39823914082312,Avron,Avron,1,1,0
 20,48.8839317699344,2.34935570859965,Barbès-Rochechouart,Barbès-Rochechouart,1,2,0
-21,48.9364774926505,2.35963974530458,Basilique de Saint-Denis,Basilique de Saint-Denis,1,1,0
+21,48.9364774926505,2.35963974530458,Basilique de Saint-Denis,Basilique de Saint-Denis,1,2,0
 22,48.8529756746542,2.36921882444334,Bastille,Bastille,1,2,0
 23,48.8421778264757,2.40114243430575,Bel-Air,Bel-Air,1,1,0
 24,48.8719457979749,2.3767510413738,Belleville,Belleville,1,2,0
@@ -21,7 +21,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 27,48.8320876442825,2.23816077687551,Billancourt,Billancourt,1,1,0
 28,48.8543272185524,2.28881010373612,Bir-Hakeim (Grenelle),Bir-Hakeim (Grenelle),1,1,0
 30,48.8837705188318,2.33248514827409,Blanche,Blanche,1,1,0
-31,48.9071473125516,2.44945750453114,Bobigny-Pablo-Picasso,Bobigny-Pablo-Picasso,1,1,0
+31,48.9071473125516,2.44945750453114,Bobigny-Pablo-Picasso,Bobigny-Pablo-Picasso,1,2,0
 32,48.895799232549,2.42485729839759,Bobigny-Pantin (Raymond Queneau),Bobigny-Pantin (Raymond Queneau),1,1,0
 33,48.8668561547603,2.29003807344501,Boissière,Boissière,1,1,0
 35,48.8807901228285,2.37415512666265,Bolivar,Bolivar,1,1,0
@@ -113,7 +113,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 138,48.8459684322046,2.35480739269422,Jussieu,Jussieu,1,2,0
 139,48.8713061490878,2.29333102089622,Kléber,Kléber,1,1,0
 140,48.8843886983582,2.35927656427673,La Chapelle,La Chapelle,1,1,0
-141,48.9205145066857,2.4102257791202,La Courneuve-8-Mai-1945,La Courneuve-8-Mai-1945,1,1,0
+141,48.9205145066857,2.4102257791202,La Courneuve-8-Mai-1945,La Courneuve-8-Mai-1945,1,2,0
 144,48.8918267548365,2.23799204321562,La Défense (Grande Arche),La Défense (Grande Arche),1,2,0
 145,48.8874368425293,2.32572522201741,La Fourche,La Fourche,1,1,0
 147,48.8490189283498,2.29776216070793,La Motte-Picquet-Grenelle,La Motte-Picquet-Grenelle,1,2,0
@@ -204,7 +204,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 262,48.8375653344736,2.2555912744479,Porte de Saint-Cloud,Porte de Saint-Cloud,1,1,0
 263,48.8975117327715,2.32902164721221,Porte de Saint-Ouen,Porte de Saint-Ouen,1,1,0
 264,48.8277653265897,2.30431235076306,Porte de Vanves,Porte de Vanves,1,1,0
-265,48.832253452749,2.28786413781919,Porte de Versailles,Porte de Versailles,1,1,0
+265,48.832253452749,2.28786413781919,Porte de Versailles,Porte de Versailles,1,2,0
 266,48.8470165184191,2.41081688233476,Porte de Vincennes,Porte de Vincennes,1,1,0
 267,48.8769382235089,2.40637656692978,Porte des Lilas,Porte des Lilas,1,2,0
 268,48.878006176279,2.28246564000133,Porte Maillot,Porte Maillot,1,1,0
@@ -449,7 +449,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 526,48.799729,2.183684,Chaville – Vélizy,Chaville – Vélizy,1,1,0
 527,48.807493,2.240883,Meudon-Val Fleury,Meudon-Val Fleury,1,1,0
 528,48.819674,2.25876,Issy,Issy,1,1,0
-529,48.83012,2.26369,Issy-Val de Seine,Issy-Val de Seine,1,1,0
+529,48.83012,2.26369,Issy-Val de Seine,Issy-Val de Seine,1,2,0
 530,48.83909,2.270458,Pont Du Garigliano - Hopital Européen Georges Pompidou,Pont Du Garigliano - Hopital Européen Georges Pompidou,1,1,0
 531,48.846192,2.276761,Javel,Javel,1,1,0
 532,48.669484,2.332623,Épinay Sur Orge,Épinay Sur Orge,1,1,0
@@ -483,7 +483,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 560,48.993777,2.416187,Villiers Le Bel Gonesse Arnouville,Villiers Le Bel Gonesse Arnouville,1,1,0
 561,48.976748,2.390594,Garges Sarcelles,Garges Sarcelles,1,1,0
 562,48.963755,2.372103,Pierrefitte Stains,Pierrefitte Stains,1,1,0
-563,48.934456,2.345604,Saint-Denis,Saint-Denis,1,1,0
+563,48.934456,2.345604,Saint-Denis,Saint-Denis,1,2,0
 564,48.917567,2.35039,Stade De France Saint-Denis,Stade De France Saint-Denis,1,1,0
 565,48.802049,2.426482,Maisons Alfort Alfortville,Maisons Alfort Alfortville,1,1,0
 566,48.788915,2.43207,Le Vert De Maisons,Le Vert De Maisons,1,1,0
@@ -547,3 +547,54 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 624,48.770779,2.690253,Ozoir La Ferriere,Ozoir La Ferriere,1,1,0
 625,48.746452,2.727229,Gretz Armainvilliers,Gretz Armainvilliers,1,1,0
 626,48.739487,2.758825,Tournan,Tournan,1,1,0
+627,48.9317335355189,2.28845125882425,Le Luth,Le Luth,1,1,0
+628,48.9333984789592,2.29464238656993,Le Village,Le Village,1,1,0
+629,48.9327357206258,2.30155847591317,Timbaud,Timbaud,1,1,0
+630,48.933132709126,2.30724617829281,Gare De Gennevilliers,Gare De Gennevilliers,1,1,0
+631,48.9337542349577,2.31361588194434,Parc Des Chanteraines,Parc Des Chanteraines,1,1,0
+632,48.9344655217644,2.32167714039575,Chemin Des Reniers,Chemin Des Reniers,1,1,0
+633,48.9348165625394,2.32673772442656,La Noue,La Noue,1,1,0
+634,48.9357785777694,2.33411727009733,Mairie De Villeneuve-La Garenne,Mairie De Villeneuve-La Garenne,1,1,0
+635,48.9358864302615,2.33996923305055,L'ile-Saint-Denis,L'ile-Saint-Denis,1,1,0
+636,48.9372517746942,2.35005023590013,Theatre Gerard Philipe,Theatre Gerard Philipe,1,1,0
+637,48.9386350155453,2.35564366609554,Marche De Saint-Denis,Marche De Saint-Denis,1,1,0
+638,48.9361799942142,2.3641547984669,Cimetiere De Saint-Denis,Cimetiere De Saint-Denis,1,1,0
+639,48.9338509141379,2.37008717096138,Hopital Delafontaine,Hopital Delafontaine,1,1,0
+640,48.9316468123299,2.37764224448945,Cosmonautes,Cosmonautes,1,1,0
+641,48.9299638851446,2.38414692421841,La Courneuve - Six Routes,La Courneuve - Six Routes,1,1,0
+642,48.9274168231674,2.3929143192774,Hotel De Ville De La Courneuve,Hotel De Ville De La Courneuve,1,1,0
+643,48.924824543175,2.40099889418652,Stade Geo Andre,Stade Geo Andre,1,1,0
+644,48.9228352084624,2.40676511780942,Danton,Danton,1,1,0
+645,48.9190919758045,2.41434200963461,Maurice Lachatre,Maurice Lachatre,1,1,0
+646,48.9181194793061,2.41723145430699,Drancy-Avenir,Drancy-Avenir,1,1,0
+647,48.9158666835714,2.42579118998224,Hopital Avicenne,Hopital Avicenne,1,1,0
+648,48.9146950656665,2.43013887493184,Gaston Roulaud,Gaston Roulaud,1,1,0
+649,48.91331601793,2.43518136031502,Escadrille Normandie-Niemen,Escadrille Normandie-Niemen,1,1,0
+650,48.9097371429159,2.437628730107,La Ferme,La Ferme,1,1,0
+651,48.9069861378276,2.43876860255659,Liberation,Liberation,1,1,0
+652,48.9065233478191,2.4438665260445,Hotel De Ville De Bobigny,Hotel De Ville De Bobigny,1,1,0
+653,48.90788894559,2.45393093070634,Jean Rostand,Jean Rostand,1,1,0
+654,48.9065623602768,2.45940850981912,Auguste Delaune,Auguste Delaune,1,1,0
+655,48.9053107169111,2.47009377047663,Pont De Bondy,Pont De Bondy,1,1,0
+656,48.9000225902207,2.46526828316241,Petit Noisy,Petit Noisy,1,1,0
+657,48.9233253856384,2.2173115374768,Pont De Bezons,Pont De Bezons,1,1,0
+658,48.9175806440239,2.22440200039865,Parc Pierre Lagravere,Parc Pierre Lagravere,1,1,0
+659,48.9136495267516,2.23002823027505,Victor Basch,Victor Basch,1,1,0
+660,48.9106873724182,2.23407012314541,Jacqueline Auriol,Jacqueline Auriol,1,1,0
+661,48.9077255147412,2.23864326147143,Charlebourg,Charlebourg,1,1,0
+662,48.9024326593636,2.23929404559377,Les Fauvelles,Les Fauvelles,1,1,0
+663,48.8968795279518,2.24040862915188,Faubourg De L'arche,Faubourg De L'arche,1,1,0
+664,48.8831230907434,2.23325285868184,Puteaux,Puteaux,1,1,0
+665,48.8765647468762,2.22592194701924,Belvedere,Belvedere,1,1,0
+666,48.867986595358,2.22147198647192,Suresnes Longchamp,Suresnes Longchamp,1,1,0
+667,48.8566884200347,2.22043483774187,Les Coteaux,Les Coteaux,1,1,0
+668,48.8500204137994,2.22114439247458,Les Milons,Les Milons,1,1,0
+669,48.8430468180261,2.22188167757702,Parc De St-Cloud,Parc De St-Cloud,1,1,0
+670,48.8287596837971,2.22516690246097,Musee De Sevres,Musee De Sevres,1,1,0
+671,48.8219620045994,2.23171487419938,Brimborion,Brimborion,1,1,0
+672,48.8192728706452,2.24014512803673,Meudon Sur-Seine,Meudon Sur-Seine,1,1,0
+673,48.821555338337,2.25130180606433,Les Moulineaux,Les Moulineaux,1,1,0
+674,48.8239694914383,2.25921972662251,Jacques-Henri Lartigue,Jacques-Henri Lartigue,1,1,0
+675,48.8349424302337,2.27261342906497,Henri Farman,Henri Farman,1,1,0
+676,48.8336771604817,2.27637249347823,Suzanne Lenglen,Suzanne Lenglen,1,1,0
+677,48.8318549731826,2.28104409928664,Porte D'issy,Porte D'issy,1,1,0
