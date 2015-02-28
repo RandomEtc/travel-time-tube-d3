@@ -54,9 +54,9 @@ function createGraph(idData) {
         var ecartY = maxLat - minLat;
       
         if(ecartX/(w-2*paddingx) < ecartY/(h-2*paddingy)) {
-            paddingy = (h-2*paddingy-ecartY*(w-2*paddingx)/ecartX)/2;
+            paddingy += (h-2*paddingy-ecartY*(w-2*paddingx)/ecartX)/2;
         }else {
-            paddingx = (w-2*paddingx-ecartX*(h-2*paddingy)/ecartY)/2;
+            paddingx += (w-2*paddingx-ecartX*(h-2*paddingy)/ecartY)/2;
         }
       
         stations.forEach(function(s) {
@@ -74,7 +74,7 @@ function createGraph(idData) {
                 c.station1 = stationsById[c.station1];
                 c.station2 = stationsById[c.station2];
                 c.station1.conns.push(c);
-                c.station2.conns.push(c);
+                //c.station2.conns.push(c);
                 c.time = parseInt(c.time,10);
             });
             
