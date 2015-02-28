@@ -53,11 +53,10 @@ function createGraph(idData) {
         var ecartX = maxLon - minLon;
         var ecartY = maxLat - minLat;
       
-        if(ecartX/w > ecartY/h) {
-            paddingy = ((1 - (ecartY/h)/(ecartX/w))*(h - paddingy))/3;
-        }
-        else {
-        paddingx = ((1 - (ecartX/w)/(ecartY/h))*(w - paddingx))/2;
+        if(ecartX/(w-2*paddingx) < ecartY/(h-2*paddingy)) {
+            paddingy = (h-2*paddingy-ecartY*(w-2*paddingx)/ecartX)/2;
+        }else {
+            paddingx = (w-2*paddingx-ecartX*(h-2*paddingy)/ecartY)/2;
         }
       
         stations.forEach(function(s) {
@@ -100,7 +99,7 @@ function createGraph(idData) {
                 
                 var zoom = d3.behavior.zoom()
                     .center([w / 2, h / 2])
-                    .scaleExtent([0.1, 20])
+                    .scaleExtent([0.01, 30])
                     .on("zoom", zoomed);
 
                 var vis = d3.select("#map")
