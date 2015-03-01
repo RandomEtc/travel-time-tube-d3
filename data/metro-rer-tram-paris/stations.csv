@@ -49,7 +49,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 64,48.8784565668312,2.3620537162489,Château Landon,Château Landon,1,1,0
 65,48.8870862830504,2.34937007325138,Château Rouge,Château Rouge,1,1,0
 66,48.8583000559814,2.34786508757711,Châtelet,Châtelet,1,4,0
-68,48.8102833635108,2.30128887097595,Châtillon Montrouge,Châtillon Montrouge,1,1,0
+68,48.8102833635108,2.30128887097595,Châtillon Montrouge,Châtillon Montrouge,1,2,0
 70,48.8729858246652,2.33342622405285,Chaussée d'Antin (La Fayette),Chaussée d'Antin (La Fayette),1,2,0
 71,48.8345787984256,2.36693389907092,Chevaleret,Chevaleret,1,1,0
 72,48.8556848502863,2.34620292952872,Cité,Cité,1,1,0
@@ -187,24 +187,24 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 246,48.8585341022857,2.342117238666,Pont Neuf,Pont Neuf,1,1,0
 247,48.8398851659774,2.33687344089015,Port Royal,Port Royal,1,1,0
 248,48.8482259804112,2.25769888566092,Porte d'Auteuil,Porte d'Auteuil,1,1,0
-249,48.8187170251155,2.36050083280537,Porte d'Italie,Porte d'Italie,1,1,0
-250,48.8213573623076,2.36930823722325,Porte d'Ivry,Porte d'Ivry,1,1,0
-251,48.8228170602349,2.325072625148,Porte d'Orléans (Général Leclerc),Porte d'Orléans (Général Leclerc),1,1,0
+249,48.8187170251155,2.36050083280537,Porte d'Italie,Porte d'Italie,1,2,0
+250,48.8213573623076,2.36930823722325,Porte d'Ivry,Porte d'Ivry,1,2,0
+251,48.8228170602349,2.325072625148,Porte d'Orléans (Général Leclerc),Porte d'Orléans (Général Leclerc),1,2,0
 252,48.8717922164175,2.27486996119569,Porte Dauphine (Maréchal de Lattre de Tassigny),Porte Dauphine (Maréchal de Lattre de Tassigny),1,1,0
-253,48.8643365354836,2.40882537603773,Porte de Bagnolet,Porte de Bagnolet,1,1,0
+253,48.8643365354836,2.40882537603773,Porte de Bagnolet,Porte de Bagnolet,1,2,0
 254,48.885739159692,2.29186062067553,Porte de Champerret,Porte de Champerret,1,1,0
 255,48.8199024461617,2.36496559829082,Porte de Choisy,Porte de Choisy,1,1,0
 256,48.894436060298,2.31356566546523,Porte de Clichy,Porte de Clichy,1,2,0
 257,48.8979701704072,2.34398838343329,Porte de Clignancourt,Porte de Clignancourt,1,1,0
-258,48.8979593432415,2.35925506957965,Porte de la Chapelle,Porte de la Chapelle,1,1,0
-259,48.8975291568915,2.3856442301273,Porte de la Villette,Porte de la Villette,1,1,0
-260,48.8533798778138,2.41045818741635,Porte de Montreuil,Porte de Montreuil,1,1,0
-261,48.8885839809719,2.39242287571854,Porte de Pantin,Porte de Pantin,1,1,0
+258,48.8979593432415,2.35925506957965,Porte de la Chapelle,Porte de la Chapelle,1,2,0
+259,48.8975291568915,2.3856442301273,Porte de la Villette,Porte de la Villette,1,2,0
+260,48.8533798778138,2.41045818741635,Porte de Montreuil,Porte de Montreuil,1,2,0
+261,48.8885839809719,2.39242287571854,Porte de Pantin,Porte de Pantin,1,2,0
 262,48.8375653344736,2.2555912744479,Porte de Saint-Cloud,Porte de Saint-Cloud,1,1,0
 263,48.8975117327715,2.32902164721221,Porte de Saint-Ouen,Porte de Saint-Ouen,1,1,0
-264,48.8277653265897,2.30431235076306,Porte de Vanves,Porte de Vanves,1,1,0
+264,48.8277653265897,2.30431235076306,Porte de Vanves,Porte de Vanves,1,2,0
 265,48.832253452749,2.28786413781919,Porte de Versailles,Porte de Versailles,1,2,0
-266,48.8470165184191,2.41081688233476,Porte de Vincennes,Porte de Vincennes,1,1,0
+266,48.8470165184191,2.41081688233476,Porte de Vincennes,Porte de Vincennes,1,2,0
 267,48.8769382235089,2.40637656692978,Porte des Lilas,Porte des Lilas,1,2,0
 268,48.878006176279,2.28246564000133,Porte Maillot,Porte Maillot,1,1,0
 269,48.8801599321124,2.39858662186977,Pré-Saint-Gervais,Pré-Saint-Gervais,1,1,0
@@ -231,7 +231,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 291,48.8640894057464,2.38089978855212,Rue Saint-Maur,Rue Saint-Maur,1,1,0
 293,48.8616474242993,2.3731471407723,Saint-Ambroise,Saint-Ambroise,1,1,0
 294,48.8743867602128,2.32072783196473,Saint-Augustin,Saint-Augustin,1,1,0
-295,48.9299266652709,2.35618614918887,Saint-Denis-Porte de Paris,Saint-Denis-Porte de Paris,1,1,0
+295,48.9299266652709,2.35618614918887,Saint-Denis-Porte de Paris,Saint-Denis-Porte de Paris,1,2,0
 296,48.8716998109711,2.40429872420218,Saint-Fargeau,Saint-Fargeau,1,1,0
 297,48.8509825598235,2.31442986460027,Saint-Francois-Xavier,Saint-Francois-Xavier,1,1,0
 298,48.8785939552362,2.33782696891702,Saint-Georges,Saint-Georges,1,1,0
@@ -268,14 +268,14 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 339,48.8420598575821,2.32886705043721,Vavin,Vavin,1,1,0
 341,48.8698649124841,2.28522620725044,Victor Hugo,Victor Hugo,1,1,0
 342,48.8037696632827,2.36390930638904,Villejuif-Léo Lagrange,Villejuif-Léo Lagrange,1,1,0
-343,48.7866380111198,2.36711052738165,Villejuif-Louis Aragon,Villejuif-Louis Aragon,1,1,0
+343,48.7866380111198,2.36711052738165,Villejuif-Louis Aragon,Villejuif-Louis Aragon,1,2,0
 344,48.7959941323932,2.36823145191568,Villejuif-Paul Vaillant Couturier (Hôpital Paul Brousse),Villejuif-Paul Vaillant Couturier (Hôpital Paul Brousse),1,1,0
 347,48.8813242939447,2.31659676150882,Villiers,Villiers,1,2,0
 348,48.8473238711606,2.43353159687789,Vincennes,Vincennes,1,1,0
 349,48.8414184426777,2.30799364938666,Volontaires,Volontaires,1,1,0
 350,48.8576637257601,2.38003629679551,Voltaire (Léon Blum),Voltaire (Léon Blum),1,1,0
 351,48.8837124760373,2.3055577575143,Wagram,Wagram,1,1,0
-352,48.836814988806,2.27868334645027,Balard,Balard,1,1,0
+352,48.836814988806,2.27868334645027,Balard,Balard,1,2,0
 353,48.8410253553217,2.28792386733087,Boucicaut,Boucicaut,1,1,0
 354,48.8214898191456,2.41385676233111,Charenton-Ecoles,Charenton-Ecoles,1,1,0
 355,48.8575865444645,2.36803669494838,Chemin Vert,Chemin Vert,1,1,0
@@ -297,8 +297,8 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 371,48.836991037653,2.40291960687004,Michel Bizot,Michel Bizot,1,1,0
 372,48.844142731121,2.38962501284843,Montgallet,Montgallet,1,1,0
 373,48.7681110763834,2.46565028903882,Pointe du Lac,Pointe du Lac,1,1,0
-374,48.8326603464822,2.40046363844978,Porte de Charenton,Porte de Charenton,1,1,0
-375,48.8354972528247,2.40618521221493,Porte Dorée,Porte Dorée,1,1,0
+374,48.8326603464822,2.40046363844978,Porte de Charenton,Porte de Charenton,1,2,0
+375,48.8354972528247,2.40618521221493,Porte Dorée,Porte Dorée,1,2,0
 376,48.8609749971872,2.36726229502294,Saint-Sébastien-Froissart,Saint-Sébastien-Froissart,1,1,0
 377,48.8333137155784,2.38729970438351,Cour Saint-Emilion,Cour Saint-Emilion,1,1,0
 378,48.8298306952711,2.37612000934484,Bibliotheque-Francois Mitterrand,Bibliotheque-Francois Mitterrand,1,1,0
@@ -359,7 +359,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 437,48.9322011699976,2.47675087121991,Blanc-Mesnil,Blanc-Mesnil,1,1,0
 438,48.7800509377689,2.31216262595979,Bourg-la-Reine,Bourg-la-Reine,1,1,0
 439,48.6957326504055,2.16308967515621,Bures-sur-Yvette,Bures-sur-Yvette,1,1,0
-440,48.8203370568976,2.33969097471013,Cité Universitaire,Cité Universitaire,1,1,0
+440,48.8203370568976,2.33969097471013,Cité Universitaire,Cité Universitaire,1,2,0
 441,48.7007630180636,2.0991005270587,Courcelle-sur-Yvette,Courcelle-sur-Yvette,1,1,0
 442,48.9327098091486,2.45510534517467,Drancy,Drancy,1,1,0
 443,48.7439325635015,2.29706733461834,Fontaine-Michalon,Fontaine-Michalon,1,1,0
@@ -443,12 +443,12 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 522,48.78739,2.044622,Saint-Quentin-en-Yvelines,Saint-Quentin-en-Yvelines,1,1,0
 523,48.800216,2.129044,Versailles Chateau – Rive Gauche,Versailles Chateau – Rive Gauche,1,1,0
 524,48.796528,2.152379,Porchefontaine,Porchefontaine,1,1,0
-525,48.800718,2.17139,Viroflay Rive Gauche,Viroflay Rive Gauche,1,1,0
+525,48.800718,2.17139,Viroflay Rive Gauche,Viroflay Rive Gauche,1,2,0
 526,48.799729,2.183684,Chaville – Vélizy,Chaville – Vélizy,1,1,0
 527,48.807493,2.240883,Meudon-Val Fleury,Meudon-Val Fleury,1,1,0
 528,48.819674,2.25876,Issy,Issy,1,1,0
 529,48.83012,2.26369,Issy-Val de Seine,Issy-Val de Seine,1,2,0
-530,48.83909,2.270458,Pont Du Garigliano - Hopital Européen Georges Pompidou,Pont Du Garigliano - Hopital Européen Georges Pompidou,1,1,0
+530,48.83909,2.270458,Pont Du Garigliano - Hopital Européen Georges Pompidou,Pont Du Garigliano - Hopital Européen Georges Pompidou,1,2,0
 531,48.846192,2.276761,Javel,Javel,1,1,0
 532,48.669484,2.332623,Épinay Sur Orge,Épinay Sur Orge,1,1,0
 533,48.652811,2.312736,Sainte-Genèvieve Des Bois,Sainte-Genèvieve Des Bois,1,1,0
@@ -479,7 +479,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 558,49.033183,2.478033,Les Noues,Les Noues,1,1,0
 559,49.023162,2.462169,Goussainville,Goussainville,1,1,0
 560,48.993777,2.416187,Villiers Le Bel Gonesse Arnouville,Villiers Le Bel Gonesse Arnouville,1,1,0
-561,48.976748,2.390594,Garges Sarcelles,Garges Sarcelles,1,1,0
+561,48.976748,2.390594,Garges Sarcelles,Garges Sarcelles,1,2,0
 562,48.963755,2.372103,Pierrefitte Stains,Pierrefitte Stains,1,1,0
 563,48.934456,2.345604,Saint-Denis,Saint-Denis,1,2,0
 564,48.917567,2.35039,Stade De France Saint-Denis,Stade De France Saint-Denis,1,1,0
@@ -555,7 +555,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 634,48.9357785777694,2.33411727009733,Mairie De Villeneuve-La Garenne,Mairie De Villeneuve-La Garenne,1,1,0
 635,48.9358864302615,2.33996923305055,L'ile-Saint-Denis,L'ile-Saint-Denis,1,1,0
 636,48.9372517746942,2.35005023590013,Theatre Gerard Philipe,Theatre Gerard Philipe,1,1,0
-637,48.9386350155453,2.35564366609554,Marche De Saint-Denis,Marche De Saint-Denis,1,1,0
+637,48.9386350155453,2.35564366609554,Marché De Saint-Denis,Marché De Saint-Denis,1,2,0
 638,48.9361799942142,2.3641547984669,Cimetiere De Saint-Denis,Cimetiere De Saint-Denis,1,1,0
 639,48.9338509141379,2.37008717096138,Hopital Delafontaine,Hopital Delafontaine,1,1,0
 640,48.9316468123299,2.37764224448945,Cosmonautes,Cosmonautes,1,1,0
@@ -620,3 +620,68 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 701,48.8987750323829,2.36878361502263,Porte D'aubervilliers,Porte D'aubervilliers,1,1,0
 702,48.897515796384,2.37249044152091,Rosa Parks,Rosa Parks,1,1,0
 703,48.8675088935417,2.40912946018999,Severine,Severine,1,1,0
+704,48.9658901937153,2.36386996707123,Alcide D'orbigny,Alcide D'orbigny,1,1,0
+705,48.9424452208633,2.35691378893275,Baudelaire,Baudelaire,1,1,0
+706,48.973797831501,2.36627660185182,Butte Pinson (Parc Regional),Butte Pinson (Parc Regional),1,1,0
+708,48.9482146778343,2.35722979660836,Guynemer (Stade Auguste Delaune),Guynemer (Stade Auguste Delaune),1,1,0
+709,48.9708593385516,2.36579719762715,Jacques Prevert,Jacques Prevert,1,1,0
+710,48.9548287717843,2.35803745993303,Joncherolles,Joncherolles,1,1,0
+711,48.9773728969234,2.37217622524553,Les Cholettes,Les Cholettes,1,1,0
+712,48.9767781787438,2.37729522521856,Les Flanades,Les Flanades,1,1,0
+713,48.9786537551151,2.38443679436938,Locheres,Locheres,1,1,0
+714,48.9634914602282,2.36053856501627,Mairie De Pierrefitte,Mairie De Pierrefitte,1,1,0
+715,48.9792035251229,2.38021871103466,Paul Valery,Paul Valery,1,1,0
+716,48.9516654554297,2.35799525455076,Petit Pierrefitte,Petit Pierrefitte,1,1,0
+717,48.9447458406773,2.35690101926321,Roger Semat,Roger Semat,1,1,0
+718,48.958926614457,2.35853039839609,Suzanne Valadon,Suzanne Valadon,1,1,0
+719,48.8040954613237,2.28911549332593,Centre De Chatillon,Centre De Chatillon,1,1,0
+720,48.7834405700809,2.21348629503054,Dewoitine,Dewoitine,1,1,0
+721,48.7945247955908,2.27303104342012,Division Leclerc,Division Leclerc,1,1,0
+722,48.7834030208353,2.23037872764543,Georges Millandy,Georges Millandy,1,1,0
+723,48.7848011946261,2.23614279499236,Georges Pompidou,Georges Pompidou,1,1,0
+724,48.7867931848526,2.25515423740587,Hopital Beclere,Hopital Beclere,1,1,0
+725,48.7815482859483,2.20894825773337,Inovel Parc Nord,Inovel Parc Nord,1,1,0
+726,48.7820987282872,2.18073928151233,L'Onde (Maison Des Arts),L'Onde (Maison Des Arts),1,1,0
+727,48.7802310520094,2.19658902493732,Louvois,Louvois,1,1,0
+728,48.7835428005873,2.24723002087109,Mail De La Plaine,Mail De La Plaine,1,1,0
+729,48.7804234442141,2.19214125554236,Mairie De Velizy,Mairie De Velizy,1,1,0
+730,48.7835151718337,2.22527814127036,Meudon-La-Foret,Meudon-La-Foret,1,1,0
+731,48.8003446550324,2.28245235087319,Parc Andre Malraux,Parc Andre Malraux,1,1,0
+732,48.7807780662934,2.24032589654388,Pave Blanc (Parc Noveos),Pave Blanc (Parc Noveos),1,1,0
+733,48.7851523602244,2.1790163043796,Robert Wagner,Robert Wagner,1,1,0
+734,48.7906727761405,2.26403074344128,Soleil Levant,Soleil Levant,1,1,0
+735,48.807386925894,2.29414710224645,Vauban,Vauban,1,1,0
+736,48.7850196042459,2.2195351308971,Velizy 2,Velizy 2,1,1,0
+737,48.7296350804229,2.36774354841386,Aeroport D'Orly,Aeroport D'Orly,1,1,0
+738,48.7628377172009,2.36716482873229,Auguste Perret (Cimetière Parisien),Auguste Perret (Cimetière Parisien),1,1,0
+739,48.7682933255892,2.36779342945872,Bretagne,Bretagne,1,1,0
+740,48.7388476178098,2.36954273285005,Caroline Aigle (Orlyfret),Caroline Aigle (Orlyfret),1,1,0
+741,48.7338137950608,2.37091198784945,Coeur D'Orly,Coeur D'Orly,1,1,0
+742,48.7790610416543,2.36756856426593,Domaine Cherioux,Domaine Cherioux,1,1,0
+743,48.7396138740715,2.35977239411252,Helene Boucher (Orlytech),Helene Boucher (Orlytech),1,1,0
+744,48.7560961818675,2.36886016839811,La Belle Épine,La Belle Épine,1,1,0
+745,48.7409092646591,2.35307318961857,La Fraternelle,La Fraternelle,1,1,0
+746,48.7831686358008,2.36721733976428,Lamartine,Lamartine,1,1,0
+747,48.7717716496081,2.3679994421848,Moulin Vert,Moulin Vert,1,1,0
+748,48.7528980174642,2.36202098272885,Place De La Logistique (Plateforme Sogaris),Place De La Logistique (Plateforme Sogaris),1,1,0
+749,48.7152165387415,2.37200018127414,Porte De L'Essonne,Porte De L'Essonne,1,1,0
+750,48.7525307118609,2.35530595101454,Porte De Rungis,Porte De Rungis,1,1,0
+751,48.7597190437871,2.36634735103918,Porte De Thiais (Marché International),Porte De Thiais (Marché International),1,1,0
+752,48.7466437819758,2.35291183965123,Robert Schuman (Parc Silic Centre),Robert Schuman (Parc Silic Centre),1,1,0
+753,48.7502208871548,2.35436728528386,Saarinen (Parc Silic Nord),Saarinen (Parc Silic Nord),1,1,0
+754,48.9477400389619,2.33900112520213,Blumenthal,Blumenthal,1,1,0
+755,48.9495103346253,2.34230316470452,Cesar,Cesar,1,1,0
+756,48.9458344501097,2.34711898844559,Delaunay-Belleville,Delaunay-Belleville,1,1,0
+757,48.9554433351439,2.29542935910774,Epinay - Orgemont,Epinay - Orgemont,1,1,0
+758,48.955939666503,2.30180175253806,Epinay-Sur-Seine - Gare,Epinay-Sur-Seine - Gare,1,1,0
+759,48.9553661336359,2.30773819416277,Gilbert Bonnemaison,Gilbert Bonnemaison,1,1,0
+760,48.9527904372825,2.34344969900299,Jean Vilar,Jean Vilar,1,1,0
+761,48.9559330784698,2.31109484550306,Lacepede,Lacepede,1,1,0
+762,48.9516212472325,2.32122168966535,Les Beatus,Les Beatus,1,1,0
+763,48.9502290367693,2.32819457994211,Les Mobiles,Les Mobiles,1,1,0
+764,48.9561424705332,2.34360020944313,Pablo Neruda,Pablo Neruda,1,1,0
+765,48.9396786425239,2.34515337428564,Paul Eluard,Paul Eluard,1,1,0
+766,48.9319492292588,2.35259959024131,Pierre De Geyter,Pierre De Geyter,1,1,0
+767,48.9535524090229,2.31508056689294,Rose Bertin (Centre Commercial L'Ilo),Rose Bertin (Centre Commercial L'Ilo),1,1,0
+768,48.9357422639183,2.34711706578437,Saint-Denis - Gare,Saint-Denis - Gare,1,1,0
+770,48.95939574112,2.34152624144333,Villetaneuse-Universite,Villetaneuse-Universite,1,1,0
