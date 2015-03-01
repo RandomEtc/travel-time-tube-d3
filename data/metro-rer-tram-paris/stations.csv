@@ -354,7 +354,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 432,49.0039144069026,2.56921045187106,Aeroport Charles de Gaulle 2 TGV,Aeroport Charles de Gaulle 2 TGV,1,1,0
 433,48.7548274850388,2.30086507059831,Antony,Antony,1,1,0
 434,48.7984604738998,2.32792175214199,Arcueil-Cachan,Arcueil-Cachan,1,1,0
-435,48.9321087626391,2.49330956258133,Aulnay-sous-Bois,Aulnay-sous-Bois,1,1,0
+435,48.9321087626391,2.49330956258133,Aulnay-sous-Bois,Aulnay-sous-Bois,1,2,0
 436,48.7932557963438,2.321324996318,Bagneux,Bagneux,1,1,0
 437,48.9322011699976,2.47675087121991,Blanc-Mesnil,Blanc-Mesnil,1,1,0
 438,48.7800509377689,2.31216262595979,Bourg-la-Reine,Bourg-la-Reine,1,1,0
@@ -529,7 +529,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 608,48.880914,2.358833,Magenta,Magenta,1,1,0
 609,48.898112,2.400362,Pantin,Pantin,1,1,0
 610,48.896652,2.458363,Noisy Le Sec,Noisy Le Sec,1,1,0
-611,48.89403,2.480071,Bondy,Bondy,1,1,0
+611,48.89403,2.480071,Bondy,Bondy,1,2,0
 612,48.889077,2.512567,Le Raincy Villemomble,Le Raincy Villemomble,1,1,0
 613,48.883734,2.525434,Gagny,Gagny,1,1,0
 614,48.877158,2.552882,Chenay Gagny,Chenay Gagny,1,1,0
@@ -685,3 +685,12 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 767,48.9535524090229,2.31508056689294,Rose Bertin (Centre Commercial L'Ilo),Rose Bertin (Centre Commercial L'Ilo),1,1,0
 768,48.9357422639183,2.34711706578437,Saint-Denis - Gare,Saint-Denis - Gare,1,1,0
 770,48.95939574112,2.34152624144333,Villetaneuse-Universite,Villetaneuse-Universite,1,1,0
+771,	48.893095,2.487911,Remise à Jorelle,,,,
+772,	48.892505,2.499388,Les Coquetiers,,,,
+773,	48.897144,2.506408,Allee De La Tour Rendez Vous,,,,
+774,	48.902444,2.511699,Les Pavillons Sous Bois,,,,
+775,	48.908165,2.517025,Gargan,,,,
+776,	48.916097,2.515061,Lycee Henri Sellier,,,,
+777,	48.921926,2.516444,L'Abbaye,,,,
+778,	48.92664,2.519104,Freinville Sevran,,,,
+779,	48.930934,2.51505,Rougemont Chanteloup,,,,
