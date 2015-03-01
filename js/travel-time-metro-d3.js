@@ -222,6 +222,11 @@ function createGraph(idData) {
                         .duration(1000)
                         .attr("cx", function(d) { return d.x; })
                         .attr("cy", function(d) { return d.y; })
+						.selectAll("title").text(function(d) { 
+							if(d.timeToCentre == 0){
+								return d.name;
+							}
+							return d.name + " / " + Math.round(d.timeToCentre/60) + "min" });
 
                     d3.selectAll("line.route, line.stripe")
                         .transition()
@@ -243,6 +248,7 @@ function updateShortestPaths(centre, stations) {
         stations.forEach(function(s) {
             s.x = s.mapx;
             s.y = s.mapy;
+			s.timeToCentre = 0;
         });  
         return;
     }
