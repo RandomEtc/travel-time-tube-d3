@@ -53,7 +53,6 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 70,48.8729858246652,2.33342622405285,Chaussée d'Antin (La Fayette),Chaussée d'Antin (La Fayette),1,2,0
 71,48.8345787984256,2.36693389907092,Chevaleret,Chevaleret,1,1,0
 72,48.8556848502863,2.34620292952872,Cité,Cité,1,1,0
-73,48.8203370568976,2.33969097471013,Cité Universitaire,Cité Universitaire,1,1,0
 74,48.8507957557043,2.34503088836523,Cluny-La Sorbonne,Cluny-La Sorbonne,1,1,0
 75,48.8781849817922,2.37017454663636,Colonel Fabien,Colonel Fabien,1,1,0
 76,48.8656780964178,2.32119377180187,Concorde,Concorde,1,2,0
@@ -597,3 +596,27 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 675,48.8349424302337,2.27261342906497,Henri Farman,Henri Farman,1,1,0
 676,48.8336771604817,2.27637249347823,Suzanne Lenglen,Suzanne Lenglen,1,1,0
 677,48.8318549731826,2.28104409928664,Porte D'issy,Porte D'issy,1,1,0
+678,48.8435299406154,2.40987238771081,Alexandra David-Neel,Alexandra David-Neel,1,1,0
+679,48.8253890943055,2.38103058281363,Avenue De France,Avenue De France,1,1,0
+680,48.8302820806831,2.3935860770449,Baron Le Roy,Baron Le Roy,1,1,0
+681,48.8288069229672,2.30097655186289,Brancion,Brancion,1,1,0
+683,48.8347500443733,2.28334179132084,Desnouettes,Desnouettes,1,1,0
+684,48.8257272854715,2.31333839958687,Didot,Didot,1,1,0
+685,48.8294615430565,2.29641574625194,Georges Brassens,Georges Brassens,1,1,0
+686,48.8248474977224,2.31900130033928,Jean Moulin,Jean Moulin,1,1,0
+687,48.8241320105302,2.37766746177698,Maryse Bastie,Maryse Bastie,1,1,0
+688,48.8398904915347,2.40903673461764,Montempoivre,Montempoivre,1,1,0
+689,48.8216582088437,2.33336195397646,Montsouris,Montsouris,1,1,0
+691,48.8209116166385,2.34995349592711,Poterne Des Peupliers,Poterne Des Peupliers,1,1,0
+692,48.8197076514178,2.34558425669085,Stade Charlety - Porte De Gentilly,Stade Charlety - Porte De Gentilly,1,1,0
+693,48.8723355323155,2.40840044234612,Adrienne Bolland,Adrienne Bolland,1,1,0
+694,48.8850140896672,2.39652097479099,Butte Du Chapeau Rouge,Butte Du Chapeau Rouge,1,1,0
+695,48.8989781775384,2.38017945555975,Canal Saint Denis,Canal Saint Denis,1,1,0
+696,48.8986684923691,2.36338561152916,Colette Besson,Colette Besson,1,1,0
+697,48.8945039358893,2.39777216346148,Delphine Seyrig,Delphine Seyrig,1,1,0
+698,48.897292180575,2.39320910192748,Ella Fitzgerald - Grands Moulins De Pantin,Ella Fitzgerald - Grands Moulins De Pantin,1,1,0
+699,48.8792689202881,2.40101100650267,Hopital Robert Debre,Hopital Robert Debre,1,1,0
+700,48.8588446369293,2.40981210770698,Marie De Miribel,Marie De Miribel,1,1,0
+701,48.8987750323829,2.36878361502263,Porte D'aubervilliers,Porte D'aubervilliers,1,1,0
+702,48.897515796384,2.37249044152091,Rosa Parks,Rosa Parks,1,1,0
+703,48.8675088935417,2.40912946018999,Severine,Severine,1,1,0
