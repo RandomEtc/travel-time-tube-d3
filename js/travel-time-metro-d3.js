@@ -1,9 +1,5 @@
 var pixelsPerMinute = 800.0/4800.0;
-var donnees = [['Métro parisien', 'data/metro-paris/stations.csv', 'data/metro-paris/routes.csv', 'data/metro-paris/lines.csv'],
-    ['Métro RER TRAM Paris', 'data/metro-rer-tram-paris/stations.csv', 'data/metro-rer-tram-paris/routes.csv', 'data/metro-rer-tram-paris/lines.csv'],
-    ['JSON Exemple', 'data/stations-exemple.json', 'data/routes-exemple.json', 'data/lines-exemple.json']];
 
- 
 window.onload = function() {
     createGraph(0);
   
