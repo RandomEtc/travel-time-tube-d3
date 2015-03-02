@@ -1,6 +1,7 @@
 var pixelsPerMinute = 800.0/4800.0;
 var donnees = [['Métro parisien', 'data/metro-paris/stations.csv', 'data/metro-paris/routes.csv', 'data/metro-paris/lines.csv'],
-    ['Métro RER TRAM Paris', 'data/metro-rer-tram-paris/stations.csv', 'data/metro-rer-tram-paris/routes.csv', 'data/metro-rer-tram-paris/lines.csv']];
+    ['Métro RER TRAM Paris', 'data/metro-rer-tram-paris/stations.csv', 'data/metro-rer-tram-paris/routes.csv', 'data/metro-rer-tram-paris/lines.csv'],
+    ['JSON Exemple', 'data/stations-exemple.json', 'data/routes-exemple.json', 'data/lines-exemple.json']];
 
  
 window.onload = function() {
@@ -21,7 +22,13 @@ window.onload = function() {
 
 function createGraph(idData) {
 
-    d3.csv(donnees[idData][1], function(stations) {
+    if(donnees[idData][1].slice(-4) == ".csv"){
+        d3.csv(donnees[idData][1], createStations);
+    }else if(donnees[idData][1].slice(-5) == ".json"){
+        d3.json(donnees[idData][1], createStations);
+    }
+
+    function createStations(stations) {
     
         var w = 800,
             h = 500,
@@ -65,8 +72,13 @@ function createGraph(idData) {
         });
             
         //console.log(stations);
-        
-        d3.csv(donnees[idData][2], function(connections) {
+        if(donnees[idData][2].slice(-4) == ".csv"){
+            d3.csv(donnees[idData][2], createRoutes);
+        }else if(donnees[idData][2].slice(-5) == ".json"){
+            d3.json(donnees[idData][2], createRoutes);
+        }
+
+        function createRoutes(connections) {
         
             //console.log(connections);
               
@@ -78,7 +90,13 @@ function createGraph(idData) {
                 c.time = parseInt(c.time,10);
             });
             
-            d3.csv(donnees[idData][3], function(routes) {
+            if(donnees[idData][3].slice(-4) == ".csv"){
+                d3.csv(donnees[idData][3], createLines);
+            }else if(donnees[idData][3].slice(-5) == ".json"){
+                d3.json(donnees[idData][3], createLines);
+            }
+
+            function createLines(routes) {
             
                 //console.log(routes);
                   
@@ -222,11 +240,11 @@ function createGraph(idData) {
                         .duration(1000)
                         .attr("cx", function(d) { return d.x; })
                         .attr("cy", function(d) { return d.y; })
-						.selectAll("title").text(function(d) { 
-							if(d.timeToCentre == 0){
-								return d.name;
-							}
-							return d.name + " / " + Math.round(d.timeToCentre/60) + "min" });
+                        .selectAll("title").text(function(d) { 
+                            if(d.timeToCentre == 0){
+                                return d.name;
+                            }
+                            return d.name + " / " + Math.round(d.timeToCentre/60) + "min" });
 
                     d3.selectAll("line.route, line.stripe")
                         .transition()
@@ -236,9 +254,9 @@ function createGraph(idData) {
                         .attr("x2", function(d) { return d.station2.x; })
                         .attr("y2", function(d) { return d.station2.y; });
                 };
-            }); // load routes
-        }); // load connections
-    }); // load stations
+            } // load Lines
+        } // load Routes
+    } // load Stations
 }
 
 // cribbed from here in double quick time: http://www.cs.cmu.edu/~crpalmer/sp/
@@ -248,7 +266,7 @@ function updateShortestPaths(centre, stations) {
         stations.forEach(function(s) {
             s.x = s.mapx;
             s.y = s.mapy;
-			s.timeToCentre = 0;
+            s.timeToCentre = 0;
         });  
         return;
     }

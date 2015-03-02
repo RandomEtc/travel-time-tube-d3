@@ -1,0 +1,14 @@
+[
+  {
+    "station1": 1,
+    "station2": 2,
+    "line": 1,
+    "time": 60
+  },
+  {
+    "station1": 2,
+    "station2": 1,
+    "line": 1,
+    "time": 120
+  }
+]
