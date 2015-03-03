@@ -11,6 +11,29 @@ body {
 }
 
 line,
-circle.connect {
+circle.station {
 	vector-effect: non-scaling-stroke;
+}
+
+line {
+    stroke-width: 4;
+}
+
+line.stripe {
+    stroke-width: 2;
+}
+
+circle.station {
+    fill: #FFFFFF;
+}
+
+circle.connect {
+    stroke-width: 1;
+    stroke: #000000;
+}
+
+circle.station:hover{
+    stroke-width: 6;
+    stroke: yellow;
+    fill: yellow;
 }
