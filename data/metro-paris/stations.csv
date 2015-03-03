@@ -17,7 +17,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 23,48.8421778264757,2.40114243430575,Bel-Air,Bel-Air,1,1,0
 24,48.8719457979749,2.3767510413738,Belleville,Belleville,1,2,0
 25,48.8453687501573,2.42824450962049,Bérault,Bérault,1,1,0
-26,48.8401922444035,2.37947725726606,Bercy,Bercy,1,1,0
+26,48.8401922444035,2.37947725726606,Bercy,Bercy,1,2,0
 27,48.8320876442825,2.23816077687551,Billancourt,Billancourt,1,1,0
 28,48.8543272185524,2.28881010373612,Bir-Hakeim (Grenelle),Bir-Hakeim (Grenelle),1,1,0
 30,48.8837705188318,2.33248514827409,Blanche,Blanche,1,1,0
@@ -65,7 +65,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 85,48.8902887750447,2.37677864892536,Crimée,Crimée,1,1,0
 86,48.857999073258,2.43586689567471,Croix-de-Chavaux (Jacques Duclos),Croix-de-Chavaux (Jacques Duclos),1,1,0
 87,48.8819510181782,2.39326067585739,Danube,Danube,1,1,0
-88,48.839376463125,2.39578806041565,Daumesnil (Félix Eboué),Daumesnil (Félix Eboué),1,1,0
+88,48.839376463125,2.39578806041565,Daumesnil (Félix Eboué),Daumesnil (Félix Eboué),1,2,0
 89,48.8342768128446,2.33220379730479,Denfert-Rochereau,Denfert-Rochereau,1,3,0
 91,48.8388761516785,2.38934738757029,Dugommier,Dugommier,1,1,0
 92,48.8507426501802,2.29246322682451,Dupleix,Dupleix,1,1,0
@@ -98,7 +98,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 126,48.8914993837643,2.40312496065608,Hoche,Hoche,1,1,0
 127,48.8573559271695,2.35207356685872,Hôtel de Ville,Hôtel de Ville,1,2,0
 129,48.8643501996473,2.29404526378309,Iéna,Iéna,1,1,0
-130,48.8608507896675,2.31454811262665,Invalides,Invalides,1,1,0
+130,48.8608507896675,2.31454811262665,Invalides,Invalides,1,2,0
 131,48.8707008232696,2.36057863558728,Jacques-Bonsergent,Jacques-Bonsergent,1,1,0
 132,48.8524385192227,2.26793392300095,Jasmin,Jasmin,1,1,0
 133,48.8827685467488,2.36994579899074,Jaurès,Jaurès,1,3,0
@@ -109,7 +109,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 139,48.8713061490878,2.29333102089622,Kléber,Kléber,1,1,0
 140,48.8843886983582,2.35927656427673,La Chapelle,La Chapelle,1,1,0
 141,48.9205145066857,2.4102257791202,La Courneuve-8-Mai-1945,La Courneuve-8-Mai-1945,1,1,0
-144,48.8918267548365,2.23799204321562,La Défense (Grande Arche),La Défense (Grande Arche),1,2,0
+144,48.8918267548365,2.23799204321562,La Défense (Grande Arche),La Défense (Grande Arche),1,1,0
 145,48.8874368425293,2.32572522201741,La Fourche,La Fourche,1,1,0
 147,48.8490189283498,2.29776216070793,La Motte-Picquet-Grenelle,La Motte-Picquet-Grenelle,1,2,0
 148,48.8580950496832,2.27409644811061,La Muette,La Muette,1,1,0
@@ -125,7 +125,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 168,48.889269622246,2.2880551248039,Louise Michel,Louise Michel,1,1,0
 169,48.8608798575938,2.3409732758179,Louvre-Rivoli,Louvre-Rivoli,1,1,0
 172,48.8528451336544,2.33514371851607,Mabillon,Mabillon,1,1,0
-173,48.8697947152178,2.32461201202227,Madeleine,Madeleine,1,1,0
+173,48.8697947152178,2.32461201202227,Madeleine,Madeleine,1,3,0
 174,48.8243465260184,2.27356582960065,Mairie d'Issy,Mairie d'Issy,1,1,0
 175,48.8112145354902,2.38350892873268,Mairie d'Ivry,Mairie d'Ivry,1,1,0
 176,48.9040054324296,2.30536812086686,Mairie de Clichy,Mairie de Clichy,1,1,0
@@ -213,7 +213,7 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 278,48.866046669631,2.35262095401519,Réaumur-Sébastopol,Réaumur-Sébastopol,1,2,0
 279,48.8481982688248,2.32802174862811,Rennes,Rennes,1,1,0
 280,48.8674108288354,2.36358782555805,République,République,1,3,0
-281,48.8473528769588,2.38584254004024,Reuilly-Diderot,Reuilly-Diderot,1,1,0
+281,48.8473528769588,2.38584254004024,Reuilly-Diderot,Reuilly-Diderot,1,2,0
 282,48.8606859919958,2.3724109318802,Richard-Lenoir,Richard-Lenoir,1,1,0
 283,48.8720961237898,2.33932555585643,Richelieu-Drouot,Richelieu-Drouot,1,1,0
 284,48.8883932319013,2.37443310888499,Riquet,Riquet,1,1,0
