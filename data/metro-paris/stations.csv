@@ -53,7 +53,6 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 70,48.8729858246652,2.33342622405285,Chaussée d'Antin (La Fayette),Chaussée d'Antin (La Fayette),1,2,0
 71,48.8345787984256,2.36693389907092,Chevaleret,Chevaleret,1,1,0
 72,48.8556848502863,2.34620292952872,Cité,Cité,1,1,0
-73,48.8203370568976,2.33969097471013,Cité Universitaire,Cité Universitaire,1,1,0
 74,48.8507957557043,2.34503088836523,Cluny-La Sorbonne,Cluny-La Sorbonne,1,1,0
 75,48.8781849817922,2.37017454663636,Colonel Fabien,Colonel Fabien,1,1,0
 76,48.8656780964178,2.32119377180187,Concorde,Concorde,1,2,0
@@ -79,7 +78,6 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 99,48.8790604392127,2.32297463240589,Europe,Europe,1,1,0
 100,48.8429069785359,2.2601443978809,Exelmans,Exelmans,1,1,0
 101,48.844323383002,2.3175646761806,Falguière,Falguière,1,1,0
-104,48.8434118592224,2.46481540327434,Fontenay-sous-Bois,Fontenay-sous-Bois,1,1,0
 105,48.9140567451466,2.40357633451101,Fort d'Aubervilliers,Fort d'Aubervilliers,1,1,0
 106,48.8690104279376,2.31025318089603,Franklin-Roosevelt,Franklin-Roosevelt,1,2,0
 109,48.9165748359832,2.29432896468706,Gabriel-Péri,Gabriel-Péri,1,1,0
@@ -91,7 +89,6 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 115,48.8455597870834,2.37344920496318,Gare de Lyon,Gare de Lyon,1,2,0
 116,48.8797430642254,2.35460081047223,Gare du Nord,Gare du Nord,1,3,0
 117,48.9063821642264,2.33191047345893,Garibaldi,Garibaldi,1,1,0
-118,48.815744305852,2.34087477502624,Gentilly,Gentilly,1,1,0
 119,48.8720456194264,2.30076918564495,George V,George V,1,1,0
 121,48.8308614053467,2.34455143330342,Glacière,Glacière,1,1,0
 122,48.870015355247,2.37076879902147,Goncourt (Hôpital Saint-Louis),Goncourt (Hôpital Saint-Louis),1,1,0
@@ -127,7 +124,6 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 167,48.8809004281511,2.36510721826434,Louis Blanc,Louis Blanc,1,2,0
 168,48.889269622246,2.2880551248039,Louise Michel,Louise Michel,1,1,0
 169,48.8608798575938,2.3409732758179,Louvre-Rivoli,Louvre-Rivoli,1,1,0
-171,48.8467785590282,2.34044118117617,Luxembourg,Luxembourg,1,1,0
 172,48.8528451336544,2.33514371851607,Mabillon,Mabillon,1,1,0
 173,48.8697947152178,2.32461201202227,Madeleine,Madeleine,1,1,0
 174,48.8243465260184,2.27356582960065,Mairie d'Issy,Mairie d'Issy,1,1,0
@@ -184,7 +180,6 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 244,48.8296903380227,2.23052843419233,Pont de Sèvres,Pont de Sèvres,1,1,0
 245,48.8534635856948,2.35738397280916,Pont Marie (Cité des Arts),Pont Marie (Cité des Arts),1,1,0
 246,48.8585341022857,2.342117238666,Pont Neuf,Pont Neuf,1,1,0
-247,48.8398851659774,2.33687344089015,Port Royal,Port Royal,1,1,0
 248,48.8482259804112,2.25769888566092,Porte d'Auteuil,Porte d'Auteuil,1,1,0
 249,48.8187170251155,2.36050083280537,Porte d'Italie,Porte d'Italie,1,1,0
 250,48.8213573623076,2.36930823722325,Porte d'Ivry,Porte d'Ivry,1,1,0
@@ -244,7 +239,6 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 309,48.8724706657937,2.31076910123035,Saint-Philippe du Roule,Saint-Philippe du Roule,1,1,0
 310,48.8470118401686,2.32705511135513,Saint-Placide,Saint-Placide,1,1,0
 312,48.8511463550549,2.33096285636646,Saint-Sulpice,Saint-Sulpice,1,1,0
-314,48.7812873184787,2.2976096510082,Sceaux,Sceaux,1,1,0
 315,48.8468647020692,2.30726884757893,Ségur,Ségur,1,1,0
 316,48.8673503814313,2.34756723541508,Sentier,Sentier,1,1,0
 319,48.8509392884308,2.32611465482228,Sèvres-Babylone,Sèvres-Babylone,1,2,0
@@ -270,7 +264,6 @@ id,latitude,longitude,name,display_name,zone,total_lines,rail
 343,48.7866380111198,2.36711052738165,Villejuif-Louis Aragon,Villejuif-Louis Aragon,1,1,0
 344,48.7959941323932,2.36823145191568,Villejuif-Paul Vaillant Couturier (Hôpital Paul Brousse),Villejuif-Paul Vaillant Couturier (Hôpital Paul Brousse),1,1,0
 347,48.8813242939447,2.31659676150882,Villiers,Villiers,1,2,0
-348,48.8473238711606,2.43353159687789,Vincennes,Vincennes,1,1,0
 349,48.8414184426777,2.30799364938666,Volontaires,Volontaires,1,1,0
 350,48.8576637257601,2.38003629679551,Voltaire (Léon Blum),Voltaire (Léon Blum),1,1,0
 351,48.8837124760373,2.3055577575143,Wagram,Wagram,1,1,0
