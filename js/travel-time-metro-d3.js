@@ -1,4 +1,4 @@
-var pixelsPerMinute = 800.0/4800.0;
+var pixelsPerMinute;
 
 window.onload = function() {
     createGraph(0);
@@ -19,6 +19,7 @@ window.onload = function() {
 
 function createGraph(idData) {
 
+    pixelsPerMinute = donnees[idData][4];
     if(donnees[idData][1].slice(-4) == ".csv"){
         d3.csv(donnees[idData][1], createStations);
     }else if(donnees[idData][1].slice(-5) == ".json"){
@@ -123,7 +124,7 @@ function createGraph(idData) {
                     .append("svg:g")
                     .call(zoom);
 
-                var radii = d3.range(pixelsPerMinute*600, Math.max(4*w,4*h), pixelsPerMinute*600);
+                var radii = d3.range(pixelsPerMinute*600, Math.max(2*w,2*h), pixelsPerMinute*600);
                     radii.reverse();
 
                 var radius = vis.selectAll('circle.radius')
@@ -179,7 +180,7 @@ function createGraph(idData) {
                         selectStation(null);
                     }
                 }
-                                   
+
                 function selectStation(d, i) {
                     updateShortestPaths(d, stations);
                                      
