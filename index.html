@@ -11,23 +11,25 @@
     </head>
 
     <body>
-        <h1>Temps de voyage en m&eacute;tro</h1>
+        <div class="text">
+            <h1>Temps de voyage en m&eacute;tro</h1>
 
-        <select id="navi"></select>
-        <select id="donnees"></select>
+            <select id="donnees"></select>
+            <select id="navi"></select>
 
-        <p>Cliquez sur une station (ou s&eacute;lectionnez-la ci-dessus) pour voir la carte du m&eacute;tro parisien se r&eacute;organiser en fonction du temps de trajet depuis ce point. Le chemin le plus court est utilis&eacute; pour placer les autres stations, le rayon est proportionnel &agrave; la dur&eacute;e de transport et l'angle doit correspondre &agrave; la direction &agrave; vol d'oiseau. Les cercles concentriques repr&eacute;sentent chacun un intervalle de dix minutes.<br>
-        Appuyez sur 'g' pour retrouver la vue g&eacute;ographique.</p>
-
+            <p>Cliquez sur une station (ou s&eacute;lectionnez-la ci-dessus) pour voir la carte du m&eacute;tro parisien se r&eacute;organiser en fonction du temps de trajet depuis ce point. Le chemin le plus court est utilis&eacute; pour placer les autres stations, le rayon est proportionnel &agrave; la dur&eacute;e de transport et l'angle doit correspondre &agrave; la direction &agrave; vol d'oiseau. Les cercles concentriques repr&eacute;sentent chacun un intervalle de dix minutes.<br>
+            Appuyez sur 'g' pour retrouver la vue g&eacute;ographique.</p>
+        </div>
         <div id="map"></div>
+        <div class="text">
+            <p><strong>NB</strong>&nbsp;: Les temps de parcours ne sont pas forc&eacute;ment justes. Ils sont bas&eacute;s sur les horaires pr&eacute;visionnels de la RATP. N'h&eacute;sitez pas &agrave; contribuer au projet sur GitHub pour am&eacute;liorer la justesse des donn&eacute;es&nbsp;: <a href="https://github.com/Cqoicebordel/travel-time-metro-d3">https://github.com/Cqoicebordel/travel-time-metro-d3</a>.<br>
+            Par ailleurs, les temps de changements ne sont pas (encore) pris en compte…</p>
 
-        <p><strong>NB</strong>&nbsp;: Les temps de parcours ne sont pas forc&eacute;ment justes. Ils sont bas&eacute;s sur les horaires pr&eacute;visionnels de la RATP. N'h&eacute;sitez pas &agrave; contribuer au projet sur GitHub pour am&eacute;liorer la justesse des donn&eacute;es&nbsp;: <a href="https://github.com/Cqoicebordel/travel-time-metro-d3">https://github.com/Cqoicebordel/travel-time-metro-d3</a>.<br>
-        Par ailleurs, les temps de changements ne sont pas (encore) pris en compte…</p>
+            <p>Bas&eacute; sur le projet <a href="http://randometc.github.io/travel-time-tube-d3/">http://randometc.github.io/travel-time-tube-d3/</a>.</p>
 
-        <p>Bas&eacute; sur le projet <a href="http://randometc.github.io/travel-time-tube-d3/">http://randometc.github.io/travel-time-tube-d3/</a>.</p>
+            <p>Les donn&eacute;es brutes proviennent de la RATP sur son site d'<a href="http://data.ratp.fr/">Open Data</a> et ont &eacute;t&eacute; compil&eacute;es par mes petites mains. Si vous voyez des erreurs, venez les corriger sur <a href="https://github.com/Cqoicebordel/travel-time-metro-d3">https://github.com/Cqoicebordel/travel-time-metro-d3</a>.</p>
 
-        <p>Les donn&eacute;es brutes proviennent de la RATP sur son site d'<a href="http://data.ratp.fr/">Open Data</a> et ont &eacute;t&eacute; compil&eacute;es par mes petites mains. Si vous voyez des erreurs, venez les corriger sur <a href="https://github.com/Cqoicebordel/travel-time-metro-d3">https://github.com/Cqoicebordel/travel-time-metro-d3</a>.</p>
-
-        <p>Pour r&eacute;cup&eacute;rer les donn&eacute;es de base, allez voir directement sur GitHub.</p>
+            <p>Pour r&eacute;cup&eacute;rer les donn&eacute;es de base, allez voir directement sur GitHub.</p>
+        </div>
     </body>
 </html>

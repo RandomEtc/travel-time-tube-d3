@@ -1,5 +1,10 @@
 var pixelsPerMinute;
 
+var w = width,
+    h = height;
+
+var zoomMultiplier = 1;
+
 window.onload = function() {
     createGraph(0);
   
@@ -19,7 +24,7 @@ window.onload = function() {
 
 function createGraph(idData) {
 
-    pixelsPerMinute = donnees[idData][4];
+    pixelsPerMinute = zoomMultiplier * donnees[idData][4];
     if(donnees[idData][1].slice(-4) == ".csv"){
         d3.csv(donnees[idData][1], createStations);
     }else if(donnees[idData][1].slice(-5) == ".json"){
@@ -27,10 +32,8 @@ function createGraph(idData) {
     }
 
     function createStations(stations) {
-    
-        var w = 800,
-            h = 500,
-            minLat = 90, 
+
+        var minLat = 90, 
             minLon = 180, 
             maxLat = -90, 
             maxLon = -180,
@@ -43,7 +46,6 @@ function createGraph(idData) {
             s.display_name = (s.display_name == 'NULL') ? null : s.display_name;
             s.rail = parseInt(s.rail,10);
             s.totalLines = parseInt(s.total_lines,16);
-            //console.log(s.rail, s.totalLines);
             s.latitude = parseFloat(s.latitude);
             s.longitude = parseFloat(s.longitude);
             minLat = Math.min(minLat, s.latitude);
@@ -84,7 +86,6 @@ function createGraph(idData) {
                 c.station1 = stationsById[c.station1];
                 c.station2 = stationsById[c.station2];
                 c.station1.conns.push(c);
-                //c.station2.conns.push(c);
                 c.time = parseInt(c.time,10);
             });
             
@@ -159,6 +160,15 @@ function createGraph(idData) {
                     .attr("r", 2)
                     .on('click', selectStation)
                     .append("svg:title").text(function(d) { return d.name });
+                    
+                vis.append("svg:image")
+                    .attr('x',0)
+                    .attr('y',0)
+                    .attr('width', 32)
+                    .attr('height', 32)
+                    .attr('id', "expand")
+                    .attr("xlink:href","img/expand.png")
+                    .on('click', switchSize);
 
                 var option = d3.select('#navi')
                     .on('change', function() {
@@ -264,4 +274,30 @@ function updateShortestPaths(centre, stations) {
         s.x = centre.mapx + (rad * Math.cos(ang));
         s.y = centre.mapy + (rad * Math.sin(ang));
     });
+}
+
+function switchSize(){
+    margins = 20;
+    if(h == height && w == width){
+        changeH = window.innerHeight - 2 * margins;
+        changeW = window.innerWidth - 2 * margins;
+        zoomMultiplier = 1.25 * changeW / w;
+    }else{
+        changeH = height;
+        changeW = width;
+        zoomMultiplier = 1;
+    }
+    d3.select("#map")
+        .transition()
+        .duration(1000)
+        .each("end", function() {document.getElementById('map').scrollIntoView(true);})
+        .attr("width", changeW + "px")
+        .attr("height", changeH + "px")
+        .style({"width": changeW + "px","height": changeH + "px"});
+    
+    d3.select("#map").selectAll("svg").remove()
+    h = changeH;
+    w = changeW;
+    var box = document.getElementById('donnees');
+    createGraph(box.selectedIndex);    
 }
