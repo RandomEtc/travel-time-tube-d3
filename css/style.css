@@ -11,6 +11,10 @@
     margin: 0 auto;
 }
 
+.stationName{
+    font-size:10px;
+}
+
 line,
 circle.station {
 	vector-effect: non-scaling-stroke;

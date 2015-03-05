@@ -7,7 +7,7 @@ var zoomMultiplier = 1;
 
 window.onload = function() {
     createGraph(0);
-  
+
     var optionDonnees = d3.select('#donnees')
         .on('change', function() {
             d3.select("#map").selectAll("svg").remove();
@@ -56,22 +56,21 @@ function createGraph(idData) {
 
         var paddingx = 10;
         var paddingy = 10;
-      
+
         var ecartX = maxLon - minLon;
         var ecartY = maxLat - minLat;
-      
-        if(ecartX/(w-2*paddingx) < ecartY/(h-2*paddingy)) {
+
+        if(ecartX/(w-2*paddingx) > ecartY/(h-2*paddingy)) {
             paddingy += (h-2*paddingy-ecartY*(w-2*paddingx)/ecartX)/2;
         }else {
             paddingx += (w-2*paddingx-ecartX*(h-2*paddingy)/ecartY)/2;
         }
-      
+
         stations.forEach(function(s) {
             s.mapx = paddingx + (w-paddingx*2) * (s.longitude-minLon) / (maxLon-minLon);
             s.mapy = h-paddingy - (h-paddingy*2) * (s.latitude-minLat) / (maxLat-minLat);
         });
-            
-        //console.log(stations);
+
         if(donnees[idData][2].slice(-4) == ".csv"){
             d3.csv(donnees[idData][2], createRoutes);
         }else if(donnees[idData][2].slice(-5) == ".json"){
@@ -79,16 +78,14 @@ function createGraph(idData) {
         }
 
         function createRoutes(connections) {
-        
-            //console.log(connections);
-              
+
             connections.forEach(function(c) {
                 c.station1 = stationsById[c.station1];
                 c.station2 = stationsById[c.station2];
                 c.station1.conns.push(c);
                 c.time = parseInt(c.time,10);
             });
-            
+
             if(donnees[idData][3].slice(-4) == ".csv"){
                 d3.csv(donnees[idData][3], createLines);
             }else if(donnees[idData][3].slice(-5) == ".json"){
@@ -96,22 +93,21 @@ function createGraph(idData) {
             }
 
             function createLines(routes) {
-            
-                //console.log(routes);
-                  
+
                 function zoomed() {
                     var visu = d3.select("#visualisation").selectAll("g");
                     visu.selectAll("circle.radius").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
                     visu.selectAll("line.route").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
                     visu.selectAll("circle.station").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")").attr("r", 2.5/zoom.scale());
+                    visu.selectAll("text.terminusText").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")").style("font-size", 10/zoom.scale() + "px");
                 }
-                    
+
                 var routesById = {};
-                    
+ 
                 routes.forEach(function(r) {
                     routesById[r.line] = r;
                 });
-                
+
                 var zoom = d3.behavior.zoom()
                     .center([w / 2, h / 2])
                     .scaleExtent([0.01, 30])
@@ -160,7 +156,17 @@ function createGraph(idData) {
                     .attr("r", 2)
                     .on('click', selectStation)
                     .append("svg:title").text(function(d) { return d.name });
-                    
+
+                vis.selectAll("g")
+                    .data(stations.filter(function(d) { return d.terminus && d.terminus == "1"; }))
+                    .enter()
+                    .append("svg:text")
+                    .attr("x", function(d) { return d.mapx; })
+                    .attr("y", function(d) { return d.mapy; })
+                    .attr("class", "terminusText stationName")
+                    .on('click', selectStation)
+                    .text(function(d) { return d.name; })
+
                 vis.append("svg:image")
                     .attr('x',0)
                     .attr('y',0)
@@ -224,6 +230,12 @@ function createGraph(idData) {
                         .attr("y1", function(d) { return d.station1.y; })
                         .attr("x2", function(d) { return d.station2.x; })
                         .attr("y2", function(d) { return d.station2.y; });
+                        
+                    d3.selectAll('text.terminusText')
+                        .transition()
+                        .duration(1000)
+                        .attr("x", function(d) { return d.x; })
+                        .attr("y", function(d) { return d.y; })
                 };
             } // load Lines
         } // load Routes
@@ -294,7 +306,7 @@ function switchSize(){
         .attr("width", changeW + "px")
         .attr("height", changeH + "px")
         .style({"width": changeW + "px","height": changeH + "px"});
-    
+
     d3.select("#map").selectAll("svg").remove()
     h = changeH;
     w = changeW;
