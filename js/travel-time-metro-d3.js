@@ -5,20 +5,44 @@ var w = width,
 
 var zoomMultiplier = 1;
 
-window.onload = function() {
-    createGraph(0);
+var choosenData = 0;
+var choosenDot = -1;
 
+window.onload = function() {
+    
+    var split = window.location.hash.indexOf('|');
+    
+    if(split > 0){
+        choosenData = window.location.hash.substring(1, split);
+        choosenDot =  window.location.hash.substring(split+1);
+    }else if(window.location.hash != ""){
+        choosenData = window.location.hash.substring(1);
+    }
+    
+    if(choosenData >= donnees.length){
+        choosenData = 0;
+    }
+    
+    createGraph(choosenData);
+    
     var optionDonnees = d3.select('#donnees')
         .on('change', function() {
             d3.select("#map").selectAll("svg").remove();
             d3.select('#navi').selectAll("option").remove();
             var box = document.getElementById('donnees');
             createGraph(box.selectedIndex);
+            window.location.hash = box.selectedIndex;
+            choosenData = box.selectedIndex;
+            choosenDot = -1;
         });
 
     var options = optionDonnees.selectAll('option');
     for(i=0 ; i<donnees.length; i++) {
-        options.data([ { id: i, name: donnees[i][0] } ]).enter().append('option').text(donnees[i][0]);
+        if(i == choosenData){
+            options.data([ { id: i, name: donnees[i][0] } ]).enter().append('option').attr("selected", "selected").text(donnees[i][0]);
+        }else{
+            options.data([ { id: i, name: donnees[i][0] } ]).enter().append('option').text(donnees[i][0]);
+        }
     }
 }
 
@@ -198,6 +222,14 @@ function createGraph(idData) {
                         selectStation(null);
                     }
                 }
+                
+                setTimeout(function(){
+                        if(choosenDot > -1){
+                            var box = document.getElementById('navi'),
+                            destination = box.options[choosenDot].value;
+                            selectStation(stationsById[destination]);
+                        }
+                    }, 100);
 
                 function selectStation(d) {
                     updateShortestPaths(d, stations);
@@ -205,6 +237,10 @@ function createGraph(idData) {
                     if (d) {
                         var box = document.getElementById('navi');
                         box.selectedIndex = d.index+1;
+                        window.location.hash = choosenData + "|" + (d.index+1);
+                        choosenDot = d.index+1;
+                    }else{
+                        window.location.hash = choosenData;
                     }
 
                     d3.selectAll('circle.radius')
