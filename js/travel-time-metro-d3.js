@@ -40,6 +40,7 @@ function createGraph(idData) {
             stationsById = {};
 
         // measure...
+        var i = 0;
         stations.forEach(function(s) {
             stationsById[s.id] = s;
             s.conns = [];
@@ -48,6 +49,7 @@ function createGraph(idData) {
             s.totalLines = parseInt(s.total_lines,16);
             s.latitude = parseFloat(s.latitude);
             s.longitude = parseFloat(s.longitude);
+            s.index = i++;
             minLat = Math.min(minLat, s.latitude);
             maxLat = Math.max(maxLat, s.latitude);
             minLon = Math.min(minLon, s.longitude);
@@ -197,12 +199,12 @@ function createGraph(idData) {
                     }
                 }
 
-                function selectStation(d, i) {
+                function selectStation(d) {
                     updateShortestPaths(d, stations);
                                      
-                    if (i) {
+                    if (d) {
                         var box = document.getElementById('navi');
-                        box.selectedIndex = i+1;
+                        box.selectedIndex = d.index+1;
                     }
 
                     d3.selectAll('circle.radius')
