@@ -181,6 +181,7 @@ function createGraph(idData) {
                     .attr("cy", function(d) { return d.mapy; })
                     .attr("r", 2)
                     .on('click', selectStation)
+                    .on('touch', selectStation)
                     .append("svg:title").text(function(d) { return d.name });
 
                 vis.selectAll("g")
@@ -191,6 +192,7 @@ function createGraph(idData) {
                     .attr("y", function(d) { return d.mapy; })
                     .attr("class", "terminusText stationName")
                     .on('click', selectStation)
+                    .on('touch', selectStation)
                     .text(function(d) { return d.name; })
 
                 vis.append("svg:image")
@@ -200,7 +202,8 @@ function createGraph(idData) {
                     .attr('height', 32)
                     .attr('id', "expand")
                     .attr("xlink:href","img/expand.png")
-                    .on('click', switchSize);
+                    .on('click', switchSize)
+                    .on('touch', switchSize);
 
                 var option = d3.select('#navi')
                     .on('change', function() {
