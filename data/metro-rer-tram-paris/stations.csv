@@ -1,0 +1,696 @@
+id,latitude,longitude,name,display_name,zone,total_lines,rail
+1,48.8843997149084,2.33839938417104,Abbesses,Abbesses,1,1,0
+4,48.8280660196865,2.32682742005084,Alésia,Alésia,1,1,0
+5,48.8564263483252,2.39455425765499,Alexandre-Dumas,Alexandre-Dumas,1,1,0
+6,48.8642986710467,2.30125141044993,Alma-Marceau,Alma-Marceau,1,1,0
+7,48.8920186263289,2.28551744479448,Anatole-France,Anatole-France,1,1,0
+9,48.8828716901806,2.34416357280039,Anvers,Anvers,1,1,0
+11,48.8756724859879,2.28944416448145,Argentine,Argentine,1,1,0
+12,48.8655518636348,2.35610815512031,Arts-et-Métiers,Arts-et-Métiers,1,2,0
+13,48.8614539042949,2.32030969050736,Assemblée Nationale,Assemblée Nationale,1,1,0
+15,48.9038980475295,2.39248007867247,Aubervilliers Pantin (4 Chemins),Aubervilliers Pantin (4 Chemins),1,1,0
+17,48.8468521519498,2.29544882793447,Avenue Emile-Zola,Avenue Emile-Zola,1,1,0
+18,48.8511938192133,2.39823914082312,Avron,Avron,1,1,0
+20,48.8839317699344,2.34935570859965,Barbès-Rochechouart,Barbès-Rochechouart,1,2,0
+21,48.9364774926505,2.35963974530458,Basilique de Saint-Denis,Basilique de Saint-Denis,1,2,0
+22,48.8529756746542,2.36921882444334,Bastille,Bastille,1,2,0
+23,48.8421778264757,2.40114243430575,Bel-Air,Bel-Air,1,1,0
+24,48.8719457979749,2.3767510413738,Belleville,Belleville,1,2,0
+25,48.8453687501573,2.42824450962049,Bérault,Bérault,1,1,0
+26,48.8401922444035,2.37947725726606,Bercy,Bercy,1,2,0
+27,48.8320876442825,2.23816077687551,Billancourt,Billancourt,1,1,0
+28,48.8543272185524,2.28881010373612,Bir-Hakeim (Grenelle),Bir-Hakeim (Grenelle),1,1,0
+30,48.8837705188318,2.33248514827409,Blanche,Blanche,1,1,0
+31,48.9071473125516,2.44945750453114,Bobigny-Pablo-Picasso,Bobigny-Pablo-Picasso,1,2,0
+32,48.895799232549,2.42485729839759,Bobigny-Pantin (Raymond Queneau),Bobigny-Pantin (Raymond Queneau),1,1,0
+33,48.8668561547603,2.29003807344501,Boissière,Boissière,1,1,0
+35,48.8807901228285,2.37415512666265,Bolivar,Bolivar,1,1,0
+36,48.870495832331,2.3488621174406,Bonne Nouvelle,Bonne Nouvelle,1,1,0
+37,48.8796070889331,2.38941556965321,Botzaris,Botzaris,1,1,0
+38,48.840680163122,2.22831366172434,Boulogne Pont de Saint-Cloud,Boulogne Pont de Saint-Cloud,1,1,0
+39,48.8422801435297,2.23886297536727,Boulogne-Jean-Jaurès,Boulogne-Jean-Jaurès,1,1,0
+41,48.8687617925964,2.3406741288121,Bourse,Bourse,1,1,0
+42,48.8567679495405,2.37077385838438,Bréguet-Sabin,Bréguet-Sabin,1,1,0
+43,48.8906266330241,2.32019112127533,Brochant,Brochant,1,1,0
+47,48.8778039560078,2.38121109973599,Buttes-Chaumont,Buttes-Chaumont,1,1,0
+48,48.8517674745052,2.40118148387264,Buzenval,Buzenval,1,1,0
+49,48.8758257180382,2.34334512457327,Cadet,Cadet,1,1,0
+50,48.8476991081708,2.30203914366926,Cambronne,Cambronne,1,1,0
+51,48.8355512166754,2.3587520951914,Campo-Formio,Campo-Formio,1,1,0
+52,48.8467058690603,2.3513351789726,Cardinal-Lemoine,Cardinal-Lemoine,1,1,0
+53,48.8405943000016,2.35175561294669,Censier-Daubenton,Censier-Daubenton,1,1,0
+57,48.8673665704698,2.31419106339366,Champs-Elysées-Clémenceau,Champs-Elysées-Clémenceau,1,2,0
+58,48.845104139567,2.26693605903225,Chardon-Lagache,Chardon-Lagache,1,1,0
+59,48.8739310942679,2.2951272516501,Charles de Gaulle-Etoile,Charles de Gaulle-Etoile,1,4,0
+60,48.8463629755008,2.28563106588287,Charles Michels,Charles Michels,1,1,0
+61,48.8546420474448,2.38503219333483,Charonne,Charonne,1,1,0
+62,48.8724541509199,2.35605616813029,Château d'Eau,Château d'Eau,1,1,0
+63,48.8443251443686,2.44055234621182,Château de Vincennes,Château de Vincennes,1,1,0
+64,48.8784565668312,2.3620537162489,Château Landon,Château Landon,1,1,0
+65,48.8870862830504,2.34937007325138,Château Rouge,Château Rouge,1,1,0
+66,48.8583000559814,2.34786508757711,Châtelet,Châtelet,1,4,0
+68,48.8102833635108,2.30128887097595,Châtillon Montrouge,Châtillon Montrouge,1,2,0
+70,48.8729858246652,2.33342622405285,Chaussée d'Antin (La Fayette),Chaussée d'Antin (La Fayette),1,2,0
+71,48.8345787984256,2.36693389907092,Chevaleret,Chevaleret,1,1,0
+72,48.8556848502863,2.34620292952872,Cité,Cité,1,1,0
+74,48.8507957557043,2.34503088836523,Cluny-La Sorbonne,Cluny-La Sorbonne,1,1,0
+75,48.8781849817922,2.37017454663636,Colonel Fabien,Colonel Fabien,1,1,0
+76,48.8656780964178,2.32119377180187,Concorde,Concorde,1,2,0
+78,48.8371369495626,2.29639609015556,Convention,Convention,1,1,0
+79,48.8946815419881,2.38230219397424,Corentin-Cariou,Corentin-Cariou,1,1,0
+80,48.8268298873941,2.27896686157434,Corentin-Celton,Corentin-Celton,1,1,0
+81,48.8296027449712,2.34937026345836,Corvisart,Corvisart,1,1,0
+83,48.8792721516316,2.30329854668249,Courcelles,Courcelles,1,1,0
+84,48.8693291694966,2.38053636616172,Couronnes,Couronnes,1,1,0
+85,48.8902887750447,2.37677864892536,Crimée,Crimée,1,1,0
+86,48.857999073258,2.43586689567471,Croix-de-Chavaux (Jacques Duclos),Croix-de-Chavaux (Jacques Duclos),1,1,0
+87,48.8819510181782,2.39326067585739,Danube,Danube,1,1,0
+88,48.839376463125,2.39578806041565,Daumesnil (Félix Eboué),Daumesnil (Félix Eboué),1,2,0
+89,48.8342768128446,2.33220379730479,Denfert-Rochereau,Denfert-Rochereau,1,3,0
+91,48.8388761516785,2.38934738757029,Dugommier,Dugommier,1,1,0
+92,48.8507426501802,2.29246322682451,Dupleix,Dupleix,1,1,0
+93,48.846848768896,2.31693731083409,Duroc,Duroc,1,2,0
+94,48.8405677262044,2.32640281522276,Edgar-Quinet,Edgar-Quinet,1,1,0
+95,48.8478832165792,2.27029589263431,Eglise d'Auteuil,Eglise d'Auteuil,1,1,0
+96,48.893632527974,2.41290026603005,Eglise de Pantin,Eglise de Pantin,1,1,0
+97,48.8883580601662,2.2499372128628,Esplanade de la Défense,Esplanade de la Défense,1,1,0
+98,48.8637103664696,2.3489831961271,Etienne Marcel,Etienne Marcel,1,1,0
+99,48.8790604392127,2.32297463240589,Europe,Europe,1,1,0
+100,48.8429069785359,2.2601443978809,Exelmans,Exelmans,1,1,0
+101,48.844323383002,2.3175646761806,Falguière,Falguière,1,1,0
+104,48.8434118592224,2.46481540327434,Fontenay-sous-Bois,Fontenay-sous-Bois,1,1,0
+105,48.9140567451466,2.40357633451101,Fort d'Aubervilliers,Fort d'Aubervilliers,1,1,0
+106,48.8690104279376,2.31025318089603,Franklin-Roosevelt,Franklin-Roosevelt,1,2,0
+107,48.8846961785522,2.34261028296205,Funiculaire Gare basse,Funiculaire Gare basse,1,1,0
+108,48.8855769295109,2.34254223541153,Funiculaire Gare haute,Funiculaire Gare haute,1,1,0
+109,48.9165748359832,2.29432896468706,Gabriel-Péri,Gabriel-Péri,1,1,0
+110,48.8387518213886,2.32250918622471,Gaité,Gaité,1,1,0
+111,48.8632625265005,2.41597536849996,Gallieni (Parc de Bagnolet),Gallieni (Parc de Bagnolet),1,1,0
+112,48.8650342980182,2.39854148691224,Gambetta,Gambetta,1,2,0
+113,48.8434142241437,2.36418839286764,Gare d'Austerlitz,Gare d'Austerlitz,1,2,0
+114,48.8766958360249,2.3579925105504,Gare de l'Est (Verdun),Gare de l'Est (Verdun),1,3,0
+115,48.8455597870834,2.37344920496318,Gare de Lyon,Gare de Lyon,1,2,0
+116,48.8797430642254,2.35460081047223,Gare du Nord,Gare du Nord,1,3,0
+117,48.9063821642264,2.33191047345893,Garibaldi,Garibaldi,1,1,0
+118,48.815744305852,2.34087477502624,Gentilly,Gentilly,1,1,0
+119,48.8720456194264,2.30076918564495,George V,George V,1,1,0
+121,48.8308614053467,2.34455143330342,Glacière,Glacière,1,1,0
+122,48.870015355247,2.37076879902147,Goncourt (Hôpital Saint-Louis),Goncourt (Hôpital Saint-Louis),1,1,0
+123,48.8715118170782,2.34320837754486,Grands Boulevards,Grands Boulevards,1,1,0
+124,48.8930090560512,2.32749583949049,Guy-Môquet,Guy-Môquet,1,1,0
+125,48.8734618906704,2.32848048447348,Havre-Caumartin,Havre-Caumartin,1,2,0
+126,48.8914993837643,2.40312496065608,Hoche,Hoche,1,1,0
+127,48.8573559271695,2.35207356685872,Hôtel de Ville,Hôtel de Ville,1,2,0
+129,48.8643501996473,2.29404526378309,Iéna,Iéna,1,1,0
+130,48.8608507896675,2.31454811262665,Invalides,Invalides,1,3,0
+131,48.8707008232696,2.36057863558728,Jacques-Bonsergent,Jacques-Bonsergent,1,1,0
+132,48.8524385192227,2.26793392300095,Jasmin,Jasmin,1,1,0
+133,48.8827685467488,2.36994579899074,Jaurès,Jaurès,1,3,0
+134,48.8459638804841,2.27781512635377,Javel-André-Citroen,Javel-André-Citroen,1,1,0
+136,48.875248294625,2.38932943415264,Jourdain,Jourdain,1,1,0
+137,48.8924969769303,2.3443284105515,Jules Joffrin,Jules Joffrin,1,1,0
+138,48.8459684322046,2.35480739269422,Jussieu,Jussieu,1,2,0
+139,48.8713061490878,2.29333102089622,Kléber,Kléber,1,1,0
+140,48.8843886983582,2.35927656427673,La Chapelle,La Chapelle,1,1,0
+141,48.9205145066857,2.4102257791202,La Courneuve-8-Mai-1945,La Courneuve-8-Mai-1945,1,2,0
+144,48.8918267548365,2.23799204321562,La Défense (Grande Arche),La Défense (Grande Arche),1,2,0
+145,48.8874368425293,2.32572522201741,La Fourche,La Fourche,1,1,0
+147,48.8490189283498,2.29776216070793,La Motte-Picquet-Grenelle,La Motte-Picquet-Grenelle,1,2,0
+148,48.8580950496832,2.27409644811061,La Muette,La Muette,1,1,0
+151,48.8897381077178,2.33914908667412,Lamarck-Caulaincourt,Lamarck-Caulaincourt,1,1,0
+153,48.8849316105461,2.37909124689984,Laumière,Laumière,1,1,0
+156,48.8103851251295,2.36183068309113,Le Kremlin-Bicêtre,Le Kremlin-Bicêtre,1,1,0
+158,48.8749630580261,2.34015679084921,Le Peletier,Le Peletier,1,1,0
+162,48.8361274397525,2.35208111783557,Les Gobelins,Les Gobelins,1,1,0
+163,48.8620119707205,2.34647645190621,Les Halles,Les Halles,1,1,0
+164,48.8812991854911,2.27191517601779,Les Sablons (Jardin d'acclimatation),Les Sablons (Jardin d'acclimatation),1,1,0
+165,48.8795371663808,2.32685794727296,Liège,Liège,1,1,0
+167,48.8809004281511,2.36510721826434,Louis Blanc,Louis Blanc,1,2,0
+168,48.889269622246,2.2880551248039,Louise Michel,Louise Michel,1,1,0
+169,48.8608798575938,2.3409732758179,Louvre-Rivoli,Louvre-Rivoli,1,1,0
+171,48.8467785590282,2.34044118117617,Luxembourg,Luxembourg,1,1,0
+172,48.8528451336544,2.33514371851607,Mabillon,Mabillon,1,1,0
+173,48.8697947152178,2.32461201202227,Madeleine,Madeleine,1,3,0
+174,48.8243465260184,2.27356582960065,Mairie d'Issy,Mairie d'Issy,1,1,0
+175,48.8112145354902,2.38350892873268,Mairie d'Ivry,Mairie d'Ivry,1,1,0
+176,48.9040054324296,2.30536812086686,Mairie de Clichy,Mairie de Clichy,1,1,0
+177,48.862280986339,2.44182767912771,Mairie de Montreuil,Mairie de Montreuil,1,1,0
+178,48.9116216803838,2.33373696484209,Mairie de Saint-Ouen,Mairie de Saint-Ouen,1,1,0
+179,48.8800510617727,2.41566020606423,Mairie des Lilas,Mairie des Lilas,1,1,0
+180,48.8228787750632,2.35807989429085,Maison Blanche,Maison Blanche,1,1,0
+182,48.8224426939998,2.29793210532873,Malakoff-Plateau de Vanves,Malakoff-Plateau de Vanves,1,1,0
+183,48.814704060567,2.29728473017064,Malakoff-Rue Etienne Dolet,Malakoff-Rue Etienne Dolet,1,1,0
+184,48.8825364728922,2.31100924300551,Malesherbes,Malesherbes,1,1,0
+185,48.8526004024001,2.40638498956614,Maraichers,Maraichers,1,1,0
+186,48.8915439306306,2.34937111538191,Marcadet-Poissonniers,Marcadet-Poissonniers,1,2,0
+187,48.8338085869803,2.2434806144174,Marcel Sembat,Marcel Sembat,1,1,0
+189,48.8903740812211,2.35979700867061,Marx-Dormoy,Marx-Dormoy,1,1,0
+192,48.8497169401636,2.34892555849187,Maubert-Mutualité,Maubert-Mutualité,1,1,0
+193,48.865705787623,2.38442937516321,Ménilmontant,Ménilmontant,1,1,0
+194,48.8479245927851,2.26423590578242,Michel-Ange-Auteuil,Michel-Ange-Auteuil,1,2,0
+195,48.845056129032,2.26191142327977,Michel-Ange-Molitor,Michel-Ange-Molitor,1,2,0
+196,48.8470848589049,2.27307491492201,Mirabeau,Mirabeau,1,1,0
+197,48.8735321406161,2.31557802486619,Miromesnil,Miromesnil,1,2,0
+199,48.8805768907484,2.30941594616481,Monceau,Monceau,1,1,0
+200,48.8441895085268,2.3244412324337,Montparnasse-Bienvenue,Montparnasse-Bienvenue,1,4,0
+201,48.8321915992697,2.33040699262932,Mouton-Duvernet,Mouton-Duvernet,1,1,0
+205,48.8490101536482,2.39766461279101,Nation,Nation,1,5,0
+206,48.8328812886788,2.3619094080162,Nationale,Nationale,1,1,0
+212,48.8767964877419,2.33902598479517,Notre-Dame de Lorette,Notre-Dame de Lorette,1,1,0
+213,48.8447830483301,2.32844448329272,Notre-Dame des Champs,Notre-Dame des Champs,1,1,0
+214,48.8640302101823,2.36918477255233,Oberkampf,Oberkampf,1,2,0
+215,48.8523148811949,2.33886172033634,Odéon,Odéon,1,2,0
+216,48.8707209762921,2.33225474357296,Opéra,Opéra,1,2,0
+218,48.886618792377,2.38548413638488,Ourcq,Ourcq,1,1,0
+219,48.8623718215243,2.33657360073643,Palais-Royal (Musée du Louvre),Palais-Royal (Musée du Louvre),1,2,0
+224,48.8652598566732,2.37475708171677,Parmentier,Parmentier,1,1,0
+225,48.8575343825139,2.28559270581709,Passy,Passy,1,1,0
+226,48.8420128040577,2.31329004383549,Pasteur,Pasteur,1,2,0
+227,48.8682233476073,2.4013243805441,Pelleport,Pelleport,1,1,0
+228,48.863161205064,2.38726040018435,Père-Lachaise,Père-Lachaise,1,2,0
+229,48.8850310612536,2.29713511150616,Péreire,Péreire,1,1,0
+230,48.8339338198109,2.31790897216328,Pernety,Pernety,1,1,0
+231,48.8583788414699,2.3897347327397,Philippe Auguste,Philippe Auguste,1,1,0
+232,48.8453231146139,2.40178631376069,Picpus,Picpus,1,1,0
+233,48.8159171816004,2.37787881648387,Pierre et Marie Curie,Pierre et Marie Curie,1,1,0
+234,48.8824225284176,2.33725468210153,Pigalle,Pigalle,1,2,0
+235,48.8315523026431,2.35533344321905,Place d'Italie,Place d'Italie,1,3,0
+236,48.8834556515955,2.32737499341036,Place de Clichy,Place de Clichy,1,2,0
+237,48.8772239477293,2.3927650502509,Place des Fêtes,Place des Fêtes,1,2,0
+238,48.8431646927668,2.3521103624151,Place Monge (Jardin des Plantes),Place Monge (Jardin des Plantes),1,1,0
+239,48.8317580937884,2.31386654984816,Plaisance,Plaisance,1,1,0
+240,48.877353095288,2.3493814239526,Poissonnière,Poissonnière,1,1,0
+242,48.8973099051795,2.2807686428069,Pont de Levallois-Bécon,Pont de Levallois-Bécon,1,1,0
+243,48.8855061094182,2.25852747019736,Pont de Neuilly,Pont de Neuilly,1,1,0
+244,48.8296903380227,2.23052843419233,Pont de Sèvres,Pont de Sèvres,1,1,0
+245,48.8534635856948,2.35738397280916,Pont Marie (Cité des Arts),Pont Marie (Cité des Arts),1,1,0
+246,48.8585341022857,2.342117238666,Pont Neuf,Pont Neuf,1,1,0
+247,48.8398851659774,2.33687344089015,Port Royal,Port Royal,1,1,0
+248,48.8482259804112,2.25769888566092,Porte d'Auteuil,Porte d'Auteuil,1,1,0
+249,48.8187170251155,2.36050083280537,Porte d'Italie,Porte d'Italie,1,2,0
+250,48.8213573623076,2.36930823722325,Porte d'Ivry,Porte d'Ivry,1,2,0
+251,48.8228170602349,2.325072625148,Porte d'Orléans (Général Leclerc),Porte d'Orléans (Général Leclerc),1,2,0
+252,48.8717922164175,2.27486996119569,Porte Dauphine (Maréchal de Lattre de Tassigny),Porte Dauphine (Maréchal de Lattre de Tassigny),1,1,0
+253,48.8643365354836,2.40882537603773,Porte de Bagnolet,Porte de Bagnolet,1,2,0
+254,48.885739159692,2.29186062067553,Porte de Champerret,Porte de Champerret,1,1,0
+255,48.8199024461617,2.36496559829082,Porte de Choisy,Porte de Choisy,1,1,0
+256,48.894436060298,2.31356566546523,Porte de Clichy,Porte de Clichy,1,2,0
+257,48.8979701704072,2.34398838343329,Porte de Clignancourt,Porte de Clignancourt,1,1,0
+258,48.8979593432415,2.35925506957965,Porte de la Chapelle,Porte de la Chapelle,1,2,0
+259,48.8975291568915,2.3856442301273,Porte de la Villette,Porte de la Villette,1,2,0
+260,48.8533798778138,2.41045818741635,Porte de Montreuil,Porte de Montreuil,1,2,0
+261,48.8885839809719,2.39242287571854,Porte de Pantin,Porte de Pantin,1,2,0
+262,48.8375653344736,2.2555912744479,Porte de Saint-Cloud,Porte de Saint-Cloud,1,1,0
+263,48.8975117327715,2.32902164721221,Porte de Saint-Ouen,Porte de Saint-Ouen,1,1,0
+264,48.8277653265897,2.30431235076306,Porte de Vanves,Porte de Vanves,1,2,0
+265,48.832253452749,2.28786413781919,Porte de Versailles,Porte de Versailles,1,2,0
+266,48.8470165184191,2.41081688233476,Porte de Vincennes,Porte de Vincennes,1,2,0
+267,48.8769382235089,2.40637656692978,Porte des Lilas,Porte des Lilas,1,2,0
+268,48.878006176279,2.28246564000133,Porte Maillot,Porte Maillot,1,1,0
+269,48.8801599321124,2.39858662186977,Pré-Saint-Gervais,Pré-Saint-Gervais,1,1,0
+270,48.8664969870386,2.3340942152591,Pyramides,Pyramides,1,1,0
+271,48.8738211723367,2.3848863721979,Pyrenees,Pyrenees,1,1,0
+272,48.8376146757853,2.3738521156805,Quai de la Gare,Quai de la Gare,1,1,0
+273,48.8459660324065,2.36691317973831,Quai de la Rapée,Quai de la Rapée,1,1,0
+274,48.869660572192,2.33632828164171,Quatre Septembre,Quatre Septembre,1,1,0
+275,48.8611933956416,2.35328695987071,Rambuteau,Rambuteau,1,1,0
+276,48.855504403002,2.26995917825576,Ranelagh,Ranelagh,1,1,0
+277,48.8391569814968,2.33047415116293,Raspail,Raspail,1,2,0
+278,48.866046669631,2.35262095401519,Réaumur-Sébastopol,Réaumur-Sébastopol,1,2,0
+279,48.8481982688248,2.32802174862811,Rennes,Rennes,1,1,0
+280,48.8674108288354,2.36358782555805,République,République,1,3,0
+281,48.8473528769588,2.38584254004024,Reuilly-Diderot,Reuilly-Diderot,1,2,0
+282,48.8606859919958,2.3724109318802,Richard-Lenoir,Richard-Lenoir,1,1,0
+283,48.8720961237898,2.33932555585643,Richelieu-Drouot,Richelieu-Drouot,1,1,0
+284,48.8883932319013,2.37443310888499,Riquet,Riquet,1,1,0
+285,48.8556808081969,2.42365908548302,Robespierre,Robespierre,1,1,0
+287,48.882070833937,2.32039833930999,Rome,Rome,1,1,0
+288,48.8642533844034,2.27791676202885,Rue de la Pompe (Avenue Georges Mandel),Rue de la Pompe (Avenue Georges Mandel),1,1,0
+289,48.8522227131835,2.38911565092719,Rue des Boulets,Rue des Boulets,1,1,0
+290,48.8558913378155,2.32570499389931,Rue du Bac,Rue du Bac,1,1,0
+291,48.8640894057464,2.38089978855212,Rue Saint-Maur,Rue Saint-Maur,1,1,0
+293,48.8616474242993,2.3731471407723,Saint-Ambroise,Saint-Ambroise,1,1,0
+294,48.8743867602128,2.32072783196473,Saint-Augustin,Saint-Augustin,1,1,0
+295,48.9299266652709,2.35618614918887,Saint-Denis-Porte de Paris,Saint-Denis-Porte de Paris,1,2,0
+296,48.8716998109711,2.40429872420218,Saint-Fargeau,Saint-Fargeau,1,1,0
+297,48.8509825598235,2.31442986460027,Saint-Francois-Xavier,Saint-Francois-Xavier,1,1,0
+298,48.8785939552362,2.33782696891702,Saint-Georges,Saint-Georges,1,1,0
+299,48.8534472377383,2.33304632604487,Saint-Germain des Prés,Saint-Germain des Prés,1,1,0
+301,48.8329916917758,2.33668289664435,Saint-Jacques,Saint-Jacques,1,1,0
+302,48.8756815064197,2.32559158481996,Saint-Lazare,Saint-Lazare,1,3,0
+303,48.8462382566208,2.41899982810926,Saint-Mandé,Saint-Mandé,1,1,0
+304,48.8394422789207,2.36164021412343,Saint-Marcel,Saint-Marcel,1,1,0
+306,48.8535999078858,2.34399624109401,Saint-Michel,Saint-Michel,1,1,0
+308,48.855134518235,2.36133433906766,Saint-Paul (Le Marais),Saint-Paul (Le Marais),1,1,0
+309,48.8724706657937,2.31076910123035,Saint-Philippe du Roule,Saint-Philippe du Roule,1,1,0
+310,48.8470118401686,2.32705511135513,Saint-Placide,Saint-Placide,1,1,0
+312,48.8511463550549,2.33096285636646,Saint-Sulpice,Saint-Sulpice,1,1,0
+314,48.7812873184787,2.2976096510082,Sceaux,Sceaux,1,1,0
+315,48.8468647020692,2.30726884757893,Ségur,Ségur,1,1,0
+316,48.8673503814313,2.34756723541508,Sentier,Sentier,1,1,0
+319,48.8509392884308,2.32611465482228,Sèvres-Babylone,Sèvres-Babylone,1,2,0
+320,48.8449961508569,2.31086483004415,Sèvres-Lecourbe,Sèvres-Lecourbe,1,1,0
+321,48.8941234446659,2.34724544444303,Simplon,Simplon,1,1,0
+322,48.8585333595082,2.32308924878721,Solférino,Solférino,1,1,0
+323,48.8841892942088,2.36703044197457,Stalingrad,Stalingrad,1,3,0
+324,48.8696323651875,2.35450206308924,Strasbourg-Saint-Denis,Strasbourg-Saint-Denis,1,2,0
+326,48.8507935947421,2.3612369937143,Sully-Morland,Sully-Morland,1,1,0
+327,48.8755224492457,2.39867651114495,Telegraphe,Telegraphe,1,1,0
+328,48.8667641678145,2.36157132703273,Temple,Temple,1,1,0
+329,48.8782280405077,2.29812143258218,Ternes,Ternes,1,1,0
+330,48.8261594539114,2.35701946618913,Tolbiac,Tolbiac,1,1,0
+332,48.8763290374387,2.3318045685106,Trinité-d'Estienne d'Orves,Trinité-d'Estienne d'Orves,1,1,0
+333,48.8630891350352,2.28684037849459,Trocadéro,Trocadéro,1,2,0
+334,48.8647801625001,2.32909495442943,Tuileries,Tuileries,1,1,0
+336,48.84870084962,2.32123988193857,Vaneau,Vaneau,1,1,0
+337,48.8563930691985,2.31475436481029,Varenne,Varenne,1,1,0
+338,48.8394392812395,2.30107804247393,Vaugirard (Adolphe Chérioux),Vaugirard (Adolphe Chérioux),1,1,0
+339,48.8420598575821,2.32886705043721,Vavin,Vavin,1,1,0
+341,48.8698649124841,2.28522620725044,Victor Hugo,Victor Hugo,1,1,0
+342,48.8037696632827,2.36390930638904,Villejuif-Léo Lagrange,Villejuif-Léo Lagrange,1,1,0
+343,48.7866380111198,2.36711052738165,Villejuif-Louis Aragon,Villejuif-Louis Aragon,1,2,0
+344,48.7959941323932,2.36823145191568,Villejuif-Paul Vaillant Couturier (Hôpital Paul Brousse),Villejuif-Paul Vaillant Couturier (Hôpital Paul Brousse),1,1,0
+347,48.8813242939447,2.31659676150882,Villiers,Villiers,1,2,0
+348,48.8473238711606,2.43353159687789,Vincennes,Vincennes,1,1,0
+349,48.8414184426777,2.30799364938666,Volontaires,Volontaires,1,1,0
+350,48.8576637257601,2.38003629679551,Voltaire (Léon Blum),Voltaire (Léon Blum),1,1,0
+351,48.8837124760373,2.3055577575143,Wagram,Wagram,1,1,0
+352,48.836814988806,2.27868334645027,Balard,Balard,1,2,0
+353,48.8410253553217,2.28792386733087,Boucicaut,Boucicaut,1,1,0
+354,48.8214898191456,2.41385676233111,Charenton-Ecoles,Charenton-Ecoles,1,1,0
+355,48.8575865444645,2.36803669494838,Chemin Vert,Chemin Vert,1,1,0
+356,48.844613671994,2.29380298016915,Commerce,Commerce,1,1,0
+357,48.7966012975785,2.44953152437608,Créteil-L'Echat (Hôpital Henri Mondor),Créteil-L'Echat (Hôpital Henri Mondor),1,1,0
+358,48.7797572578446,2.45931429107883,Créteil-Préfecture (Hôtel de Ville),Créteil-Préfecture (Hôtel de Ville),1,1,0
+359,48.78972431608,2.45083610639066,Créteil-Université,Créteil-Université,1,1,0
+360,48.8542609215541,2.30543956053901,Ecole Militaire,Ecole Militaire,1,1,0
+361,48.8150763201298,2.42163176673066,Ecole Vétérinaire de Maisons-Alfort,Ecole Vétérinaire de Maisons-Alfort,1,1,0
+362,48.8500676680027,2.38442877074163,Faidherbe-Chaligny,Faidherbe-Chaligny,1,1,0
+363,48.8428245676741,2.29222496622052,Félix Faure,Félix Faure,1,1,0
+364,48.8630781763554,2.36674588358473,Filles du Calvaire,Filles du Calvaire,1,1,0
+365,48.8572278606496,2.30979622582736,La Tour-Maubourg,La Tour-Maubourg,1,1,0
+366,48.8511941653637,2.37593173701289,Ledru-Rollin,Ledru-Rollin,1,1,0
+367,48.825637111728,2.40741080542612,Liberté,Liberté,1,1,0
+368,48.8386681290301,2.2822484883841,Lourmel,Lourmel,1,1,0
+369,48.8025004418306,2.44618361855945,Maisons-Alfort-Les Juilliottes,Maisons-Alfort-Les Juilliottes,1,1,0
+370,48.8082253473524,2.43627582105113,Maisons-Alfort-Stade,Maisons-Alfort-Stade,1,1,0
+371,48.836991037653,2.40291960687004,Michel Bizot,Michel Bizot,1,1,0
+372,48.844142731121,2.38962501284843,Montgallet,Montgallet,1,1,0
+373,48.7681110763834,2.46565028903882,Pointe du Lac,Pointe du Lac,1,1,0
+374,48.8326603464822,2.40046363844978,Porte de Charenton,Porte de Charenton,1,2,0
+375,48.8354972528247,2.40618521221493,Porte Dorée,Porte Dorée,1,2,0
+376,48.8609749971872,2.36726229502294,Saint-Sébastien-Froissart,Saint-Sébastien-Froissart,1,1,0
+377,48.8333137155784,2.38729970438351,Cour Saint-Emilion,Cour Saint-Emilion,1,1,0
+378,48.8298306952711,2.37612000934484,Bibliotheque-Francois Mitterrand,Bibliotheque-Francois Mitterrand,1,2,0
+379,48.8269482819608,2.36703843338759,Olympiades,Olympiades,1,1,0
+380,48.8184663371133,2.31964321861782,Mairie de Montrouge,Mairie de Montrouge,1,1,0
+381,48.9066665878747,2.36523013585438,Front Populaire,Front Populaire,1,1,0
+382,48.9461108724874,2.3620451929906,Saint-Denis-Universite,Saint-Denis-Universite,1,1,0
+383,48.9199435050834,2.34390941978589,Carrefour-Pleyel,Carrefour-Pleyel,1,1,0
+384,48.9229163315091,2.28596389657663,Les Agnettes,Les Agnettes,1,1,0
+385,48.9302936228708,2.28376063319525,Asnieres-Gennevilliers Les Courtilles,Asnieres-Gennevilliers Les Courtilles,1,2,0
+386,48.9551817805573,2.09252621907659,Acheres Grand Cormier,Acheres Grand Cormier,1,1,0
+387,48.9700771763045,2.07761818200838,Achères-Ville,Achères-Ville,1,1,0
+388,48.872608179941,2.32970681644823,Auber,Auber,1,1,0
+389,48.7529886446666,2.50522284595675,Boissy-Saint-Léger,Boissy-Saint-Léger,1,1,0
+390,48.8444264548331,2.52639366725601,Bry-sur-Marne,Bry-sur-Marne,1,1,0
+391,48.8366508282027,2.70985405854363,Bussy-Saint-Georges,Bussy-Saint-Georges,1,1,0
+392,49.0485472587346,2.01205516907905,Cergy-Le-Haut,Cergy-Le-Haut,1,1,0
+393,49.0359438349434,2.08014375724293,Cergy-Préfecture,Cergy-Préfecture,1,1,0
+394,49.0495421181763,2.03504364803459,Cergy-Saint-Christophe,Cergy-Saint-Christophe,1,1,0
+395,48.8070358020923,2.50990166838635,Champigny,Champigny,1,1,0
+397,48.8614637105586,2.34684413160301,Châtelet-Les Halles,Châtelet-Les Halles,1,3,0
+398,48.8851420716858,2.15562586701861,Chatou-Croissy,Chatou-Croissy,1,1,0
+399,48.9894177404915,2.07418924715144,Conflans-Fin d'Oise,Conflans-Fin d'Oise,1,1,0
+400,48.8434118592224,2.46481540327434,Fontenay-sous-Bois,Fontenay-sous-Bois,1,1,0
+402,48.9206455953069,2.18441175534892,Houilles Carrières-sur-Seine,Houilles Carrières-sur-Seine,1,1,0
+403,48.8210696783597,2.46383495630535,Joinville-le-Pont,Joinville-le-Pont,1,1,0
+405,48.7949335448386,2.51304475772495,La Varenne-Chennevières,La Varenne-Chennevières,1,1,0
+406,48.8052800122277,2.48559432484478,Le Parc de Saint-Maur,Le Parc de Saint-Maur,1,1,0
+407,48.890095706338,2.13437461432326,Le Vésinet-Centre,Le Vésinet-Centre,1,1,0
+408,48.8983508940647,2.12182892544302,Le Vésinet-Le Pecq,Le Vésinet-Le Pecq,1,1,0
+409,48.8390753276799,2.63386905557393,Lognes,Lognes,1,1,0
+410,48.9460472323042,2.14425167664227,Maisons-Laffitte,Maisons-Laffitte,1,1,0
+411,48.8684969702403,2.78225973056295,Marne-la-Vallée Chessy,Marne-la-Vallée Chessy,1,1,0
+412,48.8956599320345,2.22310032805562,Nanterre-Préfecture,Nanterre-Préfecture,1,1,0
+413,48.9014580674653,2.21546731923683,Nanterre-Université,Nanterre-Université,1,1,0
+414,48.8953251472943,2.19584047387075,Nanterre-Ville,Nanterre-Ville,1,1,0
+416,48.8534603238448,2.51376064891993,Neuilly-Plaisance,Neuilly-Plaisance,1,1,0
+417,49.0143372929337,2.07843420195858,Neuville-Université,Neuville-Université,1,1,0
+418,48.8351087741738,2.47168391615909,Nogent-sur-Marne,Nogent-sur-Marne,1,1,0
+419,48.8434850343022,2.61661461385215,Noisiel,Noisiel,1,1,0
+420,48.8430761336619,2.58187639884159,Noisy-Champs,Noisy-Champs,1,1,0
+421,48.8408826273723,2.54935097144903,Noisy-le-Grand (Mont d'Est),Noisy-le-Grand (Mont d'Est),1,1,0
+422,48.933164262405,2.04108351097056,Poissy,Poissy,1,1,0
+423,48.8872220605329,2.17062320493039,Rueil-Malmaison,Rueil-Malmaison,1,1,0
+424,48.8983086083605,2.09511210577148,Saint-Germain-en-Laye,Saint-Germain-en-Laye,1,1,0
+425,48.8064196089622,2.47204505094563,Saint-Maur Créteil,Saint-Maur Créteil,1,1,0
+426,48.9375121831836,2.15731104702058,Sartrouville,Sartrouville,1,1,0
+427,48.7710515330376,2.50751126834554,Sucy Bonneuil,Sucy Bonneuil,1,1,0
+428,48.8397284227296,2.65590311514528,Torcy,Torcy,1,1,0
+429,48.8554970482612,2.77360843321897,Val d'europe,Val d'europe,1,1,0
+430,48.8540432484831,2.48855301402338,Val de Fontenay,Val de Fontenay,1,2,0
+431,49.0106207175917,2.56321615646988,Aeroport Charles de Gaulle 1,Aeroport Charles de Gaulle 1,1,1,0
+432,49.0039144069026,2.56921045187106,Aeroport Charles de Gaulle 2 TGV,Aeroport Charles de Gaulle 2 TGV,1,1,0
+433,48.7548274850388,2.30086507059831,Antony,Antony,1,1,0
+434,48.7984604738998,2.32792175214199,Arcueil-Cachan,Arcueil-Cachan,1,1,0
+435,48.9321087626391,2.49330956258133,Aulnay-sous-Bois,Aulnay-sous-Bois,1,2,0
+436,48.7932557963438,2.321324996318,Bagneux,Bagneux,1,1,0
+437,48.9322011699976,2.47675087121991,Blanc-Mesnil,Blanc-Mesnil,1,1,0
+438,48.7800509377689,2.31216262595979,Bourg-la-Reine,Bourg-la-Reine,1,1,0
+439,48.6957326504055,2.16308967515621,Bures-sur-Yvette,Bures-sur-Yvette,1,1,0
+440,48.8203370568976,2.33969097471013,Cité Universitaire,Cité Universitaire,1,2,0
+441,48.7007630180636,2.0991005270587,Courcelle-sur-Yvette,Courcelle-sur-Yvette,1,1,0
+442,48.9327098091486,2.45510534517467,Drancy,Drancy,1,1,0
+443,48.7439325635015,2.29706733461834,Fontaine-Michalon,Fontaine-Michalon,1,1,0
+444,48.7877566012422,2.29189185290634,Fontenay-aux-Roses,Fontenay-aux-Roses,1,1,0
+445,48.815744305852,2.34087477502624,Gentilly,Gentilly,1,1,0
+446,48.6984244955871,2.13726750032393,Gif-sur-Yvette,Gif-sur-Yvette,1,1,0
+447,48.9240234349093,2.38440066468956,La Courneuve-Aubervilliers,La Courneuve-Aubervilliers,1,1,0
+448,48.7621447915303,2.30416361499926,La Croix-de-Berny,La Croix-de-Berny,1,1,0
+449,48.6950607320829,2.15266413677081,La Hacquinière,La Hacquinière,1,1,0
+450,48.9175686594317,2.36152699600391,La Plaine-Stade de France,La Plaine-Stade de France,1,1,0
+451,48.8076373363519,2.33325414669593,Laplace,Laplace,1,1,0
+452,48.9309104451792,2.42630793688445,Le Bourget,Le Bourget,1,1,0
+453,48.7048670542875,2.1912655867174,Le Guichet,Le Guichet,1,1,0
+454,48.7393809280585,2.28759904769514,Les Baconnets,Les Baconnets,1,1,0
+455,48.7060497930491,2.21156541622239,Lozère,Lozère,1,1,0
+456,48.8467785590282,2.34044118117617,Luxembourg,Luxembourg,1,1,0
+457,48.7241485261006,2.25934234895455,Massy-Palaiseau,Massy-Palaiseau,1,2,0
+458,48.7346013022464,2.27328170999022,Massy-Verrières,Massy-Verrières,1,2,0
+459,48.975712599403,2.64216068372558,Mitry-Claye,Mitry-Claye,1,1,0
+460,48.6976016469381,2.18207974854558,Orsay-Ville,Orsay-Ville,1,1,0
+461,48.7179194367165,2.24650141632646,Palaiseau,Palaiseau,1,1,0
+462,48.7077458830145,2.2370395331204,Palaiseau Villebon,Palaiseau Villebon,1,1,0
+463,48.7706219958103,2.30984199651564,Parc de Sceaux,Parc de Sceaux,1,1,0
+464,48.9737412428684,2.51479888547561,Parc des Expositions,Parc des Expositions,1,1,0
+465,48.8398851659774,2.33687344089015,Port Royal,Port Royal,1,1,0
+466,48.7800313210551,2.28105937847185,Robinson,Robinson,1,1,0
+467,48.8533931341985,2.34501765859822,Saint-Michel Notre-Dame,Saint-Michel Notre-Dame,1,2,0
+468,48.7028686842498,2.07060021452115,Saint-Rémy-lès-Chevreuse,Saint-Rémy-lès-Chevreuse,1,1,0
+470,48.9360106859113,2.53468090102698,Sevran Livry,Sevran Livry,1,1,0
+471,48.9481683299283,2.52448044743623,Sevran-Beaudottes,Sevran-Beaudottes,1,1,0
+472,48.9441312190857,2.56681426385618,Vert-Galant,Vert-Galant,1,1,0
+473,48.953000135658,2.60203177755109,Villeparisis,Villeparisis,1,1,0
+474,48.9630959973545,2.51215556699809,Villepinte,Villepinte,1,1,0
+475,49.046646,2.095195,Pontoise,Pontoise,1,1,0
+476,49.045312,2.105111,Saint-Ouen L'Aumone,Saint-Ouen L'Aumone,1,1,0
+477,49.033988,2.128264,Saint-Ouen L'Aumone Liesse,Saint-Ouen L'Aumone Liesse,1,1,0
+478,49.019137,2.154663,Pierrelaye,Pierrelaye,1,1,0
+479,49.007423,2.19762,Montigny Beauchamp,Montigny Beauchamp,1,1,0
+480,48.993713,2.234276,Franconville Le Plessis Bouchard,Franconville Le Plessis Bouchard,1,1,0
+481,48.985005,2.257474,Cernay,Cernay,1,1,0
+482,48.980646,2.272085,Ermont Eaubonne,Ermont Eaubonne,1,1,0
+483,48.96359,2.285931,Saint-Gratien,Saint-Gratien,1,1,0
+484,48.953396,2.30234,Epinay Sur Seine,Epinay Sur Seine,1,1,0
+485,48.932896,2.307943,Gennevilliers,Gennevilliers,1,1,0
+486,48.920873,2.313835,Les Gresillons,Les Gresillons,1,1,0
+487,48.905655,2.3224,Saint-Ouen,Saint-Ouen,1,1,0
+488,48.885466,2.29823,Pereire Levallois,Pereire Levallois,1,1,0
+489,48.877908,2.284431,Neuilly Porte Maillot,Neuilly Porte Maillot,1,1,0
+490,48.870974,2.275575,Avenue Foch,Avenue Foch,1,1,0
+491,48.864462,2.272121,Avenue Henri Martin,Avenue Henri Martin,1,1,0
+492,48.856532,2.275167,Boulainvilliers,Boulainvilliers,1,1,0
+493,48.853648,2.279487,Avenue Du President Kennedy,Avenue Du President Kennedy,1,1,0
+494,48.857293,2.290392,Champ De Mars - Tour Eiffel,Champ De Mars - Tour Eiffel,1,1,0
+495,48.862662,2.30099,Pont De L'Alma,Pont De L'Alma,1,1,0
+496,48.860708,2.32562,Musée D'Orsay,Musée D'Orsay,1,1,0
+497,48.813989,2.391687,Ivry Sur Seine,Ivry Sur Seine,1,1,0
+498,48.800209,2.402713,Vitry Sur Seine,Vitry Sur Seine,1,1,0
+499,48.782505,2.409542,Les Ardoines,Les Ardoines,1,1,0
+500,48.763787,2.411387,Choisy-Le-Roi,Choisy-Le-Roi,1,1,0
+501,48.745072,2.417521,Les Saules,Les Saules,1,1,0
+502,48.741879,2.402909,Orly-Ville,Orly-Ville,1,1,0
+503,48.74835,2.373112,Pont-De-Rungis – Aéroport d'Orly,Pont-De-Rungis – Aéroport d'Orly,1,1,0
+504,48.740195,2.351633,Rungis – La Fraternelle,Rungis – La Fraternelle,1,1,0
+505,48.747942,2.312711,Chemin D'Antony,Chemin D'Antony,1,1,0
+506,48.739831,2.4264,Villeneuve-le-Roi,Villeneuve-le-Roi,1,1,0
+507,48.725535,2.419565,Ablon,Ablon,1,1,0
+508,48.712629,2.403633,Athis-Mons,Athis-Mons,1,1,0
+509,48.689457,2.383139,Juvisy,Juvisy,1,2,0
+510,48.676447,2.352481,Savigny-sur-Orge,Savigny-sur-Orge,1,1,0
+511,48.676381,2.333249,Petit Vaux,Petit Vaux,1,1,0
+512,48.685714,2.317626,Gravigny – Balizy,Gravigny – Balizy,1,1,0
+513,48.700681,2.307841,Chilly – Mazarin,Chilly – Mazarin,1,1,0
+514,48.702239,2.294558,Longjumeau,Longjumeau,1,1,0
+515,48.732299,2.240161,Igny,Igny,1,1,0
+516,48.751023,2.215861,Bievres,Bievres,1,1,0
+517,48.759189,2.192136,Vauboyen,Vauboyen,1,1,0
+518,48.764776,2.163947,Jouy-en-Josas,Jouy-en-Josas,1,1,0
+519,48.770425,2.146832,Petit Jouy – Les Loges,Petit Jouy – Les Loges,1,1,0
+520,48.79528,2.13605,Versailles-Chantiers,Versailles-Chantiers,1,1,0
+521,48.798708,2.071847,Saint-Cyr,Saint-Cyr,1,1,0
+522,48.78739,2.044622,Saint-Quentin-en-Yvelines,Saint-Quentin-en-Yvelines,1,1,0
+523,48.800216,2.129044,Versailles Chateau – Rive Gauche,Versailles Chateau – Rive Gauche,1,1,0
+524,48.796528,2.152379,Porchefontaine,Porchefontaine,1,1,0
+525,48.800718,2.17139,Viroflay Rive Gauche,Viroflay Rive Gauche,1,2,0
+526,48.799729,2.183684,Chaville – Vélizy,Chaville – Vélizy,1,1,0
+527,48.807493,2.240883,Meudon-Val Fleury,Meudon-Val Fleury,1,1,0
+528,48.819674,2.25876,Issy,Issy,1,1,0
+529,48.83012,2.26369,Issy-Val de Seine,Issy-Val de Seine,1,2,0
+530,48.83909,2.270458,Pont Du Garigliano - Hopital Européen Georges Pompidou,Pont Du Garigliano - Hopital Européen Georges Pompidou,1,2,0
+531,48.846192,2.276761,Javel,Javel,1,1,0
+532,48.669484,2.332623,Épinay Sur Orge,Épinay Sur Orge,1,1,0
+533,48.652811,2.312736,Sainte-Genèvieve Des Bois,Sainte-Genèvieve Des Bois,1,1,0
+534,48.635876,2.306833,Saint-Michel Sur Orge,Saint-Michel Sur Orge,1,1,0
+535,48.606745,2.30206,Bretigny,Bretigny,1,1,0
+536,48.591461,2.266938,La Norville St Germain Les Arpajon,La Norville St Germain Les Arpajon,1,1,0
+537,48.586008,2.24107,Arpajon,Arpajon,1,1,0
+538,48.582486,2.222433,Égly,Égly,1,1,0
+539,48.577508,2.192063,Breuillet – Bruyères Le Chatel,Breuillet – Bruyères Le Chatel,1,1,0
+540,48.564597,2.170976,Breuillet Village,Breuillet Village,1,1,0
+541,48.551092,2.125707,Saint-Chéron,Saint-Chéron,1,1,0
+542,48.535807,2.069382,Sermaise,Sermaise,1,1,0
+543,48.533733,2.008772,Dourdan,Dourdan,1,1,0
+544,48.535621,1.995902,Dourdan La Foret,Dourdan La Foret,1,1,0
+545,48.565594,2.290924,Marolles En Hurepoix,Marolles En Hurepoix,1,1,0
+546,48.53289,2.290083,Bouray,Bouray,1,1,0
+547,48.520404,2.25474,Lardy,Lardy,1,1,0
+548,48.514246,2.215518,Chamarande,Chamarande,1,1,0
+549,48.493645,2.194582,Étréchy,Étréchy,1,1,0
+550,48.436924,2.159531,Étampes,Étampes,1,1,0
+551,48.427363,2.145247,Saint-Martin-d'Étampes,Saint-Martin-d'Étampes,1,1,0
+552,49.263944,2.468914,Creil,Creil,1,1,0
+553,49.187334,2.45952,Chantilly Gouvieux,Chantilly Gouvieux,1,1,0
+554,49.155327,2.475658,Orry La Ville Coye La Foret,Orry La Ville Coye La Foret,1,1,0
+555,49.126781,2.506144,La Borne Blanche,La Borne Blanche,1,1,0
+556,49.099587,2.525532,Survilliers Fosses,Survilliers Fosses,1,1,0
+557,49.049326,2.501758,Louvres,Louvres,1,1,0
+558,49.033183,2.478033,Les Noues,Les Noues,1,1,0
+559,49.023162,2.462169,Goussainville,Goussainville,1,1,0
+560,48.993777,2.416187,Villiers Le Bel Gonesse Arnouville,Villiers Le Bel Gonesse Arnouville,1,1,0
+561,48.976748,2.390594,Garges Sarcelles,Garges Sarcelles,1,2,0
+562,48.963755,2.372103,Pierrefitte Stains,Pierrefitte Stains,1,1,0
+563,48.934456,2.345604,Saint-Denis,Saint-Denis,1,2,0
+564,48.917567,2.35039,Stade De France Saint-Denis,Stade De France Saint-Denis,1,1,0
+565,48.802049,2.426482,Maisons Alfort Alfortville,Maisons Alfort Alfortville,1,1,0
+566,48.788915,2.43207,Le Vert De Maisons,Le Vert De Maisons,1,1,0
+567,48.773318,2.436146,Creteil Pompadour,Creteil Pompadour,1,1,0
+568,48.745231,2.438344,Villeneuve Triage,Villeneuve Triage,1,1,0
+569,48.730117,2.446136,Villeneuve Saint-Georges,Villeneuve Saint-Georges,1,1,0
+570,48.708238,2.462282,Montgeron Crosne,Montgeron Crosne,1,1,0
+571,48.706611,2.484245,Yerres,Yerres,1,1,0
+572,48.699732,2.506078,Brunoy,Brunoy,1,1,0
+573,48.681017,2.533131,Boussy Saint-Antoine,Boussy Saint-Antoine,1,1,0
+574,48.667902,2.547548,Combs La Ville Quincy,Combs La Ville Quincy,1,1,0
+575,48.628376,2.569584,Lieusaint Moissy,Lieusaint Moissy,1,1,0
+576,48.595564,2.583948,Savigny Le Temple Nandy,Savigny Le Temple Nandy,1,1,0
+577,48.564949,2.594552,Cesson,Cesson,1,1,0
+578,48.538775,2.625522,Le Mée,Le Mée,1,1,0
+579,48.527243,2.65499,Melun,Melun,1,1,0
+580,48.708366,2.414359,Vigneux Sur Seine,Vigneux Sur Seine,1,1,0
+581,48.676092,2.386784,Viry Chatillon,Viry Chatillon,1,1,0
+582,48.658975,2.415207,Ris Orangis,Ris Orangis,1,1,0
+583,48.648489,2.435331,Grand Bourg,Grand Bourg,1,1,0
+584,48.634479,2.45229,Evry - Val De Seine,Evry - Val De Seine,1,1,0
+585,48.613428,2.472934,Corbeil Essonnes,Corbeil Essonnes,1,1,0
+586,48.65397,2.396177,Grigny Centre,Grigny Centre,1,1,0
+587,48.636351,2.407796,Orangis Bois de L'Epine,Orangis Bois de L'Epine,1,1,0
+588,48.626022,2.428739,Évry Courcouronnes - Centre,Évry Courcouronnes - Centre,1,1,0
+589,48.623332,2.451409,Le Bras De Fer,Le Bras De Fer,1,1,0
+590,48.605556,2.462456,Essonnes Robinson,Essonnes Robinson,1,1,0
+591,48.592628,2.461806,Villabé,Villabé,1,1,0
+592,48.573808,2.479469,Le Plessis Chenet,Le Plessis Chenet,1,1,0
+593,48.565271,2.488287,Le Coudray Monceaux La Justice,Le Coudray Monceaux La Justice,1,1,0
+594,48.564486,2.542652,Saint-Fargeau,Saint-Fargeau,1,1,0
+595,48.53514,2.544349,Ponthierry Pringy,Ponthierry Pringy,1,1,0
+596,48.529747,2.572074,Boissise Le Roi,Boissise Le Roi,1,1,0
+597,48.515151,2.599304,Vosves,Vosves,1,1,0
+598,48.587154,2.47349,Moulin Galant,Moulin Galant,1,1,0
+599,48.570597,2.432099,Mennecy,Mennecy,1,1,0
+600,48.531502,2.370518,Ballancourt,Ballancourt,1,1,0
+601,48.484957,2.351858,La Ferté Alais,La Ferté Alais,1,1,0
+602,48.434491,2.376673,Boutigny,Boutigny,1,1,0
+603,48.393642,2.393411,Maisse,Maisse,1,1,0
+604,48.371383,2.38721,Buno Gironville,Buno Gironville,1,1,0
+605,48.341664,2.378815,Boigneville,Boigneville,1,1,0
+606,48.296734,2.398779,Malesherbes,Malesherbes,1,1,0
+607,48.875029,2.326718,Haussmann St Lazare,Haussmann St Lazare,1,1,0
+608,48.880914,2.358833,Magenta,Magenta,1,1,0
+609,48.898112,2.400362,Pantin,Pantin,1,1,0
+610,48.896652,2.458363,Noisy Le Sec,Noisy Le Sec,1,2,0
+611,48.89403,2.480071,Bondy,Bondy,1,2,0
+612,48.889077,2.512567,Le Raincy Villemomble,Le Raincy Villemomble,1,1,0
+613,48.883734,2.525434,Gagny,Gagny,1,1,0
+614,48.877158,2.552882,Chenay Gagny,Chenay Gagny,1,1,0
+615,48.874144,2.583331,Chelles Gournay,Chelles Gournay,1,1,0
+616,48.882304,2.481421,Rosny Bois Perrier,Rosny Bois Perrier,1,1,0
+617,48.869912,2.485761,Rosny Sous Bois,Rosny Sous Bois,1,1,0
+618,48.839342,2.494188,Nogent Le Perreux,Nogent Le Perreux,1,1,0
+619,48.824849,2.511856,Les Boullereaux Champigny,Les Boullereaux Champigny,1,1,0
+620,48.823267,2.54268,Villiers Sur Marne Plessis Trevise,Villiers Sur Marne Plessis Trevise,1,1,0
+621,48.823152,2.579837,Les Yvris Noisy Le Grand,Les Yvris Noisy Le Grand,1,1,0
+622,48.80577,2.619396,Emerainville Pontault Combault,Emerainville Pontault Combault,1,1,0
+623,48.795655,2.650388,Roissy En Brie,Roissy En Brie,1,1,0
+624,48.770779,2.690253,Ozoir La Ferriere,Ozoir La Ferriere,1,1,0
+625,48.746452,2.727229,Gretz Armainvilliers,Gretz Armainvilliers,1,1,0
+626,48.739487,2.758825,Tournan,Tournan,1,1,0
+627,48.9317335355189,2.28845125882425,Le Luth,Le Luth,1,1,0
+628,48.9333984789592,2.29464238656993,Le Village,Le Village,1,1,0
+629,48.9327357206258,2.30155847591317,Timbaud,Timbaud,1,1,0
+630,48.933132709126,2.30724617829281,Gare De Gennevilliers,Gare De Gennevilliers,1,1,0
+631,48.9337542349577,2.31361588194434,Parc Des Chanteraines,Parc Des Chanteraines,1,1,0
+632,48.9344655217644,2.32167714039575,Chemin Des Reniers,Chemin Des Reniers,1,1,0
+633,48.9348165625394,2.32673772442656,La Noue,La Noue,1,1,0
+634,48.9357785777694,2.33411727009733,Mairie De Villeneuve-La Garenne,Mairie De Villeneuve-La Garenne,1,1,0
+635,48.9358864302615,2.33996923305055,L'ile-Saint-Denis,L'ile-Saint-Denis,1,1,0
+636,48.9372517746942,2.35005023590013,Theatre Gerard Philipe,Theatre Gerard Philipe,1,1,0
+637,48.9386350155453,2.35564366609554,Marché De Saint-Denis,Marché De Saint-Denis,1,2,0
+638,48.9361799942142,2.3641547984669,Cimetiere De Saint-Denis,Cimetiere De Saint-Denis,1,1,0
+639,48.9338509141379,2.37008717096138,Hopital Delafontaine,Hopital Delafontaine,1,1,0
+640,48.9316468123299,2.37764224448945,Cosmonautes,Cosmonautes,1,1,0
+641,48.9299638851446,2.38414692421841,La Courneuve - Six Routes,La Courneuve - Six Routes,1,1,0
+642,48.9274168231674,2.3929143192774,Hotel De Ville De La Courneuve,Hotel De Ville De La Courneuve,1,1,0
+643,48.924824543175,2.40099889418652,Stade Geo Andre,Stade Geo Andre,1,1,0
+644,48.9228352084624,2.40676511780942,Danton,Danton,1,1,0
+645,48.9190919758045,2.41434200963461,Maurice Lachatre,Maurice Lachatre,1,1,0
+646,48.9181194793061,2.41723145430699,Drancy-Avenir,Drancy-Avenir,1,1,0
+647,48.9158666835714,2.42579118998224,Hopital Avicenne,Hopital Avicenne,1,1,0
+648,48.9146950656665,2.43013887493184,Gaston Roulaud,Gaston Roulaud,1,1,0
+649,48.91331601793,2.43518136031502,Escadrille Normandie-Niemen,Escadrille Normandie-Niemen,1,1,0
+650,48.9097371429159,2.437628730107,La Ferme,La Ferme,1,1,0
+651,48.9069861378276,2.43876860255659,Liberation,Liberation,1,1,0
+652,48.9065233478191,2.4438665260445,Hotel De Ville De Bobigny,Hotel De Ville De Bobigny,1,1,0
+653,48.90788894559,2.45393093070634,Jean Rostand,Jean Rostand,1,1,0
+654,48.9065623602768,2.45940850981912,Auguste Delaune,Auguste Delaune,1,1,0
+655,48.9053107169111,2.47009377047663,Pont De Bondy,Pont De Bondy,1,1,0
+656,48.9000225902207,2.46526828316241,Petit Noisy,Petit Noisy,1,1,0
+657,48.9233253856384,2.2173115374768,Pont De Bezons,Pont De Bezons,1,1,0
+658,48.9175806440239,2.22440200039865,Parc Pierre Lagravere,Parc Pierre Lagravere,1,1,0
+659,48.9136495267516,2.23002823027505,Victor Basch,Victor Basch,1,1,0
+660,48.9106873724182,2.23407012314541,Jacqueline Auriol,Jacqueline Auriol,1,1,0
+661,48.9077255147412,2.23864326147143,Charlebourg,Charlebourg,1,1,0
+662,48.9024326593636,2.23929404559377,Les Fauvelles,Les Fauvelles,1,1,0
+663,48.8968795279518,2.24040862915188,Faubourg De L'arche,Faubourg De L'arche,1,1,0
+664,48.8831230907434,2.23325285868184,Puteaux,Puteaux,1,1,0
+665,48.8765647468762,2.22592194701924,Belvedere,Belvedere,1,1,0
+666,48.867986595358,2.22147198647192,Suresnes Longchamp,Suresnes Longchamp,1,1,0
+667,48.8566884200347,2.22043483774187,Les Coteaux,Les Coteaux,1,1,0
+668,48.8500204137994,2.22114439247458,Les Milons,Les Milons,1,1,0
+669,48.8430468180261,2.22188167757702,Parc De St-Cloud,Parc De St-Cloud,1,1,0
+670,48.8287596837971,2.22516690246097,Musee De Sevres,Musee De Sevres,1,1,0
+671,48.8219620045994,2.23171487419938,Brimborion,Brimborion,1,1,0
+672,48.8192728706452,2.24014512803673,Meudon Sur-Seine,Meudon Sur-Seine,1,1,0
+673,48.821555338337,2.25130180606433,Les Moulineaux,Les Moulineaux,1,1,0
+674,48.8239694914383,2.25921972662251,Jacques-Henri Lartigue,Jacques-Henri Lartigue,1,1,0
+675,48.8349424302337,2.27261342906497,Henri Farman,Henri Farman,1,1,0
+676,48.8336771604817,2.27637249347823,Suzanne Lenglen,Suzanne Lenglen,1,1,0
+677,48.8318549731826,2.28104409928664,Porte D'issy,Porte D'issy,1,1,0
+678,48.8435299406154,2.40987238771081,Alexandra David-Neel,Alexandra David-Neel,1,1,0
+679,48.8253890943055,2.38103058281363,Avenue De France,Avenue De France,1,1,0
+680,48.8302820806831,2.3935860770449,Baron Le Roy,Baron Le Roy,1,1,0
+681,48.8288069229672,2.30097655186289,Brancion,Brancion,1,1,0
+683,48.8347500443733,2.28334179132084,Desnouettes,Desnouettes,1,1,0
+684,48.8257272854715,2.31333839958687,Didot,Didot,1,1,0
+685,48.8294615430565,2.29641574625194,Georges Brassens,Georges Brassens,1,1,0
+686,48.8248474977224,2.31900130033928,Jean Moulin,Jean Moulin,1,1,0
+687,48.8241320105302,2.37766746177698,Maryse Bastie,Maryse Bastie,1,1,0
+688,48.8398904915347,2.40903673461764,Montempoivre,Montempoivre,1,1,0
+689,48.8216582088437,2.33336195397646,Montsouris,Montsouris,1,1,0
+691,48.8209116166385,2.34995349592711,Poterne Des Peupliers,Poterne Des Peupliers,1,1,0
+692,48.8197076514178,2.34558425669085,Stade Charlety - Porte De Gentilly,Stade Charlety - Porte De Gentilly,1,1,0
+693,48.8723355323155,2.40840044234612,Adrienne Bolland,Adrienne Bolland,1,1,0
+694,48.8850140896672,2.39652097479099,Butte Du Chapeau Rouge,Butte Du Chapeau Rouge,1,1,0
+695,48.8989781775384,2.38017945555975,Canal Saint Denis,Canal Saint Denis,1,1,0
+696,48.8986684923691,2.36338561152916,Colette Besson,Colette Besson,1,1,0
+697,48.8945039358893,2.39777216346148,Delphine Seyrig,Delphine Seyrig,1,1,0
+698,48.897292180575,2.39320910192748,Ella Fitzgerald - Grands Moulins De Pantin,Ella Fitzgerald - Grands Moulins De Pantin,1,1,0
+699,48.8792689202881,2.40101100650267,Hopital Robert Debre,Hopital Robert Debre,1,1,0
+700,48.8588446369293,2.40981210770698,Marie De Miribel,Marie De Miribel,1,1,0
+701,48.8987750323829,2.36878361502263,Porte D'aubervilliers,Porte D'aubervilliers,1,1,0
+702,48.897515796384,2.37249044152091,Rosa Parks,Rosa Parks,1,1,0
+703,48.8675088935417,2.40912946018999,Severine,Severine,1,1,0
+704,48.9658901937153,2.36386996707123,Alcide D'orbigny,Alcide D'orbigny,1,1,0
+705,48.9424452208633,2.35691378893275,Baudelaire,Baudelaire,1,1,0
+706,48.973797831501,2.36627660185182,Butte Pinson (Parc Regional),Butte Pinson (Parc Regional),1,1,0
+708,48.9482146778343,2.35722979660836,Guynemer (Stade Auguste Delaune),Guynemer (Stade Auguste Delaune),1,1,0
+709,48.9708593385516,2.36579719762715,Jacques Prevert,Jacques Prevert,1,1,0
+710,48.9548287717843,2.35803745993303,Joncherolles,Joncherolles,1,1,0
+711,48.9773728969234,2.37217622524553,Les Cholettes,Les Cholettes,1,1,0
+712,48.9767781787438,2.37729522521856,Les Flanades,Les Flanades,1,1,0
+713,48.9786537551151,2.38443679436938,Locheres,Locheres,1,1,0
+714,48.9634914602282,2.36053856501627,Mairie De Pierrefitte,Mairie De Pierrefitte,1,1,0
+715,48.9792035251229,2.38021871103466,Paul Valery,Paul Valery,1,1,0
+716,48.9516654554297,2.35799525455076,Petit Pierrefitte,Petit Pierrefitte,1,1,0
+717,48.9447458406773,2.35690101926321,Roger Semat,Roger Semat,1,1,0
+718,48.958926614457,2.35853039839609,Suzanne Valadon,Suzanne Valadon,1,1,0
+719,48.8040954613237,2.28911549332593,Centre De Chatillon,Centre De Chatillon,1,1,0
+720,48.7834405700809,2.21348629503054,Dewoitine,Dewoitine,1,1,0
+721,48.7945247955908,2.27303104342012,Division Leclerc,Division Leclerc,1,1,0
+722,48.7834030208353,2.23037872764543,Georges Millandy,Georges Millandy,1,1,0
+723,48.7848011946261,2.23614279499236,Georges Pompidou,Georges Pompidou,1,1,0
+724,48.7867931848526,2.25515423740587,Hopital Beclere,Hopital Beclere,1,1,0
+725,48.7815482859483,2.20894825773337,Inovel Parc Nord,Inovel Parc Nord,1,1,0
+726,48.7820987282872,2.18073928151233,L'Onde (Maison Des Arts),L'Onde (Maison Des Arts),1,1,0
+727,48.7802310520094,2.19658902493732,Louvois,Louvois,1,1,0
+728,48.7835428005873,2.24723002087109,Mail De La Plaine,Mail De La Plaine,1,1,0
+729,48.7804234442141,2.19214125554236,Mairie De Velizy,Mairie De Velizy,1,1,0
+730,48.7835151718337,2.22527814127036,Meudon-La-Foret,Meudon-La-Foret,1,1,0
+731,48.8003446550324,2.28245235087319,Parc Andre Malraux,Parc Andre Malraux,1,1,0
+732,48.7807780662934,2.24032589654388,Pave Blanc (Parc Noveos),Pave Blanc (Parc Noveos),1,1,0
+733,48.7851523602244,2.1790163043796,Robert Wagner,Robert Wagner,1,1,0
+734,48.7906727761405,2.26403074344128,Soleil Levant,Soleil Levant,1,1,0
+735,48.807386925894,2.29414710224645,Vauban,Vauban,1,1,0
+736,48.7850196042459,2.2195351308971,Velizy 2,Velizy 2,1,1,0
+737,48.7296350804229,2.36774354841386,Aeroport D'Orly,Aeroport D'Orly,1,1,0
+738,48.7628377172009,2.36716482873229,Auguste Perret (Cimetière Parisien),Auguste Perret (Cimetière Parisien),1,1,0
+739,48.7682933255892,2.36779342945872,Bretagne,Bretagne,1,1,0
+740,48.7388476178098,2.36954273285005,Caroline Aigle (Orlyfret),Caroline Aigle (Orlyfret),1,1,0
+741,48.7338137950608,2.37091198784945,Coeur D'Orly,Coeur D'Orly,1,1,0
+742,48.7790610416543,2.36756856426593,Domaine Cherioux,Domaine Cherioux,1,1,0
+743,48.7396138740715,2.35977239411252,Helene Boucher (Orlytech),Helene Boucher (Orlytech),1,1,0
+744,48.7560961818675,2.36886016839811,La Belle Épine,La Belle Épine,1,1,0
+745,48.7409092646591,2.35307318961857,La Fraternelle,La Fraternelle,1,1,0
+746,48.7831686358008,2.36721733976428,Lamartine,Lamartine,1,1,0
+747,48.7717716496081,2.3679994421848,Moulin Vert,Moulin Vert,1,1,0
+748,48.7528980174642,2.36202098272885,Place De La Logistique (Plateforme Sogaris),Place De La Logistique (Plateforme Sogaris),1,1,0
+749,48.7152165387415,2.37200018127414,Porte De L'Essonne,Porte De L'Essonne,1,1,0
+750,48.7525307118609,2.35530595101454,Porte De Rungis,Porte De Rungis,1,1,0
+751,48.7597190437871,2.36634735103918,Porte De Thiais (Marché International),Porte De Thiais (Marché International),1,1,0
+752,48.7466437819758,2.35291183965123,Robert Schuman (Parc Silic Centre),Robert Schuman (Parc Silic Centre),1,1,0
+753,48.7502208871548,2.35436728528386,Saarinen (Parc Silic Nord),Saarinen (Parc Silic Nord),1,1,0
+754,48.9477400389619,2.33900112520213,Blumenthal,Blumenthal,1,1,0
+755,48.9495103346253,2.34230316470452,Cesar,Cesar,1,1,0
+756,48.9458344501097,2.34711898844559,Delaunay-Belleville,Delaunay-Belleville,1,1,0
+757,48.9554433351439,2.29542935910774,Epinay - Orgemont,Epinay - Orgemont,1,1,0
+758,48.955939666503,2.30180175253806,Epinay-Sur-Seine - Gare,Epinay-Sur-Seine - Gare,1,1,0
+759,48.9553661336359,2.30773819416277,Gilbert Bonnemaison,Gilbert Bonnemaison,1,1,0
+760,48.9527904372825,2.34344969900299,Jean Vilar,Jean Vilar,1,1,0
+761,48.9559330784698,2.31109484550306,Lacepede,Lacepede,1,1,0
+762,48.9516212472325,2.32122168966535,Les Beatus,Les Beatus,1,1,0
+763,48.9502290367693,2.32819457994211,Les Mobiles,Les Mobiles,1,1,0
+764,48.9561424705332,2.34360020944313,Pablo Neruda,Pablo Neruda,1,1,0
+765,48.9396786425239,2.34515337428564,Paul Eluard,Paul Eluard,1,1,0
+766,48.9319492292588,2.35259959024131,Pierre De Geyter,Pierre De Geyter,1,1,0
+767,48.9535524090229,2.31508056689294,Rose Bertin (Centre Commercial L'Ilo),Rose Bertin (Centre Commercial L'Ilo),1,1,0
+768,48.9357422639183,2.34711706578437,Saint-Denis - Gare,Saint-Denis - Gare,1,1,0
+770,48.95939574112,2.34152624144333,Villetaneuse-Universite,Villetaneuse-Universite,1,1,0
+771,	48.893095,2.487911,Remise à Jorelle,,,,
+772,	48.892505,2.499388,Les Coquetiers,,,,
+773,	48.897144,2.506408,Allee De La Tour Rendez Vous,,,,
+774,	48.902444,2.511699,Les Pavillons Sous Bois,,,,
+775,	48.908165,2.517025,Gargan,,,,
+776,	48.916097,2.515061,Lycee Henri Sellier,,,,
+777,	48.921926,2.516444,L'Abbaye,,,,
+778,	48.92664,2.519104,Freinville Sevran,,,,
+779,	48.930934,2.51505,Rougemont Chanteloup,,,,

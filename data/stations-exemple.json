@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "latitude": 1,
+    "longitude": 2,
+    "name": "Station 1",
+    "display_name": "Station 1",
+    "total_lines": 1,
+    "rail": 0
+  },
+  {
+    "id": 2,
+    "latitude": 3,
+    "longitude": 1,
+    "name": "Station 2",
+    "display_name": "Station 2",
+    "total_lines": 1,
+    "rail": 0
+  }
+]
